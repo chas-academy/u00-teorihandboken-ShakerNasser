@@ -52,7 +52,7 @@ Källhänvisning (agila metoder):
 1. Julia Martins- 10 Oktober 2022- https://asana.com/sv/resources/what-is-kanban
 2. Alicia Raeburn- 28 november 2022 -https://asana.com/sv/resources/extreme-programming-xp
 3. Julia Martins- 9 Januari 2023 -https://asana.com/sv/resources/what-is-scrum 
-
+4. Caroline Hasel- 9 Sep 2022 https://projektledning.se/vattenfallsmodellen/
 
 ## PJ 1.2 Icke-agila metoder
 
@@ -83,12 +83,11 @@ Hantering av eventuella framtida kravförändringar och ge möjlighet att lösa 
 Vattenfallsmetoden har fördelar till att vara tydligt strukturellt och processen är enklare att följa. Dokumentationen gör att det finns detaljerade dokument som beskriver systemet. 
 Dem nackdelarna som finns i vattenfallsmetoden är bristande flexibilitet och att risker upptäckas sent i projektets gång. Det blir svårare att hantera ändrade krav eftersom varje fas måste slutföras innan nästa påbörjas.
 
-Inom vattenfallsmetoden så arbetar man väldigt mycket med dokumentation. Detta förenklar för projektgruppen och kunna planera för möjliga hot samt kunna backa och se tillbaka. Dokumentation är även bra till framtida projekt.
-Nackdelen blir att väldigt mycket tid går åt att analysera och dokumentera. 
+Inom vattenfallsmetoden så arbetar man väldigt mycket med dokumentation. Detta förenklar för projektgruppen och kunna planera för möjliga hot samt kunna backa och se tillbaka vid hinder/risker. Dokumentation är även bra till framtida projekt.
+Nackdelen blir att väldigt mycket av tiden går åt att analysera och dokumentera. 
 
 För att förtydliga och fördjupa sig i icke-agila metoder så kan man även se andra fallstudier där konkreta vattenfallsmetoder har använts. Inom rymdskyttelstillverkning, storskaliga mjukvaruprojekt och komplexa byggnadsprojekt så använder man sig av metoden. I dessa slutprodukter så är det svårt att kunna planera flera lanseringar. Slut produkten skall vara i sånt bruk att inga komplexa eller risktagande problem uppstår. 
 Inom rymdskyttelstillverkning har till exempel Nasa (Nasa Space Shuttle) kunnat använda sig av vattenfallsmodellen. Detta resulterade till ett framgångsrikt uppdrag i rymden på grund av den välplanerade detaljplanen och utförande.
- 
 
 
 Källhänvisning (Icke-agila metoder):
@@ -96,6 +95,7 @@ Källhänvisning (Icke-agila metoder):
 1. https://theagileproject.wordpress.com/vattenfallsmodellen/
 2. https://asana.com/sv/resources/waterfall-project-management-methodology
 3. https://llis.nasa.gov/lesson/24502
+
 
 ## PJ 1.3 Entreprenörskap inom webbutveckling
 
@@ -149,8 +149,48 @@ Källhänvisning (Entreprenörskap inom webbutveckling):
 
 ## PJ 1.4 Issue distribution and handling in a group
 
+Issues distribution är svenskas motsvarighet till arbetsfördelning. Oftast pratar man om issue är ett "kort" som består av olika arbetsuppgifter och som innehåller information om vem som är ansvarig för varje arbetsuppgift. I dem korten så innehåller det information om milstolpar och prioritet samt bifogade filer för att del av. Detta gör att projekten hanteras på ett effektivt sätt och att man kan säkerställa att inga uppgifter förbises. 
+Arbetsfördelning handlar om att organisera och fördela arbetsuppgifter på ett visuellt och strukturellt sätt. Det finns flera guider till hur man kan använda dessa kort i så kallade brädor eller tavlor. Dessa gör det enkelt att kunna skapa en strukturell tavla med flera fält. Dem flesta guider och verktyg använder liknande arbetsfördelning även om plattformarna ser annorlunda ut. 
+
+Github har en issue distribution som används av väldigt många inom it branschen. Dessa steg förenklar arbetet av issue distribution i GitHub:
+
+Issues (skapa och hantera):
+Genom att issues (kort) för varje arbetsuppgift, problem eller förbättringsförslag. Tydliga beskrivningar ökar framgångsrikt resultat. Etiketterna ska inte likna varandra om arbetsuppgifterna är olika. 
+
+Milstolpar:
+Milstolpar är en annan viktig aspekt av issue distribution i GitHub. De används för att gruppera issues som hör samman med en specifik version, en projektfas eller en annan  kategori. Genom att skapa och använda milstolpar kan teamet skapa en strukturerad och övergripande översikt över projektets framsteg.
+
+Utse ansvariga: 
+Genom att tilldela issues till specifika teammedlemmar genom att utse dem som ansvariga. Det skapar ansvarstagande och ökar sannolikheten för att uppgiften blir slutförd i tid. 
+
+Använd etiketter:
+Använd etiketter för att kategorisera och prioritera issues. Du kan ha olika etiketter för olika typer av uppgifter, t.ex. "bug", "feature" osv.
+
+Använda projekt (tavla)
+Kanban-liknande tavla som har fält och kolumner där man kan anpassa projekt för att passa ens egna arbetsprocess.
+
+Fördela efter kompetens:
+Teammedlemmarnas kunskapsområden är viktig i denna steg. Här ska man tänka på att fördela på ett rätt sätt för att kunna utnyttja varje teammedlems starka sidor. 
+
+Använda mention:
+
+Använd @username-syntaxen i kommentarer för att nämna specifika användare och notifiera dem om en viss issue eller kommentar.
+
+Följ upp och kommunicera:
+Regelbundna uppdateringar om statusen för issues. Detta kan göras som kommentarer i issues eller genom regelbundna möten med teamet.
+
+Sammanfattningsvis, issue distribution i GitHub är en process för att organisera och fördela arbetsuppgifter i ett projekt. Genom att använda issues, milstolpar, ansvariga, projekt och regelbunden uppföljning kan teamet säkerställa att inga uppgifter förbises och att arbetsbelastningen fördelas jämnt. Denna strukturerade metod främjar effektivt samarbete och bidrar till projektets framgång.
+Genom att fördela arbetsuppgifter baserat på teammedlemmarnas kompetens och tillgänglighet kan resurserna användas på ett optimalt sätt, vilket leder till en mer effektiv användning av arbetskraften.
 
 
-
+Gruppens dynamik är avgörande för ett lyckat bolag och framgångsrika projekt. Arbetet innebär även att man jobbar mot gemensamt mål och slutföra målet på ett framgångsrikt sätt. 
+Förtroende och ömsesidig respekt är nödvändig för att arbeta effektivt. I varje grupp så kan konflikter uppstå. Det gäller att ta tag i konflikterna på ett konstruktivt och respektfullt sätt. Uppmuntra till öppen diskussion och upplysa om lösningar som gynnar gruppens dynamik. 
+Hålla varje medlem ansvarig för sina uppgifter och ansvar. Detta främjar en känsla av ägarskap och säkerställer att alla bidrar till gruppens framgång. 
+Ett viktigt steg är att fira framgångar och höja moralen. Detta förstärker känslan av prestation.
 
 Källhänvisning (Issue distribution and handling in a group)
+
+1. https://github.com/issues
+2. https://asana.com/sv/uses/kanban-boards
+3. https://www.ef.se/blog/language/8-tips-for-att-lyckas-med-grupparbeten/
+4. Hanna Liman - lektion presentation om agila metoder och Issue distribution - Tisdag 3/10-2023
