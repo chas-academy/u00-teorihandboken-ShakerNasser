@@ -27,6 +27,8 @@ Hantering av problem som uppstår i en sprint och här det upptäcks. Detta möt
 
 Strukturen i arbetet har kravspecifikation på backlog där prioriterad och levande lista med önskemål skall följas. 
 
+![Bild visar Scrum översikt- skriven på Engelska ](Scrum-process.JPEG)
+
 
 Kanban är en projektledningsmetod som härstammar från den japanska produktionen inom olika branscher där arbetet behöver kontinuerlig visualisering och uppföljning arbetsflödet. Detta för att förbättra förståelsen för deltagarna i arbetet om att förstå mer om vad som behöver göras. Arbeta utifrån Kanban-tavla innebär att arbeta utifrån att visualisera arbetsflödet, styra processen och maximera resultaten. Man arbetar med olika kort som representerar arbetsuppgifter. Man jobbar från vänstersida av tavlan till höger och går i logisk ordning. Detta för att kunna effektivera processen och eliminera slöseri av resurser men kunna leverera resultat snabbare. Om arbetet följer mönster "att göra", "pågående" och "klart" så hanteras den på en Kanban-tavla nivå. Fokuset i kanban nivå är kvalitetssäkra slutprodukter och förhindring av stopp och förseningar. Det tiden det tar för en uppgift att gå från "att göra" till "klart" kännetecknas av termen LeadTime (ledtid) som räknar tiden för avklarat uppgift. 
 
@@ -48,6 +50,9 @@ Simpel design: en enkel design med den mesta direkta lösningen för att undvika
 Extreme progamming har visat sig vara väldigt effektivt agilt metod och har smittat av sig till andra ramverk och metoder.
 
 
+![Bild visar XP modul- skriven på Engelska ](Extreme_Programming.PNG)
+
+
 Källhänvisning (agila metoder): 
 1. Julia Martins- 10 Oktober 2022- https://asana.com/sv/resources/what-is-kanban
 2. Alicia Raeburn- 28 november 2022 -https://asana.com/sv/resources/extreme-programming-xp
@@ -58,7 +63,7 @@ Källhänvisning (agila metoder):
 
 Icke agila metoder refereras ofta till dem traditionella utvecklingsmetoder. Metoder och tillvägagångsätt skiljs från dem principerna och ramverk som kännetecknar dem agila metoderna. 
 
-Vattenfallsmodellen är en icke agil metod som används. Den har sitt fäste i tillverkningsindustrin där man arbetar utifrån att varje fas ska vara slutförd innan man börjar med nästa. Inom programvaruutveckling så har man börja använda sig utav denna metod. I den traditionella vattenfallsmodellen arbetar man utifrån att varje fas ska vara slutförd innan man börjar med det nästa. Därav namnet vattenfallsmetoden då den efter liknar flödet som ett vattenfall. Detta lämpar sig till projekt som är väldefinierade och förändras sällan under projektets gång. 
+Vattenfallsmodellen är en icke agil metod som används. Den har sitt fäste i tillverkningsindustrin där man arbetar utifrån att varje fas ska vara slutförd innan man börjar med nästa. Inom programvaruutveckling så har man börjat använda sig utav denna metod. I den traditionella vattenfallsmodellen arbetar man utifrån att varje fas ska vara slutförd innan man börjar med det nästa. Därav namnet vattenfallsmetoden då den efter liknar flödet som ett vattenfall. Detta lämpar sig till projekt som är väldefinierade och förändras sällan under projektets gång. 
 Vattenfallsmodellen inkluderar olika faser:
 
 Kravspecifikation (kravfasen):
@@ -90,11 +95,16 @@ För att förtydliga och fördjupa sig i icke-agila metoder så kan man även se
 Inom rymdskyttelstillverkning har till exempel Nasa (Nasa Space Shuttle) kunnat använda sig av vattenfallsmodellen. Detta resulterade till ett framgångsrikt uppdrag i rymden på grund av den välplanerade detaljplanen och utförande.
 
 
+![Bild visar vattenfallsmodellen-Text i bilden är skriven på engelska](Waterfall.PNG)
+
+
+
 Källhänvisning (Icke-agila metoder):
 
 1. https://theagileproject.wordpress.com/vattenfallsmodellen/
 2. https://asana.com/sv/resources/waterfall-project-management-methodology
 3. https://llis.nasa.gov/lesson/24502
+
 
 
 ## PJ 1.3 Entreprenörskap inom webbutveckling
@@ -109,6 +119,8 @@ Skapa färdigheter och samla in kompetens inom dem programmeringsspråket och ra
 En detaljerad affärsplan:
 Genom en detaljerad affärsplan så skapar man en förutsättning för sig själv genom att hålla sig fokuserad och en vägledning till att ta viktiga beslut. En affärsplan kan man jobba på genom verksamma år. Det gäller dock att han en tydlig grund och inkludera målgruppen och skapa en konkurrensanalys. Marknadsföring är en väldigt stor del för att locka till kunder men även samarbetspartner i framtida projekt. 
 
+![Bild visar hur affärsplan kan se ut-Svensk text i bilden](Aff%C3%A4rsplan-PNG.png)
+
 Mellan dessa faser så är det bra att vara påläst om vilka bestämmelser och skyldigheter man har som en entreprenör. Detta kan man oftast lära sig genom företag som erbjuder juridiska hjälp eller läsa själv om detta som tex på Skatteverkets hemsida (om man vill starta i Sverige). Här är det även viktigt att börja tänka vilken företagsform man vill ha. Vill man ha ett aktiebolag eller handelsbolag? Det finns flera företagsformer som passar just ens egna affärsplan. Inom detta så ska man få en samlad detaljplan om lönekostnader och försäkringskostnader. I lönekostnader så kan det tex handla om avgifter (arbetsgivaravgift) och prelimnäraskatter. En del av kostnader går till så kallad Overheadkostnader där semesterlönen, sjukdomslön och tjänstepensionen inräknas. 
 Man bör även ha koll på dem kostnaderna som finns av inköp för materialkostnader och teknologiska. 
 En sådan kostnad kan även innebära licenskostnad. 
@@ -116,7 +128,7 @@ I detta stadie ska man även kunna förstå sig på intäktsmodeller. En enkel i
 
 Känna till dem olika faser i ett:
 Genom att känna till dem olika faserna i ett projekt så blir detaljplanen och prissättningen enklare.
-Ide och efterforskning är en av dem startpunkterna i ett projekt. Dem punkterna tar slut när design fasen börjar. Utvecklingfasen innebär att man jobbar på lösningar, Apier och databaser kopplas samman och grafiska lösningar byggs upp. 
+Idé och efterforskning är en av dem startpunkterna i ett projekt. Dem punkterna tar slut när designfasen börjar. Utvecklingsfasen innebär att man jobbar på lösningar, Apier och databaser kopplas samman och grafiska lösningar byggs upp. 
 
 Prissättning: 
 Genom att läsa in sig och göra en tydlig research så kan man oftast få fram en prissättning. Ibland är det bra att börja med att tänka ut om vad kunden är redo att betala och hur stort behovet kunden har av denna projekt/produkt. En annan prissättningsmodell kan vara att man lurkar i vad konkurrenternas prissättning där och arbeta utifrån det. 
@@ -126,7 +138,7 @@ Att sticka ut:
 Genom att specialisera sig inom ett område inom webbutveckling, tex inom E-handelsplattformar då webbutveckling är en bred bransch under ständig utveckling. 
 
 Gott rykte och marknadsföring:
-Huvudnyckel till att man blir vidare rekommenderad. Ett gott rykte är grunden till att man får fler projekt och nyckeln ligger i att vara lyhörd till kunderna och möta upp till deras förväntningar. Kunderna kan oftast inte så mycket om programmering, det gäller att prata ett klarare och ge tydliga språk, till exempel på förbättringar och föreslå ider. 
+Huvudnyckel till att man blir vidare rekommenderad. Ett gott rykte är grunden till att man får fler projekt och nyckeln ligger i att vara lyhörd till kunderna och möta upp till deras förväntningar. Kunderna kan oftast inte så mycket om programmering, det gäller att prata ett klarare och ge tydliga språk, till exempel på förbättringar och föreslå Idér. 
 Marknadsföring är väldigt viktigt i webbutveckling branschen. Dem digitala annonser är en kostnadseffektiv gentemot den fysiska. Det gäller att nå ut till rätt målgrupp men också genom att visa pålitliga reslutat. En portfolio med vilka kunskaper och projekt man skapat kommer att stärka pålitligheten. 
 
 En strukturell hantering av verksamheten: 
@@ -137,14 +149,15 @@ Oftast kan man få en förenklad blid av hur entreprenörskap är. Många framg�
 
 Ett bra sätt att kunna driva företaget till framgång är att visualisera affärsmodellen. Detta kan man tex göra i en Business Modell Canvas.
 
-
+![Bild visar marknadsföringsstrategins - Texten i bilden är skriven på engelska](Marknadsf%C3%B6ring.png)
 
 Källhänvisning (Entreprenörskap inom webbutveckling):
 
 1. https://www.fortnox.se/fortnox-foretagsguide/starta-eget-foretag/it-webbkonsult
-2. Lektion av Hanna Liman 2023-10-11
-3. https://skatteverket.se/foretag/drivaforetag/startaochregistrera/fordigsomvillstartaforetag.4.6e8a1495181dad540842251.html
-4. https://asana.com/sv/pricing
+2. https://skatteverket.se/foretag/drivaforetag/startaochregistrera/fordigsomvillstartaforetag.4.6e8a1495181dad540842251.html
+3. https://asana.com/sv/pricing
+
+Föreläsningskälla -Lektion av Hanna Liman 2023-10-11
 
 
 ## PJ 1.4 Issue distribution and handling in a group
@@ -158,7 +171,7 @@ Issues (skapa och hantera):
 Genom att issues (kort) för varje arbetsuppgift, problem eller förbättringsförslag. Tydliga beskrivningar ökar framgångsrikt resultat. Etiketterna ska inte likna varandra om arbetsuppgifterna är olika. 
 
 Milstolpar:
-Milstolpar är en annan viktig aspekt av issue distribution i GitHub. De används för att gruppera issues som hör samman med en specifik version, en projektfas eller en annan  kategori. Genom att skapa och använda milstolpar kan teamet skapa en strukturerad och övergripande översikt över projektets framsteg.
+Milstolpar är en annan viktig aspekt av issue distribution i GitHub. De används för att gruppera issues som hör samman med en specifik version, en projektfas eller en annan kategori. Genom att skapa och använda milstolpar kan teamet skapa en strukturerad och övergripande översikt över projektets framsteg.
 
 Utse ansvariga: 
 Genom att tilldela issues till specifika teammedlemmar genom att utse dem som ansvariga. Det skapar ansvarstagande och ökar sannolikheten för att uppgiften blir slutförd i tid. 
@@ -182,15 +195,19 @@ Regelbundna uppdateringar om statusen för issues. Detta kan göras som kommenta
 Sammanfattningsvis, issue distribution i GitHub är en process för att organisera och fördela arbetsuppgifter i ett projekt. Genom att använda issues, milstolpar, ansvariga, projekt och regelbunden uppföljning kan teamet säkerställa att inga uppgifter förbises och att arbetsbelastningen fördelas jämnt. Denna strukturerade metod främjar effektivt samarbete och bidrar till projektets framgång.
 Genom att fördela arbetsuppgifter baserat på teammedlemmarnas kompetens och tillgänglighet kan resurserna användas på ett optimalt sätt, vilket leder till en mer effektiv användning av arbetskraften.
 
-
 Gruppens dynamik är avgörande för ett lyckat bolag och framgångsrika projekt. Arbetet innebär även att man jobbar mot gemensamt mål och slutföra målet på ett framgångsrikt sätt. 
 Förtroende och ömsesidig respekt är nödvändig för att arbeta effektivt. I varje grupp så kan konflikter uppstå. Det gäller att ta tag i konflikterna på ett konstruktivt och respektfullt sätt. Uppmuntra till öppen diskussion och upplysa om lösningar som gynnar gruppens dynamik. 
 Hålla varje medlem ansvarig för sina uppgifter och ansvar. Detta främjar en känsla av ägarskap och säkerställer att alla bidrar till gruppens framgång. 
 Ett viktigt steg är att fira framgångar och höja moralen. Detta förstärker känslan av prestation.
+
+![Bild visar hur en "Kanban-tavla kan se ut i Github- På engelska ](Board-GitHub-PNG.png)
+
+
 
 Källhänvisning (Issue distribution and handling in a group)
 
 1. https://github.com/issues
 2. https://asana.com/sv/uses/kanban-boards
 3. https://www.ef.se/blog/language/8-tips-for-att-lyckas-med-grupparbeten/
-4. Hanna Liman - lektion presentation om agila metoder och Issue distribution - Tisdag 3/10-2023
+
+Föreläsningskälla - Hanna Liman - lektion presentation om agila metoder och Issue distribution - Tisdag 3/10-2023
