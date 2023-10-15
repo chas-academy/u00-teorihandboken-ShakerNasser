@@ -3,7 +3,7 @@ Studerande: Shaker Nasser Albu-salman
 
 ## PJ 1.1 Agila metoder (Scrum, Kanban, Extreme Programming)
 
-Agila metoder beskriver ett arbete som utförs i olika etapper eller sprintar. Projektformen framställs av dem stegen som utförs. Från beställning till färdigställd etapp. Under den processen följs stegen för planeringen av arbetet och genomförande av själva aktivitet. Att arbeta agilt gör att man kan skapa förutsättningar för sitt team och minska risken. Detta stärker teamet och skapar mindre hierarkiskt team. Metoden välkomnar förändringar under projektets gång. De vanligaste agila ramverk inkluderar Scrum, Kanban och Extreme Programming (XP). Agila arbetsmetod är först och främst utvecklat till arbete inom mjukvaruutveckling men det har även smittats till andra områden som kräver arbete i form av team/grupp arbete och konturering resultat.
+Agila metoder beskriver ett arbete som utförs i olika etapper eller sprintar. Projektformen framställs av dem stegen som utförs. Från beställning till färdigställd etapp. Under den processen följs stegen för planeringen av arbetet och genomförande av själva aktivitet. Att arbeta agilt gör att man kan skapa förutsättningar för sitt team och minska risker. Detta stärker teamet och skapar mindre hierarkiskt team. Metoden välkomnar förändringar under projektets gång. De vanligaste agila ramverk inkluderar Scrum, Kanban och Extreme Programming (XP). Agila arbetsmetod är först och främst utvecklat till arbete inom mjukvaruutveckling men det har även smittats till andra områden som kräver arbete i form av team/grupp arbete och konturering resultat.
 
 Scrum är en av dem agila metoder som används för en systemutveckling. Begreppet härstammar från tekniken Scrum i sporten rugby där spelarna i teamet använder sig av axel mot axelformation för att föra bollen vidare till mål. Detta gjorde att dem japanska managementforskarna använda sig av detta begrepp till liknelse om hur systemutveckling i grupp bör ske. 
 Rollerna delas upp i Scrum metoden och dem viktiga tre uttalade rollerna är; Produktägare, Scrum master och Teamet. Detta förenklar arbetet i grupp och ökar gruppens samhörighet. 
@@ -11,7 +11,7 @@ Produktägaren är den som förleder arbetet och agerar som projektledare hos be
 I Scrum så använder man sig av fem aktiviteter som kallas för sprintar. Dessa sprintar står för cykel av utveckling och ingår i en och samma iteration.
 
 Sprint:
-iteration, utveckling över tid där utvecklingsgruppen visar resultat, sker oftast mellan 2-3 veckors tid. Dessa sprintar avlöser varandra.
+Iteration, utveckling över tid där utvecklingsgruppen visar resultat, sker oftast mellan 2-3 veckors tid. Dessa sprintar avlöser varandra.
 
 Sprintplanering:
 Innan nästa Sprint påbörjas så görs Springplanering. Detta görs tillsammans med produktägaren och sker i form av förberedelse och visualisera Sprintens mål. 
@@ -49,9 +49,7 @@ Simpel design: en enkel design med den mesta direkta lösningen för att undvika
 
 Extreme progamming har visat sig vara väldigt effektivt agilt metod och har smittat av sig till andra ramverk och metoder.
 
-
 ![Bild visar XP modul- skriven på Engelska ](Extreme_Programming.PNG)
-
 
 Källhänvisning (agila metoder): 
 1. Julia Martins- 10 Oktober 2022- https://asana.com/sv/resources/what-is-kanban
@@ -94,17 +92,13 @@ Nackdelen blir att väldigt mycket av tiden går åt att analysera och dokumente
 För att förtydliga och fördjupa sig i icke-agila metoder så kan man även se andra fallstudier där konkreta vattenfallsmetoder har använts. Inom rymdskyttelstillverkning, storskaliga mjukvaruprojekt och komplexa byggnadsprojekt så använder man sig av metoden. I dessa slutprodukter så är det svårt att kunna planera flera lanseringar. Slut produkten skall vara i sånt bruk att inga komplexa eller risktagande problem uppstår. 
 Inom rymdskyttelstillverkning har till exempel Nasa (Nasa Space Shuttle) kunnat använda sig av vattenfallsmodellen. Detta resulterade till ett framgångsrikt uppdrag i rymden på grund av den välplanerade detaljplanen och utförande.
 
-
 ![Bild visar vattenfallsmodellen-Text i bilden är skriven på engelska](Waterfall.PNG)
-
-
 
 Källhänvisning (Icke-agila metoder):
 
 1. https://theagileproject.wordpress.com/vattenfallsmodellen/
 2. https://asana.com/sv/resources/waterfall-project-management-methodology
 3. https://llis.nasa.gov/lesson/24502
-
 
 
 ## PJ 1.3 Entreprenörskap inom webbutveckling
@@ -159,7 +153,6 @@ Källhänvisning (Entreprenörskap inom webbutveckling):
 
 Föreläsningskälla -Lektion av Hanna Liman 2023-10-11
 
-
 ## PJ 1.4 Issue distribution and handling in a group
 
 Issues distribution är svenskas motsvarighet till arbetsfördelning. Oftast pratar man om issue är ett "kort" som består av olika arbetsuppgifter och som innehåller information om vem som är ansvarig för varje arbetsuppgift. I dem korten så innehåller det information om milstolpar och prioritet samt bifogade filer för att del av. Detta gör att projekten hanteras på ett effektivt sätt och att man kan säkerställa att inga uppgifter förbises. 
@@ -186,7 +179,6 @@ Fördela efter kompetens:
 Teammedlemmarnas kunskapsområden är viktig i denna steg. Här ska man tänka på att fördela på ett rätt sätt för att kunna utnyttja varje teammedlems starka sidor. 
 
 Använda mention:
-
 Använd @username-syntaxen i kommentarer för att nämna specifika användare och notifiera dem om en viss issue eller kommentar.
 
 Följ upp och kommunicera:
@@ -201,8 +193,6 @@ Hålla varje medlem ansvarig för sina uppgifter och ansvar. Detta främjar en k
 Ett viktigt steg är att fira framgångar och höja moralen. Detta förstärker känslan av prestation.
 
 ![Bild visar hur en "Kanban-tavla kan se ut i Github- På engelska ](Board-GitHub-PNG.png)
-
-
 
 Källhänvisning (Issue distribution and handling in a group)
 
