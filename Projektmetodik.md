@@ -192,7 +192,7 @@ Förtroende och ömsesidig respekt är nödvändig för att arbeta effektivt. I 
 Hålla varje medlem ansvarig för sina uppgifter och ansvar. Detta främjar en känsla av ägarskap och säkerställer att alla bidrar till gruppens framgång. 
 Ett viktigt steg är att fira framgångar och höja moralen. Detta förstärker känslan av prestation.
 
-![Bild visar hur en "Kanban-tavla kan se ut i Github- På engelska ](Board-GitHub-PNG.png)
+![Bild visar hur en "Kanban-tavla kan se ut i Github-](Board-GitHub-PNG.png)
 
 Källhänvisning (Issue distribution and handling in a group)
 
