@@ -2,7 +2,7 @@
 Studerande: Shaker Nasser 
 
 ## HC 1.1 HTML & CSS
-HTML ( HyperText Markup Language)
+HTML (HyperText Markup Language)
 
 HTML är standardiserat märkspråk som används för att skapa webbsidor och kännetecknas som grundstenen i webbutveckling. Språket i sig används för att skapa struktur i webbsidor. HTML gör det att möjligt att kunna definiera dem olika momenten i en webbsida och bestämma hur de ska vara organiserade och relaterade till varandra. Märkspråket är utvecklad för att båda kunna läsas strukturellt av maskindatorer och människor. HTML har haft flera förändringar sedan första lanseringen under år 1993.Den nuvarande versionen vi använder oss av går under namnet HTML 5. Syftet med HTML5 var att förbättra och modernisera webbstandarderna för att möta de ökande kraven och behoven hos den moderna webben. Det ger utvecklare kraftfulla verktyg för att skapa rikare och mer interaktiva och tillgänligsbara webbapplikationer och webbsidor.
 
@@ -50,7 +50,6 @@ Istället för fasta mått i pixlar använder responsiv design ofta procentenhet
 
 Bildoptimering är en annan viktig aspekt av responsiv design. Det handlar om att optimera bilder för olika enheter och skärmupplösningar. Tekniker som att använda olika bildfiler eller implementera srcset och storlekar i HTML används ofta.
 
-
 ![Bild visar responsiv design](Responsive-design.webp)
 
 Innehållsprioritering är en viktig faktor vid responsiv design. Det handlar om att identifiera det mest relevanta och viktiga innehållet för användare baserat på deras enhet och skärmstorlek. Det kan handla om att prioritera vissa element eller dölja specifika detaljer på mindre skärmar.
@@ -62,6 +61,10 @@ Flexbox och grid är också viktiga aspekter av responsiv design. Dessa layoutmo
 Förutom estetiken är responsiv design avgörande av andra skäl. Den förbättrar användarupplevelsen genom att ge en konsekvent och användarvänlig upplevelse på alla enheter. Detta uppmuntrar besökare att stanna längre på webbplatsen och utforska dess innehåll. Dessutom tenderar responsiva webbplatser att rankas högre i sökmotorresultaten (SEO) på grund av sin mobilvänlighet, vilket ökar synligheten och ökar trafiken.
 
 Bildoptimering en viktig del av responsiv design och säkerställer optimal prestanda på olika enheter. Flexbox och grid ger utvecklare kraftfulla verktyg för att skapa komplexa layouter som anpassar sig. Responsiv design förbättrar inte bara användarupplevelsen utan även sökmotorrankingen, vilket gör den till en viktig del av den digitala marknadsföringen.
+
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+2. https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+3. https://developer.mozilla.org/en-US/docs/Glossary/SEO
 
 ## HC 1.3 Tillgänglighet inom webb
 
@@ -91,23 +94,25 @@ Webben en kraftfull plattform för kommunikation och information som berikar vå
 2. http://www.w3c.se/resources/office/translations/wai/intro/accessibility.html
 3. https://medarbetare.ki.se/tillganglighet-pa-webben-vad-kravs-av-dig-som-uppdaterar-innehall
 
-
 ## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
 
-När det kommer till att optimera sin kod finns det faktiskt en hel del fördelar. Webbsidan kommer att laddas mycket snabbare i webbläsaren. Dessutom kommer den att rankas högre i sökmotorer, vilket är bra för din synlighet online. 
-
 Webbstandarder är viktiga eftersom de hjälper till att skapa en mer tillgänglig, användarvänlig och hållbar webb. Genom att följa webbstandarder kan webbutvecklare skapa webbsidor som är lättare att underhålla, snabbare att ladda och mer sökmotorvänliga. Webbstandarder gör det också möjligt för personer med funktionsnedsättningar att använda webben på ett effektivt sätt genom att tillhandahålla stöd för hjälpmedel som skärmläsare.
+Dem allmänna webbriktlinjer rekomenderar att man använder sig av HTML5 versionen som blev en "W3C Recommendation" i Oktober 2014. 
+CSS3 är den senaste versionen av Cascading Style Sheets och möjliggör avancerade stil- och layoutmöjligheter för webbsidor. Det inkluderar övergångar, animationer och flexbox-layouter.
+
+När det kommer till att optimera sin kod finns det faktiskt en hel del fördelar. Webbsidan kommer att laddas mycket snabbare i webbläsaren. Dessutom kommer den att rankas högre i sökmotorer, vilket är bra för din synlighet online. 
 
 Ett användbart tips är att utforska Chrome DevTools Lighthouse. Där kan man testa prestandan och få en lista över saker du kan förbättra på din webbsida.
 
 ![Bild som visar Devtools-utvecklad av Google](chromedevtools.png)
 
-Validering:
+Inom kommande webbstanarder så jobbar man väldigt mycket på att utveckla hur man kan ge användaren möljghet till använda webbsidor för att fungera offline, erbjuda snabbare laddningstider och ge användare en app-liknande upplevelse direkt från webbläsaren. Dessa går under namnet Service Workers och Progressive Web Apps (PWAs)
+
 Att validera kod innebär att försäkra om att den följer de bästa praxis som W3C rekommenderar. En kod som klarar valideringen är oftast också mer optimerad. Dessutom hjälper validering att förbättra SEO resultatet, hitta fel i koden, öka användarvänligheten och tillgängligheten, samt se till att webbsidan fungerar på olika enheter.
 
 1. https://webbriktlinjer.se/riktlinjer/54-optimera-webbplatsen-for-basta-prestanda/
-
-
+2. https://web.dev/learn/pwa/service-workers
+3. https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Offline_Service_workers
 
 ## HC 1.5 CSS Pre-processorer (ex SASS/LESS)
 
@@ -123,6 +128,10 @@ Dessutom minskar användningen av pre-processorer beroendet av att förlita sig 
 
 Sammanfattningsvis utgör användningen av CSS pre-processorer en betydande framsteg inom webbutveckling, vilket leder till mer effektiv och strukturerad kod. Genom att minska upprepningar och frigöra utrymme för kreativitet, möjliggör pre-processorer för utvecklare att skapa webbsidor och applikationer som är både stilistiskt enhetliga och lättlästa.
 
+1. https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
+2. https://www.freecodecamp.org/news/how-to-use-sass-with-css/
+3. https://developer.mozilla.org/en-US/docs/Web/CSS
+
 ## HC 1.6 Optimering och validering av HTML & CSS
 
 Optimering och validering utgör en en stor del i en välfungerande webbplats. Att förstå och tillämpa bästa praxis för HTML (HyperText Markup Language) och CSS (Cascading Style Sheets) är avgörande för att skapa snabba, tillgängliga och sökmotorvänliga webbsidor.
@@ -135,6 +144,19 @@ LightHouse är en verktyg utvecklad av Google för att mäta och förbättra pre
 
 Validering är processen att kontrollera att koden följer de standarder och riktlinjer som fastställts av W3C (World Wide Web Consortium). För HTML finns det verktyg som W3C Validator som kan användas för att kontrollera om koden är korrekt formaterad. Validering hjälper till att upptäcka och åtgärda potentiella fel och säkerställer att webbsidan fungerar korrekt på olika webbläsare och enheter.
 
+Här är en användbar verktyg utvecklad av W3C: https://validator.w3.org/
+Verktygen gör validerar koden och ger förslag på förbättring av html-koden. 
+![Bild visar hur varning eller erorr kan se ut i HTML valdiator](HTML-Valid.PNG)
+
 För CSS finns även valideringsverktyg som hjälper till att identifiera syntaktiska fel och ogiltiga kodsyntax. Att ha giltig CSS-kod är avgörande för att säkerställa en enhetlig och pålitlig visuell upplevelse på olika plattformar.
 
+Här är en användbar verktyg utvecklad av W3C: https://jigsaw.w3.org/css-validator/
+Verktygen gör validerar koden och ger förslag på förbättring av css-koden. 
+
+![Bild visar hur varning eller erorr kan se ut i CSS valdiator](css-Valid.png)
+
 Optimering och validering av HTML & CSS är grundläggande principer för att skapa högpresterande och pålitliga webbplatser. Genom att följa bästa praxis för kodoptimering och använda valideringsverktyg kan utvecklare säkerställa att deras webbsidor är snabba, tillgängliga och kompatibla på olika plattformar. Detta är avgörande för att skapa en positiv användarupplevelse och maximera webbplatsens effektivitet.
+
+1. https://webbriktlinjer.se/riktlinjer/81-utveckla-webbplatsen-enligt-en-standard-snarare-an-for-en-webblasare/
+2. https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS
+3. https://developer.mozilla.org/en-US/docs/Learn/Performance/HTML
