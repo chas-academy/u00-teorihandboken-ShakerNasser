@@ -38,8 +38,6 @@ Sammanfattningsvis är HTML och CSS två av de viktigaste verktygen för webbutv
 3. https://codeinstitute.net/se/blog/what-is-html-and-why-should-i-learn-it/
 4. https://codeinstitute.net/se/blog/what-is-css-and-why-should-i-learn-it/
 
-
-
 ## HC 1.2 Responsiv design
 
 Responsiv design är en designmetod inom webbutveckling som fokuserar på att skapa webbsidor eller applikationer som anpassar sig och verkar visuellt tillämpade över olika enheter och skärmstorlekar. Den uppnår detta genom olika viktiga aspekter.
@@ -52,7 +50,6 @@ Istället för fasta mått i pixlar använder responsiv design ofta procentenhet
 
 Bildoptimering är en annan viktig aspekt av responsiv design. Det handlar om att optimera bilder för olika enheter och skärmupplösningar. Tekniker som att använda olika bildfiler eller implementera srcset och storlekar i HTML används ofta.
 
-Responsiv design tar också hänsyn till beröringsanpassning för mobila enheter. Detta inkluderar inkorporering av större knappar och interaktiva element som är lätta att röra med ett finger.
 
 ![Bild visar responsiv design](Responsive-design.webp)
 
@@ -64,11 +61,11 @@ Flexbox och grid är också viktiga aspekter av responsiv design. Dessa layoutmo
 
 Förutom estetiken är responsiv design avgörande av andra skäl. Den förbättrar användarupplevelsen genom att ge en konsekvent och användarvänlig upplevelse på alla enheter. Detta uppmuntrar besökare att stanna längre på webbplatsen och utforska dess innehåll. Dessutom tenderar responsiva webbplatser att rankas högre i sökmotorresultaten (SEO) på grund av sin mobilvänlighet, vilket ökar synligheten och ökar trafiken.
 
-Sammanfattningsvis är bildoptimering en viktig del av responsiv design och säkerställer optimal prestanda på olika enheter. Flexbox och grid ger utvecklare kraftfulla verktyg för att skapa komplexa layouter som anpassar sig sömlöst. Responsiv design förbättrar inte bara användarupplevelsen utan även sökmotorrankingen, vilket gör den till en viktig del av den digitala marknadsföringen.
+Bildoptimering en viktig del av responsiv design och säkerställer optimal prestanda på olika enheter. Flexbox och grid ger utvecklare kraftfulla verktyg för att skapa komplexa layouter som anpassar sig. Responsiv design förbättrar inte bara användarupplevelsen utan även sökmotorrankingen, vilket gör den till en viktig del av den digitala marknadsföringen.
 
 ## HC 1.3 Tillgänglighet inom webb
 
-Webben är en plats för information, interaktion och kommunikation som är i ständig förändring och utveckling. Den har blivit en del av våra liv och används i en mängd olika syften, från att söka information till att delta i sociala nätverk och utföra komplexa uppgifter som online-shopping och bankärenden. Vi tar lätt webbens tillgänglighet för givet, men det är viktigt att komma ihåg att för många är tillgången till webbinnehåll inte alltid lika smidig som för andra.
+Webben är en plats för information och kommunikation som är i ständig förändring och utveckling. Den har blivit en del av våra liv och används i en mängd olika syften, från att söka information till att delta i sociala nätverk och utföra komplexa uppgifter som online-shopping och bankärenden. Vi tar lätt webbens tillgänglighet för givet, men det är viktigt att komma ihåg att för många är tillgången till webbinnehåll inte alltid lika smidig som för andra.
 
 Det finns en bred variation av användare med olika behov och förutsättningar när de konsumerar webbinnehåll. För vissa kan det handla om att ha en funktionsnedsättning som påverkar deras förmåga att interagera med webbsidor på det traditionella sättet. För andra kan det vara relaterat till tekniska begränsningar på deras enheter eller internetuppkoppling. Att förstå och adressera dessa varierande behov är avgörande för att säkerställa att webben är tillgänglig för alla, oavsett deras individuella förutsättningar.
 
@@ -88,14 +85,56 @@ Funkify är en en extension för Google Chrome som gör att man kan uppleva hur 
 
 ![Bild visar funktionsnedsättning simulator](Funkify.png)
 
-Sammanfattningsvis är webben en kraftfull plattform för kommunikation och informationstillgänglighet som berikar våra liv. Det är viktigt att komma ihåg att inte alla användare har samma förutsättningar för att ta del av webbinnehållet. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll i att främja webbens tillgänglighet och säkerställa att den är öppen för alla, oavsett deras individuella behov och förutsättningar. Dessa insatser är avgörande för att skapa en inkluderande digital värld där varje individ har möjlighet att dra nytta av webbens rikedom och möjligheter.
+Webben en kraftfull plattform för kommunikation och information som berikar våra liv. Det är viktigt att komma ihåg att inte alla användare har samma förutsättningar för att ta del av webbinnehållet. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll i att främja webbens tillgänglighet och säkerställa att den är öppen för alla, oavsett deras individuella behov och förutsättningar. Dessa insatser är avgörande för att skapa en inkluderande digital värld där varje individ har möjlighet att dra nytta av webbens rikedom och möjligheter.
+
+1. https://webbriktlinjer.se/principer/tillganglig/
+2. http://www.w3c.se/resources/office/translations/wai/intro/accessibility.html
+3. https://medarbetare.ki.se/tillganglighet-pa-webben-vad-kravs-av-dig-som-uppdaterar-innehall
 
 
 ## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
-Beskriv rubriken nedan här
+
+När det kommer till att optimera sin kod finns det faktiskt en hel del fördelar. Webbsidan kommer att laddas mycket snabbare i webbläsaren. Dessutom kommer den att rankas högre i sökmotorer, vilket är bra för din synlighet online. 
+
+Webbstandarder är viktiga eftersom de hjälper till att skapa en mer tillgänglig, användarvänlig och hållbar webb. Genom att följa webbstandarder kan webbutvecklare skapa webbsidor som är lättare att underhålla, snabbare att ladda och mer sökmotorvänliga. Webbstandarder gör det också möjligt för personer med funktionsnedsättningar att använda webben på ett effektivt sätt genom att tillhandahålla stöd för hjälpmedel som skärmläsare.
+
+Ett användbart tips är att utforska Chrome DevTools Lighthouse. Där kan man testa prestandan och få en lista över saker du kan förbättra på din webbsida.
+
+![Bild som visar Devtools-utvecklad av Google](chromedevtools.png)
+
+Validering:
+Att validera kod innebär att försäkra om att den följer de bästa praxis som W3C rekommenderar. En kod som klarar valideringen är oftast också mer optimerad. Dessutom hjälper validering att förbättra SEO resultatet, hitta fel i koden, öka användarvänligheten och tillgängligheten, samt se till att webbsidan fungerar på olika enheter.
+
+1. https://webbriktlinjer.se/riktlinjer/54-optimera-webbplatsen-for-basta-prestanda/
+
+
 
 ## HC 1.5 CSS Pre-processorer (ex SASS/LESS)
-Beskriv rubriken nedan här
+
+Användning av CSS pre-processorer utgör en värdefull lösning för att effiktiversa hanteringen av stilregler och minska behovet av omfattande ramverk inom CSS. Genom att sammansmälta pre-processorer som LESS (Leaner Style Sheets), Sass (Syntactically Awesome Stylesheets), Stylus och den mer avancerade PostCSS, kan webbutvecklare effektivisera sin arbetsprocess.
+
+Traditionell CSS-implementering kräver att specifika värden upprepas gång på gång, vilket kan leda till onödigt komplexa och tidskrävande kodbaser. Med CSS pre-processorer kan dessa värden definieras som variabler och återanvändas i hela projektet. Detta inte bara minskar risken för fel, utan sparar också värdefull tid som annars skulle ha spenderats på att upprepa liknande kodstrukturer.
+
+En av de mest betydande fördelarna med pre-processorer är möjligheten att nästa CSS-regler. Genom att organisera koden på ett strukturerat sätt, blir den mer läsbar och underlättar underhållet över tid. Denna hierarkiska struktur skapar en översiktlig och intuitiv kodbas, vilket i sin tur förenklar samarbete och förståelse mellan utvecklare.
+
+![Bild visar hur SASS ser ut och hur tradtionell CSS ser ut](SASS-vs-CSS.PNG)
+
+Dessutom minskar användningen av pre-processorer beroendet av att förlita sig på andras lösningar och ökar därmed utvecklarens självständighet. Genom att skapa sina egna regler och definiera specifika stilparametrar, får utvecklaren större kontroll över design och layout.
+
+Sammanfattningsvis utgör användningen av CSS pre-processorer en betydande framsteg inom webbutveckling, vilket leder till mer effektiv och strukturerad kod. Genom att minska upprepningar och frigöra utrymme för kreativitet, möjliggör pre-processorer för utvecklare att skapa webbsidor och applikationer som är både stilistiskt enhetliga och lättlästa.
 
 ## HC 1.6 Optimering och validering av HTML & CSS
-Beskriv rubriken nedan här
+
+Optimering och validering utgör en en stor del i en välfungerande webbplats. Att förstå och tillämpa bästa praxis för HTML (HyperText Markup Language) och CSS (Cascading Style Sheets) är avgörande för att skapa snabba, tillgängliga och sökmotorvänliga webbsidor.
+När man pratar om optimering så pratar man oftast om optimering av resurser och optimering av innehåll. Optimering av resurser grundad bakom studier om hur användaren inte har tålamod och det digitala ska ske under en snabb respons. Svarstiden ska göra så att användaren vill uppehålla sig i webbsidan och inte behöva uppsöka andra sidor. I resurs menar man dem filerna som används för att bygga en webbsida så som: .HTML, .CSS, .JPG och flera andra filer. Optimering av resurser kan ske genom att man minskar storleken på bilderna och använda sig av ikoner istället för bilder. Genom användning av rätta filformat och inte avända sig av högkvalitiva bilder. 
+Att använda externa filer för JavaScript och CSS minskar sidans storlek och gör det möjligt för webbläsaren att cacha filerna. Detta innebär att när en användare besöker flera sidor på webbplatsen, behöver de inte ladda om samma filer igen, vilket accelererar sidans prestanda.
+
+LightHouse är en verktyg utvecklad av Google för att mäta och förbättra prestanda, tillgänglighet, användbarhet och sökbarhet på webbsidor. Genom att använda Lighthouse kan webbutvecklare och webbdesigners få värdefulla insikter och rekommendationer för att förbättra kvaliteten och prestandan på sina webbsidor. 
+
+![Bild visar Lighthouse i Google](Lighthouse.png)
+
+Validering är processen att kontrollera att koden följer de standarder och riktlinjer som fastställts av W3C (World Wide Web Consortium). För HTML finns det verktyg som W3C Validator som kan användas för att kontrollera om koden är korrekt formaterad. Validering hjälper till att upptäcka och åtgärda potentiella fel och säkerställer att webbsidan fungerar korrekt på olika webbläsare och enheter.
+
+För CSS finns även valideringsverktyg som hjälper till att identifiera syntaktiska fel och ogiltiga kodsyntax. Att ha giltig CSS-kod är avgörande för att säkerställa en enhetlig och pålitlig visuell upplevelse på olika plattformar.
+
+Optimering och validering av HTML & CSS är grundläggande principer för att skapa högpresterande och pålitliga webbplatser. Genom att följa bästa praxis för kodoptimering och använda valideringsverktyg kan utvecklare säkerställa att deras webbsidor är snabba, tillgängliga och kompatibla på olika plattformar. Detta är avgörande för att skapa en positiv användarupplevelse och maximera webbplatsens effektivitet.
