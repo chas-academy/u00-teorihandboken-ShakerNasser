@@ -2,7 +2,8 @@
 Studerande Shaker Nasser 
 
 ## JS 1.1 JavaScript / ECMAScript
-Beskriv rubriken här
+
+Boolisk datatyp kan ha värdet sant eller falskt.
 
 ## JS 1.2 JavaScript-ramverk och -bibliotek
 Beskriv rubriken här

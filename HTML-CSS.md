@@ -13,7 +13,7 @@ I HTML så finns det även andra funktioner som förenklar dokumentationen och f
 Semantik i HTML handlar om att använda taggar på ett sätt som ger en meningsfull struktur och betydelse åt innehållet på en webbsida. Det hjälper både människor och maskindatorer (webbläsare) att förstå hur olika delar av webbsidan är relaterade till varandra.
 Att använda semantisk HTML är en god praxis inom webbutveckling och bidrar till en bättre användarupplevelse och tillgänglighet.
 
-![Bild visar semantik i HTML 5](HTML-Semantic.png)
+![Bild visar semantik i HTML 5](images/HTML-Semantic.png)
 
 CSS (Cascading Style Sheets)
 
@@ -30,8 +30,8 @@ För att skapa en komplett webbsida måste HTML och CSS integreras. Detta görs 
 
 Sammanfattningsvis är HTML och CSS två av de viktigaste verktygen för webbutveckling. HTML används för att definiera strukturen och innehållet på en webbsida medan CSS hanterar presentationen och utseendet.
 
-![Bild visar Extern-fil CSS praxis](ex-css.png)
-![Bild visar Intern-fil CSS praxis](internal-css-png.jpeg)
+![Bild visar Extern-fil CSS praxis](images/ex-css.png)
+![Bild visar Intern-fil CSS praxis](images/internal-css-png.jpeg)
 
 1. https://www.hostinger.com/tutorials/what-is-html
 2. https://www.hostinger.com/tutorials/what-is-css
@@ -50,13 +50,13 @@ Istället för fasta mått i pixlar använder responsiv design ofta procentenhet
 
 Bildoptimering är en annan viktig aspekt av responsiv design. Det handlar om att optimera bilder för olika enheter och skärmupplösningar. Tekniker som att använda olika bildfiler eller implementera srcset och storlekar i HTML används ofta.
 
-![Bild visar responsiv design](Responsive-design.webp)
+![Bild visar responsiv design](images/Responsive-design.webp)
 
 Innehållsprioritering är en viktig faktor vid responsiv design. Det handlar om att identifiera det mest relevanta och viktiga innehållet för användare baserat på deras enhet och skärmstorlek. Det kan handla om att prioritera vissa element eller dölja specifika detaljer på mindre skärmar.
 
 Flexbox och grid är också viktiga aspekter av responsiv design. Dessa layoutmodeller ger utvecklare avancerade verktyg för att skapa komplexa och flexibla layouter. Flexbox är perfekt för att hantera element i en endimensionell riktning, medan grid möjliggör en tvådimensionell layout och möjliggör exakt placering av element i ett rutnät. Med dessa tekniker kan utvecklare skapa dynamiska gränssnitt som smidigt anpassar sig till olika skärmstorlekar.
 
-![Bild visar skillnaden mellan flexbox och Grid](Flex-grid.png)
+![Bild visar skillnaden mellan flexbox och Grid](images/Flex-grid.png)
 
 Förutom estetiken är responsiv design avgörande av andra skäl. Den förbättrar användarupplevelsen genom att ge en konsekvent och användarvänlig upplevelse på alla enheter. Detta uppmuntrar besökare att stanna längre på webbplatsen och utforska dess innehåll. Dessutom tenderar responsiva webbplatser att rankas högre i sökmotorresultaten (SEO) på grund av sin mobilvänlighet, vilket ökar synligheten och ökar trafiken.
 
@@ -86,7 +86,7 @@ Inbyggda skärmläsare, eller screen readers, utgör en komponent i att göra we
 
 Funkify är en en extension för Google Chrome som gör att man kan uppleva hur andra människor med funktionsnedsättningar kan uppleva interaktionen med webbläsaren under som användare. Här nedan så kan vi se ett exempel från funkify simulator på hur någon med minskad central syn kan vara: 
 
-![Bild visar funktionsnedsättning simulator](Funkify.png)
+![Bild visar funktionsnedsättning simulator](images/Funkify.png)
 
 Webben en kraftfull plattform för kommunikation och information som berikar våra liv. Det är viktigt att komma ihåg att inte alla användare har samma förutsättningar för att ta del av webbinnehållet. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll i att främja webbens tillgänglighet och säkerställa att den är öppen för alla, oavsett deras individuella behov och förutsättningar. Dessa insatser är avgörande för att skapa en inkluderande digital värld där varje individ har möjlighet att dra nytta av webbens rikedom och möjligheter.
 
@@ -104,7 +104,7 @@ När det kommer till att optimera sin kod finns det faktiskt en hel del fördela
 
 Ett användbart tips är att utforska Chrome DevTools Lighthouse. Där kan man testa prestandan och få en lista över saker du kan förbättra på din webbsida.
 
-![Bild som visar Devtools-utvecklad av Google](chromedevtools.png)
+![Bild som visar Devtools-utvecklad av Google](images/chromedevtools.png)
 
 Inom kommande webbstanarder så jobbar man väldigt mycket på att utveckla hur man kan ge användaren möljghet till använda webbsidor för att fungera offline, erbjuda snabbare laddningstider och ge användare en app-liknande upplevelse direkt från webbläsaren. Dessa går under namnet Service Workers och Progressive Web Apps (PWAs)
 
@@ -122,7 +122,7 @@ Traditionell CSS-implementering kräver att specifika värden upprepas gång på
 
 En av de mest betydande fördelarna med pre-processorer är möjligheten att nästa CSS-regler. Genom att organisera koden på ett strukturerat sätt, blir den mer läsbar och underlättar underhållet över tid. Denna hierarkiska struktur skapar en översiktlig och intuitiv kodbas, vilket i sin tur förenklar samarbete och förståelse mellan utvecklare.
 
-![Bild visar hur SASS ser ut och hur tradtionell CSS ser ut](SASS-vs-CSS.PNG)
+![Bild visar hur SASS ser ut och hur tradtionell CSS ser ut](images/SASS-vs-CSS.PNG)
 
 Dessutom minskar användningen av pre-processorer beroendet av att förlita sig på andras lösningar och ökar därmed utvecklarens självständighet. Genom att skapa sina egna regler och definiera specifika stilparametrar, får utvecklaren större kontroll över design och layout.
 
@@ -140,20 +140,20 @@ Att använda externa filer för JavaScript och CSS minskar sidans storlek och g�
 
 LightHouse är en verktyg utvecklad av Google för att mäta och förbättra prestanda, tillgänglighet, användbarhet och sökbarhet på webbsidor. Genom att använda Lighthouse kan webbutvecklare och webbdesigners få värdefulla insikter och rekommendationer för att förbättra kvaliteten och prestandan på sina webbsidor. 
 
-![Bild visar Lighthouse i Google](Lighthouse.png)
+![Bild visar Lighthouse i Google](images/Lighthouse.png)
 
 Validering är processen att kontrollera att koden följer de standarder och riktlinjer som fastställts av W3C (World Wide Web Consortium). För HTML finns det verktyg som W3C Validator som kan användas för att kontrollera om koden är korrekt formaterad. Validering hjälper till att upptäcka och åtgärda potentiella fel och säkerställer att webbsidan fungerar korrekt på olika webbläsare och enheter.
 
 Här är en användbar verktyg utvecklad av W3C: https://validator.w3.org/
 Verktygen gör validerar koden och ger förslag på förbättring av html-koden. 
-![Bild visar hur varning eller erorr kan se ut i HTML valdiator](HTML-Valid.PNG)
+![Bild visar hur varning eller erorr kan se ut i HTML valdiator](images/HTML-Valid.PNG)
 
 För CSS finns även valideringsverktyg som hjälper till att identifiera syntaktiska fel och ogiltiga kodsyntax. Att ha giltig CSS-kod är avgörande för att säkerställa en enhetlig och pålitlig visuell upplevelse på olika plattformar.
 
 Här är en användbar verktyg utvecklad av W3C: https://jigsaw.w3.org/css-validator/
 Verktygen gör validerar koden och ger förslag på förbättring av css-koden. 
 
-![Bild visar hur varning eller erorr kan se ut i CSS valdiator](css-Valid.png)
+![Bild visar hur varning eller erorr kan se ut i CSS valdiator](images/css-Valid.png)
 
 Optimering och validering av HTML & CSS är grundläggande principer för att skapa högpresterande och pålitliga webbplatser. Genom att följa bästa praxis för kodoptimering och använda valideringsverktyg kan utvecklare säkerställa att deras webbsidor är snabba, tillgängliga och kompatibla på olika plattformar. Detta är avgörande för att skapa en positiv användarupplevelse och maximera webbplatsens effektivitet.
 
