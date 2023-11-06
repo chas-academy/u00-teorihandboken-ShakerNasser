@@ -3,6 +3,8 @@ Studerande Shaker Nasser
 
 ## JS 1.1 JavaScript / ECMAScript
 
+Javascript 
+
 Boolisk datatyp kan ha värdet sant eller falskt.
 
 ## JS 1.2 JavaScript-ramverk och -bibliotek
@@ -12,7 +14,7 @@ Beskriv rubriken här
 Beskriv rubriken här
 
 ## JS 1.4 OOP i JavaScript
-Beskriv rubriken här
+
 
 ## JS 1.5 DOM-manipulation
 Beskriv rubriken här

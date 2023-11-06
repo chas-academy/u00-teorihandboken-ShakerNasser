@@ -158,7 +158,7 @@ Dessutom minskar användningen av pre-processorer beroendet av att förlita sig 
 
 ## HC 1.6 Optimering och validering av HTML & CSS
 
-Optimering och validering utgör en en stor del i en välfungerande webbplats. Att förstå och tillämpa bästa praxis för HTML (HyperText Markup Language) och CSS (Cascading Style Sheets) är avgörande för att skapa snabba, tillgängliga och sökmotorvänliga webbsidor.
+Optimering och validering utgör en en stor del i en välfungerande webbplats. Att förstå och tillämpa bästa praxis för HTML (HyperText Markup Language) och CSS (Cascading Style Sheets) är avgörande för att skapa snabba, tillgängliga och sökmotorvänliga webbsidor.git
 
 När man pratar om optimering så pratar man oftast om optimering av resurser och optimering av innehåll. Optimering av resurser grundad bakom studier om hur användaren inte har tålamod och det digitala ska ske under en snabb respons. Svarstiden ska göra så att användaren vill uppehålla sig i webbsidan och inte behöva uppsöka andra sidor. I resurs menar man dem filerna som används för att bygga en webbsida så som: .HTML, .CSS, .JPG och flera andra filer. Optimering av resurser kan ske genom att man minskar storleken på bilderna och använda sig av ikoner istället för bilder. Genom användning av rätta filformat och inte avända sig av högkvalitiva bilder. 
 

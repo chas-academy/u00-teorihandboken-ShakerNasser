@@ -4,6 +4,7 @@ Studerande: Shaker Nasser
 ## UD 1.1 Grafik och design för webbsidor
 
 
+
 ## UD 1.2 UX och användbarhet
 
 Användarbarhet syftar på hur användarvänlig och lättanvänd en produkt eller en systemgränssnitt är för dess avsedda användare. Det handlar om att säkerställa att en produkt eller en webbplats är enkel att förstå, navigera och använda utan onödiga hinder eller förvirrande element. För att uppnå det så måste man följa upp vissa egenskaper. 
