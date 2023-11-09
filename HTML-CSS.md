@@ -21,6 +21,13 @@ Medan HTML fokuserar på struktur och innehåll, är CSS ansvarigt för presenta
 
 Genom CSS kan webbutvecklare ändra egenskaper som färg, typsnitt, storlek och positionering av element. Detta görs genom att använda selektorer för att välja specifika HTML-element och sedan tillämpa dem stilregler.
 
+Utvecklaren har även möjlgihet till att använda shorthand (istället för att upprepa sig) när det gäller placering av margin/paddingen. Enklaste sättet är att tänka på hur en klocka fungerar och utgå från att dessa ska tillämpas: 
+
+![Bild visar shorthand på margin](<images/CSS- Shorthand.webp>)
+
+En typisk CSS-regel består av en selektor och en uppsättning deklarationer.
+CSS erbjuder även möjligheten att använda hierarki. Om två eller flera regler konflikterar, tillämpas den med högre specificitet eller den som deklarerades senast.
+
 I HTML:
 
 ```
@@ -36,9 +43,6 @@ p {
 } 
 ```
 Här deklerar vi var ```<p> ``` skall vara placerad och vilken färg den skall visas. 
-
-En typisk CSS-regel består av en selektor och en uppsättning deklarationer.
-CSS erbjuder även möjligheten att använda hierarki. Om två eller flera regler konflikterar, tillämpas den med högre specificitet eller den som deklarerades senast.
 
 Inom CSS går det att arbeta med olika praxis. Inline CSS och extern CSS är en av dem praxisen. Inline CSS syftar på användningen av stilregler och definitioner som direkt infogas i HTML-elementets attribut, istället för att placeras i en separat extern CSS-fil. Extern CSS innebär att man jobbar i en extern CSS fil sepeterat från HTML- dokumentet. Detta tillvägagångssätt hjälper till med att separera innehållet från presentationen. Vilket gör koden mer organiserad och lättläst.
 
@@ -92,27 +96,19 @@ Förutom estetiken (utseende) är responsiv design avgörande av andra skäl. De
 
 ## HC 1.3 Tillgänglighet inom webb
 
-Webben är en plats för information och kommunikation som är i ständig förändring och utveckling. Den har blivit en del av våra liv och används i en mängd olika syften, från att söka information till att delta i sociala nätverk och utföra komplexa uppgifter som online-shopping och bankärenden. Vi tar lätt webbens tillgänglighet för givet, men det är viktigt att komma ihåg att för många är tillgången till webbinnehåll inte alltid lika smidig som för andra.
+Webben är en ständigt föränderlig och utvecklande plattform som är central i vårt dagliga liv. Alla har dock inte samma tillgång till webbinnehåll. Olika användare har varierande behov och omständigheter som påverkar deras förmåga att interagera med webbplatser. För att hantera detta är initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare mycket viktiga.
 
-Det finns en bred variation av användare med olika behov och förutsättningar när de konsumerar webbinnehåll. För vissa kan det handla om att ha en funktionsnedsättning som påverkar deras förmåga att interagera med webbsidor på det traditionella sättet. För andra kan det vara relaterat till tekniska begränsningar på deras enheter eller internetuppkoppling. Att förstå och adressera dessa varierande behov är avgörande för att säkerställa att webben är tillgänglig för alla, oavsett deras individuella förutsättningar.
+ARIA är en teknik som ger ytterligare information om webbsidors tillgänglighet för användare med funktionsnedsättning. Den gör det möjligt för utvecklare att beskriva interaktiva element och dynamiska innehållsuppdateringar så att de är tillgängliga för alla. WAI-ARIA, som är en del av World Wide Web Consortium (W3C), utvecklar riktlinjer och specifikationer för att förbättra webbtillgängligheten, inklusive tekniker för att beskriva interaktiva element och navigeringsmönster.
 
-För att främja en mer inkluderande och tillgänglig webb har initiativ som ARIA (Accessible Rich Internet Applications), WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications), A11y (förkortning för "accessibility", vanligt i nätgemenskapen) och WCAG (Web Content Accessibility Guidelines) blivit avgörande. Dessa initiativ syftar till att skapa riktlinjer, tekniker och verktyg för utvecklare och webbdesigners för att göra sina webbsidor och applikationer tillgängliga för så många användare som möjligt.
+A11y är ett åtagande att skapa produkter och tjänster som är tillgängliga för alla. Det fokuserar på att integrera tillgänglighetsprinciper i design- och utvecklingsprocessen. WCAG, som fastställts av W3C, innehåller riktlinjer för bedömning av webbsidors tillgänglighet och tar upp perceptuell, kognitiv och motorisk tillgänglighet.
 
-ARIA är en teknik som gör det möjligt att tillföra ytterligare information om användbarheten och tillgängligheten av webbsidor för användare som använder hjälpmedel som skärmläsare eller tangentbord för att navigera. Det gör det möjligt för utvecklare att beskriva interaktiva element, widgets och dynamiska innehållsuppdateringar så att de blir tillgängliga för personer med funktionsnedsättningar.
+Inbyggda skärmläsare är avgörande för att personer med synnedsättning ska få tillgång till webbinnehåll. Dessa program omvandlar visuellt innehåll till talat eller taktilt format. Utvecklare måste utforma sina webbsidor så att de är kompatibla med skärmläsare för korrekt tolkning.
 
-WAI-ARIA är en del av W3C (World Wide Web Consortium) och arbetar för att utveckla riktlinjer och specifikationer för att förbättra webbens tillgänglighet. Dessa inkluderar tekniker för att beskriva interaktiva element och navigationsmönster, vilket möjliggör en mer detaljerad och precis tolkning av webbsidor för användare med funktionsnedsättningar.
-
-A11y är en förkortning som används för att hänvisa till tillgänglighet i webbutvecklings- och designgemenskapen. Den representerar ett åtagande att skapa produkter och tjänster som är tillgängliga för alla, oavsett deras förmåga eller funktionsnedsättning. A11y fokuserar på att integrera principer för tillgänglighet i varje steg av design- och utvecklingsprocessen.
-
-WCAG är en uppsättning riktlinjer som fastställs av W3C och utgör en referenspunkt för att bedöma webbsidors tillgänglighet. Dessa riktlinjer adresserar olika aspekter av webbinnehåll, inklusive perceptuell, kognitiv och motorisk tillgänglighet. Genom att följa WCAG riktlinjer kan utvecklare skapa webbsidor som är tillgängliga för en bredare publik.
-
-Inbyggda skärmläsare, eller screen readers, utgör en komponent i att göra webben tillgänglig för personer med synnedsättningar. Dessa programvaror tolkar visuellt webbinnehåll och omvandlar det till talat eller taktilt format. Användare med synnedsättningar kan därmed navigera och konsumera webbsidor med hjälp av ljudmeddelanden eller taktila återkopplingar som genereras av skärmläsaren. Det är avgörande för utvecklare att utforma sina webbsidor på ett sätt som gör dem kompatibla med dessa skärmläsare, så att de kan tolka innehållet korrekt och göra det tillgängligt för användare med synnedsättningar.
+Sammanfattningsvis är webben en kraftfull plattform som berikar våra liv, men alla användare har inte samma möjligheter att få tillgång till dess innehåll. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll för att främja webbtillgänglighet och skapa en inkluderande digital värld för alla.
 
 Funkify är en en extension för Google Chrome som gör att man kan uppleva hur andra människor med funktionsnedsättningar kan uppleva interaktionen med webbläsaren under som användare. Här nedan så kan vi se ett exempel från funkify simulator på hur någon med minskad central syn kan vara: 
 
 ![Bild visar funktionsnedsättning simulator](images/Funkify.png)
-
-Webben en kraftfull plattform för kommunikation och information som berikar våra liv. Det är viktigt att komma ihåg att inte alla användare har samma förutsättningar för att ta del av webbinnehållet. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll i att främja webbens tillgänglighet och säkerställa att den är öppen för alla, oavsett deras individuella behov och förutsättningar. Dessa insatser är avgörande för att skapa en inkluderande digital värld där varje individ har möjlighet att dra nytta av webbens rikedom och möjligheter.
 
 1. https://webbriktlinjer.se/principer/tillganglig/
 2. http://www.w3c.se/resources/office/translations/wai/intro/accessibility.html
@@ -144,13 +140,14 @@ Användning av CSS pre-processorer utgör en värdefull lösning för att effikt
 
 Traditionell CSS-implementering kräver att specifika värden upprepas gång på gång, vilket kan leda till onödigt komplexa och tidskrävande kodbaser. Med CSS pre-processorer kan dessa värden definieras som variabler och återanvändas i hela projektet. Detta inte bara minskar risken för fel, utan sparar också värdefull tid som annars skulle ha spenderats på att upprepa liknande koder.
 
-En av de mesta fördelarna med pre-processorer är möjligheten att nästa CSS-regler. Genom att organisera koden på ett strukturerat sätt, blir den mer läsbar och underlättar underhållet över tid. Denna hierarkiska struktur skapar en översiktlig och intuitiv kodbas, vilket i sin tur förenklar samarbete och förståelse mellan utvecklare.
+En av de mesta fördelarna med pre-processorer är möjligheten att nästa CSS-regler. Genom att organisera koden på ett strukturerat sätt, blir den mer läsbar och underlättar underhållet över tid. Denna hierarkiska struktur skapar en översiktlig och intuitiv kodbas, vilket i sin tur förenklar samarbete och förståelse mellan utvecklare. 
 
 ![Bild visar hur SASS ser ut och hur tradtionell CSS ser ut](images/SASS-vs-CSS.PNG)
 
-Dessutom minskar användningen av pre-processorer beroendet av att förlita sig på andras lösningar och ökar därmed utvecklarens självständighet. Genom att skapa sina egna regler och definiera specifika stilparametrar, ökar utvecklarens kontroll över design och layout.
+Dessutom minskar användningen av pre-processorer beroendet av att förlita sig på andras lösningar och ökar därmed utvecklarens självständighet. Genom att skapa sina egna regler och definiera specifika stilparametrar, ökar utvecklarens kontroll över design och layout. 
 
- Användningen av CSS pre-processorer en betydande framsteg inom webbutveckling, vilket leder till mer effektiv och strukturerad kod. Genom att minska upprepningar och frigöra utrymme för kreativitet, möjliggör pre-processorer för utvecklare att skapa webbsidor och applikationer som är både stilistiskt enhetliga och lättlästa.
+Användningen av CSS pre-processorer en betydande framsteg inom webbutveckling, vilket leder till mer effektiv och strukturerad kod. Genom att minska upprepningar och frigöra utrymme för kreativitet, möjliggör pre-processorer för utvecklare att skapa webbsidor och applikationer som är både stilistiskt enhetliga och lättlästa.
+Både Sass och Less är övermängder av vanlig CSS, vilket innebär att giltig CSS automatiskt är giltig i båda preprocessorer. Valet mellan Sass och Less beror slutligen på personliga preferenser och projektets krav.
 
 1. https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
 2. https://www.freecodecamp.org/news/how-to-use-sass-with-css/

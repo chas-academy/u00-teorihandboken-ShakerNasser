@@ -27,7 +27,7 @@ Hantering av problem som uppstår i en sprint och här det upptäcks. Detta möt
 
 Strukturen i arbetet har kravspecifikation på backlog där prioriterad och levande lista med önskemål skall följas. 
 
-![Bild visar Scrum översikt- skriven på Engelska ](Scrum-process.JPEG)
+![Bild visar Scrum översikt- skriven på Engelska ](/images/Scrum-process.JPEG)
 
 
 Kanban är en projektledningsmetod som härstammar från den japanska produktionen inom olika branscher där arbetet behöver kontinuerlig visualisering och uppföljning arbetsflödet. Detta för att förbättra förståelsen för deltagarna i arbetet om att förstå mer om vad som behöver göras. Arbeta utifrån Kanban-tavla innebär att arbeta utifrån att visualisera arbetsflödet, styra processen och maximera resultaten. Man arbetar med olika kort som representerar arbetsuppgifter. Man jobbar från vänstersida av tavlan till höger och går i logisk ordning. Detta för att kunna effektivera processen och eliminera slöseri av resurser men kunna leverera resultat snabbare. Om arbetet följer mönster "att göra", "pågående" och "klart" så hanteras den på en Kanban-tavla nivå. Fokuset i kanban nivå är kvalitetssäkra slutprodukter och förhindring av stopp och förseningar. Det tiden det tar för en uppgift att gå från "att göra" till "klart" kännetecknas av termen LeadTime (ledtid) som räknar tiden för avklarat uppgift. 
@@ -49,7 +49,7 @@ Simpel design: en enkel design med den mesta direkta lösningen för att undvika
 
 Extreme progamming har visat sig vara väldigt effektivt agilt metod och har smittat av sig till andra ramverk och metoder.
 
-![Bild visar XP modul- skriven på Engelska ](Extreme_Programming.PNG)
+![Bild visar XP modul- skriven på Engelska ](/images/Extreme_Programming.PNG)
 
 Källhänvisning (agila metoder): 
 1. Julia Martins- 10 Oktober 2022- https://asana.com/sv/resources/what-is-kanban
@@ -92,7 +92,7 @@ Nackdelen blir att väldigt mycket av tiden går åt att analysera och dokumente
 För att förtydliga och fördjupa sig i icke-agila metoder så kan man även se andra fallstudier där konkreta vattenfallsmetoder har använts. Inom rymdskyttelstillverkning, storskaliga mjukvaruprojekt och komplexa byggnadsprojekt så använder man sig av metoden. I dessa slutprodukter så är det svårt att kunna planera flera lanseringar. Slut produkten skall vara i sånt bruk att inga komplexa eller risktagande problem uppstår. 
 Inom rymdskyttelstillverkning har till exempel Nasa (Nasa Space Shuttle) kunnat använda sig av vattenfallsmodellen. Detta resulterade till ett framgångsrikt uppdrag i rymden på grund av den välplanerade detaljplanen och utförande.
 
-![Bild visar vattenfallsmodellen-Text i bilden är skriven på engelska](Waterfall.PNG)
+![Bild visar vattenfallsmodellen-Text i bilden är skriven på engelska](/images/Waterfall.PNG)
 
 Källhänvisning (Icke-agila metoder):
 
@@ -113,7 +113,7 @@ Skapa färdigheter och samla in kompetens inom dem programmeringsspråket och ra
 En detaljerad affärsplan:
 Genom en detaljerad affärsplan så skapar man en förutsättning för sig själv genom att hålla sig fokuserad och en vägledning till att ta viktiga beslut. En affärsplan kan man jobba på genom verksamma år. Det gäller dock att han en tydlig grund och inkludera målgruppen och skapa en konkurrensanalys. Marknadsföring är en väldigt stor del för att locka till kunder men även samarbetspartner i framtida projekt. 
 
-![Bild visar hur affärsplan kan se ut-Svensk text i bilden](Aff%C3%A4rsplan-PNG.png)
+![Bild visar hur affärsplan kan se ut-Svensk text i bilden](/images/Aff%C3%A4rsplan-PNG.png)
 
 Mellan dessa faser så är det bra att vara påläst om vilka bestämmelser och skyldigheter man har som en entreprenör. Detta kan man oftast lära sig genom företag som erbjuder juridiska hjälp eller läsa själv om detta som tex på Skatteverkets hemsida (om man vill starta i Sverige). Här är det även viktigt att börja tänka vilken företagsform man vill ha. Vill man ha ett aktiebolag eller handelsbolag? Det finns flera företagsformer som passar just ens egna affärsplan. Inom detta så ska man få en samlad detaljplan om lönekostnader och försäkringskostnader. I lönekostnader så kan det tex handla om avgifter (arbetsgivaravgift) och prelimnäraskatter. En del av kostnader går till så kallad Overheadkostnader där semesterlönen, sjukdomslön och tjänstepensionen inräknas. 
 Man bör även ha koll på dem kostnaderna som finns av inköp för materialkostnader och teknologiska. 
@@ -143,7 +143,7 @@ Oftast kan man få en förenklad blid av hur entreprenörskap är. Många framg�
 
 Ett bra sätt att kunna driva företaget till framgång är att visualisera affärsmodellen. Detta kan man tex göra i en Business Modell Canvas.
 
-![Bild visar marknadsföringsstrategins - Texten i bilden är skriven på engelska](Marknadsf%C3%B6ring.png)
+![Bild visar marknadsföringsstrategins - Texten i bilden är skriven på engelska](/images/Marknadsf%C3%B6ring.png)
 
 Källhänvisning (Entreprenörskap inom webbutveckling):
 
@@ -192,7 +192,7 @@ Förtroende och ömsesidig respekt är nödvändig för att arbeta effektivt. I 
 Hålla varje medlem ansvarig för sina uppgifter och ansvar. Detta främjar en känsla av ägarskap och säkerställer att alla bidrar till gruppens framgång. 
 Ett viktigt steg är att fira framgångar och höja moralen. Detta förstärker känslan av prestation.
 
-![Bild visar hur en "Kanban-tavla kan se ut i Github-](Board-GitHub-PNG.png)
+![Bild visar hur en "Kanban-tavla kan se ut i Github-](/images/Board-GitHub-PNG.png)
 
 Källhänvisning (Issue distribution and handling in a group)
 
