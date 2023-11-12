@@ -4,7 +4,9 @@ Studerande: Shaker Nasser
 ## HC 1.1 HTML & CSS
 HTML (HyperText Markup Language)
 
-HTML är ett märkspråk som används för att skapa webbsidor och kännetecknas som grundstenen i webbutveckling. Språket i sig används för att skapa struktur i webbsidor. HTML gör det att möjligt att kunna definiera dem olika momenten i en webbsida och bestämma hur de ska vara organiserade och relaterade till varandra. Märkspråket är utvecklad för att båda kunna läsas strukturellt av maskindatorer och människor. HTML har haft flera förändringar sedan första lanseringen under år 1993.Den nuvarande versionen vi använder oss av går under namnet HTML 5. Syftet med HTML5 var att förbättra och modernisera webbstandarderna för att möta de ökande kraven och behoven hos den moderna webben. Det ger utvecklare kraftfulla verktyg för att skapa rikare och mer interaktiva och tillgänligsbara webbapplikationer och webbsidor.
+HTML är ett märkspråk som används för att skapa webbsidor och kännetecknas som grundstenen i webbutveckling. Språket i sig används för att skapa struktur i webbsidor. HTML gör det att möjligt att kunna definiera dem olika momenten i en webbsida och bestämma hur de ska vara organiserade och relaterade till varandra. Språket är utvecklad för att båda kunna läsas strukturellt av maskindatorer och människor. 
+
+HTML har haft flera förändringar sedan första produkt lansering under år 1993.Den nuvarande versionen vi använder oss av går under namnet HTML 5. Syftet med HTML5 var att förbättra och mordranisera webbstandarderna för att möta de ökande kraven och behoven hos den moderna webben. Detta ger utvecklare kraftfulla verktyg för att skapa rikare och mer interaktiva och tillgänligsbara webbapplikationer och webbsidor.
 
 I ett HTML dokument så presenteras serie av element. Dem elementen presenteras av en starttagg ```<tag>``` och en sluttag ```</tag>``` av dem olika delar av innehållet. Inom starttagg och sluttag presenteras ett attribut och innehåll. 
 
@@ -55,6 +57,7 @@ För att skapa en komplett webbsida måste HTML och CSS integreras. Detta görs 
 2. https://www.hostinger.com/tutorials/what-is-css
 3. https://codeinstitute.net/se/blog/what-is-html-and-why-should-i-learn-it/
 4. https://codeinstitute.net/se/blog/what-is-css-and-why-should-i-learn-it/
+5. Booken HTML & CSS (design and build websites) ISBN: 97811188871645
 
 ## HC 1.2 Responsiv design
 
@@ -106,7 +109,7 @@ Inbyggda skärmläsare är avgörande för att personer med synnedsättning ska 
 
 Sammanfattningsvis är webben en kraftfull plattform som berikar våra liv, men alla användare har inte samma möjligheter att få tillgång till dess innehåll. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll för att främja webbtillgänglighet och skapa en inkluderande digital värld för alla.
 
-Funkify är en en extension för Google Chrome som gör att man kan uppleva hur andra människor med funktionsnedsättningar kan uppleva interaktionen med webbläsaren under som användare. Här nedan så kan vi se ett exempel från funkify simulator på hur någon med minskad central syn kan vara: 
+Funkify är en en extension för Google Chrome som gör att man kan uppleva hur andra människor med funktionsnedsättningar kan uppleva interaktionen med webbläsaren som användare. Här nedan så kan vi se ett exempel från funkify simulator på hur någon med minskad central syn kan vara: 
 
 ![Bild visar funktionsnedsättning simulator](images/Funkify.png)
 
@@ -117,6 +120,7 @@ Funkify är en en extension för Google Chrome som gör att man kan uppleva hur 
 ## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
 
 Webbstandarder är viktiga eftersom de hjälper till att skapa en mer tillgänglig, användarvänlig och hållbar webb. Genom att följa webbstandarder kan webbutvecklare skapa webbsidor som är lättare att underhålla, snabbare att ladda och mer sökmotorvänliga. Webbstandarder gör det också möjligt för personer med funktionsnedsättningar att använda webben på ett effektivt sätt genom att tillhandahålla stöd för hjälpmedel som skärmläsare.
+
 Dem allmänna webbriktlinjer rekomenderar att man använder sig av HTML5 versionen som blev en "W3C Recommendation" i Oktober 2014. 
 CSS3 är den senaste versionen av Cascading Style Sheets och möjliggör avancerade stil- och layoutmöjligheter för webbsidor. Det inkluderar övergångar, animationer och flexbox-layouter.
 
