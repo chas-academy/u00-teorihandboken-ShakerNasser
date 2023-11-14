@@ -1,5 +1,5 @@
 # Teorihandboken - HTML & CSS (HC)
-Studerande: Shaker Nasser 
+Studerande: Shaker Nasser - Elevid: 
 
 ## HC 1.1 HTML & CSS
 HTML (HyperText Markup Language)
@@ -107,7 +107,7 @@ A11y är ett åtagande att skapa produkter och tjänster som är tillgängliga f
 
 Inbyggda skärmläsare är avgörande för att personer med synnedsättning ska få tillgång till webbinnehåll. Dessa program omvandlar visuellt innehåll till talat eller taktilt format. Utvecklare måste utforma sina webbsidor så att de är kompatibla med skärmläsare för korrekt tolkning.
 
-Sammanfattningsvis är webben en kraftfull plattform som berikar våra liv, men alla användare har inte samma möjligheter att få tillgång till dess innehåll. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll för att främja webbtillgänglighet och skapa en inkluderande digital värld för alla.
+Webben en kraftfull plattform som berikar våra liv, men alla användare har inte samma möjligheter att få tillgång till dess innehåll. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och inbyggda skärmläsare spelar en avgörande roll för att främja webbtillgänglighet och skapa en inkluderande digital värld för alla.
 
 Funkify är en en extension för Google Chrome som gör att man kan uppleva hur andra människor med funktionsnedsättningar kan uppleva interaktionen med webbläsaren som användare. Här nedan så kan vi se ett exempel från funkify simulator på hur någon med minskad central syn kan vara: 
 

@@ -37,6 +37,8 @@ Beskriv rubriken här
 ## JS 1.11 Single-thread programming
 Beskriv rubriken här
 
+asynkrona metoder 
+
 ## JS 1.12 OAuth från frontend
 Beskriv rubriken här
 
