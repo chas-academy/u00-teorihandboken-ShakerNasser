@@ -35,14 +35,70 @@ class Person {
 $person1 = new Person("Alice", 25);
 
 ?>
+```
+
+Ett objekt är en konkret instans av en klass. När du skapar ett objekt från en klass, får objektet tillgång till de egenskaper och metoder som definierats i klassen. Objekten är de faktiska "föremålen" eller "instanserna" som skapas enligt klassens specifikationer.
+
+```php
+
+$minBil = new Bil();
+$minBil->modell = "Volvo";
+$minBil->färg = "Blå";
+$minBil->köra(); // Anropar metoden köra från klassen Bil
 
 ```
 
-Klasser och objekt 
+Publika medlemmar (variabler och metoder) är de som kan nås och användas utanför klassen. De är synliga och tillgängliga för andra delar av koden, inklusive andra klasser.
 
-Publika och privata 
+```php
 
-Konstruktören
+class Konto {
+    public $saldo;
+
+    public function sättSaldo($belopp) {
+        $this->saldo = $belopp;
+    }
+}
+
+```
+
+Privata medlemmar är begränsade till att endast vara åtkomliga inom den klass där de är deklarerade. De är inte synliga eller tillgängliga utanför klassen och används för att skydda interna detaljer och säkerställa att de inte påverkas externt.
+
+```php
+class Användare {
+    private $användarnamn;
+    private $lösenord;
+
+    public function sättAnvändarnamn($namn) {
+        $this->användarnamn = $namn;
+    }
+
+    public function sättLösenord($lösen) {
+        $this->lösenord = $lösen;
+    }
+}
+
+```
+
+En konstruktor är en särskild metod i en klass som körs automatiskt när ett objekt skapas. Dess huvudsakliga syfte är att initialisera objektets egenskaper eller utföra andra förberedande åtgärder. Konstruktorn kallas automatiskt när du skapar ett objekt och används för att ge objektet
+
+```php
+
+class Person {
+    public $namn;
+
+    // Konstruktor
+    public function __construct($startNamn) {
+        $this->namn = $startNamn;
+        echo "En ny person skapades med namnet $startNamn.";
+    }
+}
+
+// Skapa ett objekt och anropa konstruktorn automatiskt
+$nyPerson = new Person("Anna");
+
+
+```
 
 ## BE 1.3 Säkerhet i PHP
 
@@ -67,8 +123,12 @@ Denna modell används inom olika områden, till exempel för att representera or
 Fördelarna med hierarkiska databaser inkluderar deras effektivitet när det gäller att hantera naturligt hierarkisk data och möjligheten att snabbt navigera mellan närliggande noder. Genom att använda hierarkiska databaser kan man enkelt organisera och strukturera data på ett sätt som återspeglar verkliga hierarkier.
 
 Strukturen i hirearkiska databaser är väldigt minneskrävande till skillnad från relationsdatabaser. Sökningen av data generaras långsamt. Dessutom erbjuder hierarkiska databaser enkelhetsfaktor vid sökning och åtkomst av data. Eftersom varje nod har tydliga föräldrar och underordnade noder, kan man snabbt hitta och manipulera specifika datapunkter utan att behöva söka igenom hela databasen.
+
 ![Bild på hur Hirarkiska databaser kan se ut](images/hierarchical-database-model-l.jpg)
 
+1. https://www.heavy.ai/technical-glossary/hierarchical-database
+2. https://www.redswitches.com/blog/hierarchical-databases/
+3. https://www.c-sharpcorner.com/article/what-is-a-hierarchical-database/
 
 ## BE 1.7 Relationsdatabaser, SQL och ER-modellering
 
@@ -77,6 +137,12 @@ Relationella databaser utgör en grundläggande modell inom hanteringen av datab
 Varje tabell i en relationsdatabas följer ett fördefinierat schema som beskriver strukturen och innehållet i tabellen. Detta schemas beskrivning fungerar som en vägledning för vilken typ av data som kan lagras i tabellen. Schemat ger en tydlig översikt över databasens struktur och underlättar både förståelsen och hanteringen av dess innehåll.
 
 Inom relationsdatabaser används även dimensionstabeller för att organisera data. Dessa tabeller består av rader, också kallade tupler, där varje rad representerar en entitet eller objekt, och varje kolumn, eller attribut, ger en beskrivning av data som är relaterad till entiteten.
+
+I en relationsdatabas är det viktigt att förstå skillnaden mellan en primärnyckel och en främmande nyckel för att säkerställa integriteten och relationerna inom datastrukturen.
+
+En primärnyckel fungerar som en unik identifierare för varje post i en tabell och säkerställer att varje rad kan identifieras på ett entydigt sätt. Den måste ha unika värden och får inte vara NULL. Primärnyckeln är avgörande för att upprätthålla dataintegriteten och underlättar effektiv hämtning av data.
+
+Å andra sidan är en främmande nyckel ett fält i en tabell som skapar en länk till primärnyckeln i en annan tabell. Denna länk skapar en relation mellan de två tabellerna och möjliggör implementeringen av referentiell integritet. Med andra ord motsvarar en främmande nyckel i en tabell primärnyckeln i en annan tabell och främjar anslutningen mellan relaterade data över olika tabeller i databasen.
 
 ![Bild på Realtionsdatabas](images/Relationsdatabas.png)
 
@@ -118,6 +184,20 @@ SELECT * FROM UserData;
 
 ```
 
+Select har väldigt många avändbara kommandon. Här räknar man anatal användare: 
+
+```sql
+SELECT COUNT(*) AS AntalAnvandare FROM UserData;
+
+```
+
+Här tar man ut den specifika datan från tabellen:
+
+```sql 
+SELECT username, email FROM UserData;
+
+```
+
 Uppdatera (Lägga till ex en rad till) data i SQL genom kommando (update) 
 
 ```sql
@@ -133,6 +213,11 @@ För att radera data med kommando(delete)
 DELETE FROM UserData WHERE UserId = 2;
 
 ```
+
+1. https://herovired.com/learning-hub/blogs/difference-between-primary-key-and-foreign-key/
+2. https://www.tutorialspoint.com/dbms/er_diagram_representation.htm
+3. https://aws.amazon.com/what-is/sql/
+4. https://svenskatack.wordpress.com/teknik-och-data/databaser/sql/
 
 ## BE 1.8 OAuth i backend
 

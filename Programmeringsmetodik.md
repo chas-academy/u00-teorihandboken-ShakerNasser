@@ -1,6 +1,7 @@
 # Teorihandboken - Programmeringsmetodik (PG)
 Studerande: Shaker Nasser
 ![Alt text](images/Programmeringsmetodik.png)
+
 ## PG 1.1 Versionshantering (Git)
 GIT är ett kraftfullt verktyg för versionshantering som används av utvecklare för att effektivt spåra och hantera ändringar i källkoden under projektutveckling. Det ger en strukturerad och samarbetsvänlig metod för att spåra historiken över projektet och underlättar samtidigt arbete från flera utvecklare. Nedan presenteras en översikt över viktiga koncept inom GIT-versionshantering.
 
@@ -23,6 +24,46 @@ GIT har blivit det föredragna verktyget för versionshantering inom öppen käl
 
 ![GIT](images/GIT-Branchand-its-Operations.webp)
 
+Här nedan följer ett par grundläggande git kommandon:
+
+Skapa en ny Git-repo:
+
+```bash
+git init
+
+```
+
+För att klona ner ett bifentligt repo:
+```bash
+git clone <repo-url>
+
+```
+
+Lägg till alla ändringar för att staging-området:
+
+```bash
+git add .
+
+```
+
+Lägg till ändringar för att staging-området: 
+
+```bash
+git add <filnamn>
+
+```
+
+Den mest användbara kommandon (enligt mig):
+
+```bash
+git status
+
+```
+
+1. https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+2. https://www.atlassian.com/git/tutorials/what-is-git
+3. https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/
+
 ## PG 1.2 Benchmarking
 
 Inom webbutveckling är benchmark ett vanligt begrepp som används för att mäta och jämföra prestanda eller effektivitet hos olika webbplatser eller webbapplikationer. Det kan inkludera hastighetstester, laddningstider och andra metriker för att utvärdera hur väl en webbplats eller en specifik funktion presterar i jämförelse med branschstandarder eller konkurrenter. Att använda benchmarking i utvecklingsprocessen hjälper till att identifiera områden för förbättring och säkerställa en bättre användarupplevelse.
@@ -31,8 +72,12 @@ Lighthouse är en av dem verkygen som Goolge har utvecklat för att testa webbsi
 
 Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de flesta webbläsare. Inom DevTools kan man använda olika flikar såsom Audits. För att utföra prestandamätningar och få förslag på förbättringar. Detta gör det möjligt för utvecklare att identifiera och lösa problem som kan påverka prestandan. Goolge DevTools ger även möjlighet att följa dem vanliga HTML och CSS fel innan koden kan implenteras. Detta är en utmärkt verktyg för nybörjare inom webbutveckling. 
 
-1. ![DevTools LightHouse](images/DevTools-LightHouse.png)
-2. ![DevTools Verktygsfunktion ](images/DevTools.png)
+![DevTools LightHouse](images/DevTools-LightHouse.png)
+![DevTools Verktygsfunktion ](images/DevTools.png)
+
+1. https://developer.chrome.com/docs/lighthouse/overview/
+2. https://developer.chrome.com/docs/devtools/open/
+3. https://nira.com/chrome-developer-tools/
 
 
 ## PG 1.3 Testdriven utveckling
@@ -72,3 +117,41 @@ Terminalgränssnitt är vanligtvis beroende av operativsystemet. Till exempel an
 Båda dessa verktyg är kraftfulla och ger avancerad kontroll och flexibilitet för användare som föredrar att använda kommandoraden för att hantera sina system och Git-repositorier.
 
 ![Git- Bash- terminal](<images/Git-Bash -.png>)
+
+Grundläggande kommandon för Bash terminal: 
+
+Navigera mellan mappar:
+
+```bash 
+
+cd <mappnamn>
+
+```
+
+Visa innehållet i en mapp:
+
+
+```bash 
+ls
+
+```
+
+Skapa en ny mapp:
+
+```bash 
+mkdir <mappnamn>
+
+```
+
+Ta bort en fil: 
+
+```bash 
+
+rm <filnamn>
+
+
+```
+
+1. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line
+2. https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
+3. https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce

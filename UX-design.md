@@ -10,6 +10,7 @@ Grafik spelar en nyckelroll inom webbdesign och kan markant förbättra använda
 För att skapa en enhetlig design är det också viktigt att använda en harmonisk färgval och välja typsnitt som är lättlästa på skärmen. Att överväga kontrast och hierarki i designen hjälper till att framhäva viktig information och gör sidan lättare att förstå.
 
 Responsiv design är en annan viktig aspekt att tänka på inom webbdesign. Eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det avgörande att designa webbsidor som dynamiskt anpassar sig efter olika skärmstorlekar.
+
 ![Bild visar responsive design](images/responsive-web-design-png-file.png)
 
 För att hålla sig uppdaterad inom området är det viktigt att följa trender inom grafik och design för webb. Det kan inkludera att hålla koll på nya designverktyg och tekniker samt att studera framstående exempel på webbdesign för att dra inspiration och lära sig nya metoder.
@@ -113,10 +114,9 @@ Användarupplevelsen på en webbplats påverkas av hur väl användare kan lösa
 Responsiv design:
 
 Eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det viktigt att designa responsiva webbsidor. Anpassa layout och innehåll för olika skärmar för att ge en enhetlig upplevelse.
-Språk och begreppsbildning:
 
 Använd tydligt och lättläst språk på webbsidor. Undvik jargong och tekniska termer som kan förvirra användare. Begreppsbildning är viktigt för att användare ska förstå och navigera på webbplatsen.
-Sammanfattningsvis är kognitionspsykologi inom webbutveckling avgörande för att skapa användarvänliga, effektiva och minnesvärda webbsidor. Genom att förstå hur människor tänker och interagerar kan vi skapa en bättre digital upplevelse för användarna.
+Kognitionspsykologi inom webbutveckling avgörande för att skapa användarvänliga, effektiva och minnesvärda webbsidor. Genom att förstå hur människor tänker och interagerar kan vi skapa en bättre digital upplevelse för användarna.
 
 1. https://people.cs.umu.se/gabriel/mdi/2.html (Umeå Universitet)
-2. 
+2. http://www.diva-portal.se/smash/get/diva2:728228/FULLTEXT01.pdf (Linköpings universitet)
