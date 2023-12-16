@@ -3,17 +3,15 @@ Studerande: Shaker Nasser
 
 ## UD 1.1 Grafik och design för webbsidor
 
-Att skapa en välutformad webbsida innebär inte bara att den ska vara snygg med att titta på, utan också att den ska fungera felfritt för användaren. Inom webbdesign är användbarhet en grundläggande princip, vilket innebär att användaren enkelt ska kunna navigera och interagera med webbsidan. För att uppnå detta är det viktigt att skapa en logisk layout och använda tydliga navigationsmenyer.
+Att skapa en välutformad webbsida innebär inte bara att den ska vara snygg med att titta på. Utan också att den ska fungera felfritt för användaren. Inom webbdesign är användbarhet en grundläggande princip, vilket innebär att användaren enkelt ska kunna navigera och interagera med webbsidan. För att uppnå detta är det viktigt att skapa en logisk layout och använda tydliga navigationsmenyer.
 
 Grafik spelar en nyckelroll inom webbdesign och kan markant förbättra användarupplevelsen. Genom att använda visuella element som bilder och ikoner kan webbsidan bli mer engagerande och minnesvärd. Det är dock viktigt att optimera grafiken för webben för att säkerställa snabba laddningstider och en effektiv användarupplevelse.
 
-För att skapa en enhetlig design är det också viktigt att använda en harmonisk färgval och välja typsnitt som är lättlästa på skärmen. Att överväga kontrast och hierarki i designen hjälper till att framhäva viktig information och gör sidan lättare att förstå.
-
-Responsiv design är en annan viktig aspekt att tänka på inom webbdesign. Eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det avgörande att designa webbsidor som dynamiskt anpassar sig efter olika skärmstorlekar.
+ För att skapa en likartad design är det också kritiskt att använda en harmonisk färgpalett och välja typsnitt som är lättlästa på skärmen. Att överväga kontrast och hierarki i designen är avgörande för att framhäva viktig information och göra sidan lättare att förstå. Responsiv design är en ytterligare viktig aspekt inom webbdesign. Med tanke på att användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det avgörande att designa webbsidor som dynamiskt anpassar sig efter olika skärmstorlekar, vilket möjliggör en enhetlig och tillgänglig användarupplevelse. Eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det avgörande att designa webbsidor som dynamiskt anpassar sig efter olika skärmstorlekar.
 
 ![Bild visar responsive design](images/responsive-web-design-png-file.png)
 
-För att hålla sig uppdaterad inom området är det viktigt att följa trender inom grafik och design för webb. Det kan inkludera att hålla koll på nya designverktyg och tekniker samt att studera framstående exempel på webbdesign för att dra inspiration och lära sig nya metoder.
+För att hålla sig uppdaterad inom området är det viktigt att följa trender inom grafik och design för webb. Det inkluderar att vara medveten om framväxande designverktyg, tekniker och att analysera framstående exempel på webbdesign för att inspireras och integrera nya metoder i skapandet. Att aktivt delta i designgemenskaper och konferenser kan också vara berikande för att hålla sig informerad om de senaste innovationerna och bästa praxis.
 
 1. https://webbriktlinjer.se/riktlinjer/124-inte-bara-farg/
 2. https://webbdesignfabriken.se/bra-tips-angaende-din-hemsidedesign/
@@ -32,7 +30,7 @@ För att förbättra användbarheten är det viktigt att genomföra användartes
 
 Det är också viktigt att lyssna på användarfeedback och kontinuerligt förbättra produkten. Användarupplevelsen är dynamisk och förändras över tiden, vilket gör det nödvändigt att vara lyhörd för användarnas behov och önskemål. Genom att implementera en iterativ designprocess kan produkten ständigt förfinas och anpassas för att möta användarnas förväntningar.
 
-I sammanfattning är UX och användbarhet nära sammankopplade när det kommer till att skapa framgångsrika digitala produkter. Genom att fokusera på användarnas behov, genomföra användartester och sträva efter en intuitiv och responsiv design kan designers skapa en användarupplevelse som inte bara är funktionell utan också engagerande och tillfredsställande.
+UX och användbarhet nära sammankopplade när det kommer till att skapa framgångsrika digitala produkter. Genom att fokusera på användarnas behov, genomföra användartester och sträva efter en intuitiv och responsiv design kan designers skapa en användarupplevelse som inte bara är funktionell utan också engagerande och tillfredsställande.
 
 1. https://www.ibm.com/blogs/think/se-sv/2021/01/11/vad-ar-ux-design-egentligen/
 2. https://raidboxes.io/sv/blog/webdesign-development/ux-design-usability/
@@ -40,17 +38,16 @@ I sammanfattning är UX och användbarhet nära sammankopplade när det kommer t
 
 ## UD 1.3 Riktlinjer för användbarhet
 
-Webben är en viktig del av våra liv, som används för olika ändamål, från att söka information till online shopping och banktjänster. Men alla har inte samma nivå av tillgång till webbinnehåll. Det finns användare med funktionshinder eller tekniska begränsningar som gör det svårt för dem att interagera med webbplatser. För att komma till rätta med detta har initiativ som ARIA, WAI-ARIA, A11y och WCAG utvecklats.
+Webben är en viktig del av våra liv som används för olika ändamål. Från att söka information till online shopping, banktjänster och hålla sig uppdaterat till det privata sociala livet. Men alla har inte samma nivå av tillgång till webbinnehåll. Det finns användare med funktionshinder eller tekniska begränsningar som gör det svårt för dem att interagera med webbplatser. För att komma till rätta med detta har initiativ som ARIA, WAI-ARIA, A11y och WCAG utvecklats.
 
 ARIA tillåter utvecklare att beskriva interaktiva element och dynamiska innehållsuppdateringar, vilket gör dem tillgängliga för personer med funktionshinder som använder hjälpmedel. WAI-ARIA, en del av World Wide Web Consortium, tillhandahåller riktlinjer och specifikationer för att förbättra webbtillgängligheten. A11y är ett åtagande att skapa tillgängliga produkter och tjänster, som integrerar tillgänglighetsprinciper i designprocessen. WCAG erbjuder riktlinjer för att bedöma tillgängligheten av webbsidor, som täcker perceptuell, kognitiv och motorisk tillgänglighet.
 
-Skärmläsare är avgörande för att personer med synnedsättning ska kunna navigera på webbsidor. Dessa program tolkar visuellt innehåll och konverterar det till talat eller taktilt format. Utvecklare måste designa webbsidor som är kompatibla med skärmläsare för att säkerställa tillgänglighet.
+Skärmläsare är avgörande för personer med synnedsättning, översättande visuellt innehåll till talat eller taktilt format. Utvecklare bör designa webbsidor som är fullt kompatibla med skärmläsare för att säkerställa optimal tillgänglighet och en inkluderande användarupplevelse. Det innefattar användningen av tydlig struktur, alternativ text för bilder och tillgängliga formulär för att göra webbinnehållet tillgängligt för alla användare oavsett deras förmåga. Att integrera tillgänglighetsprinciper i webbutvecklingsprocessen är nödvändigt för att skapa en inkluderande digital miljö.
 
-Sammanfattningsvis är webben en kraftfull plattform som berikar våra liv, men alla användare har inte lika tillgång. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och skärmläsare spelar en viktig roll för att främja webbtillgänglighet och skapa en inkluderande digital värld. Genom att införliva dessa insatser i webbdesign och utveckling kan vi säkerställa att alla har lika möjligheter att dra nytta av webbens möjligheter.
+Webben är en kraftfull plattform som berikar våra liv, men alla användare har inte lika tillgång. Initiativ som ARIA, WAI-ARIA, A11y, WCAG och skärmläsare spelar en viktig roll för att främja webbtillgänglighet och skapa en inkluderande digital värld. Genom att införliva dessa insatser i webbdesign och utveckling kan vi säkerställa att alla har lika möjligheter att dra nytta av webbens möjligheter.
 
 1. https://webbriktlinjer.se/riktlinjer/81-utveckla-webbplatsen-enligt-en-standard-snarare-an-for-en-webblasare/
 2. https://www.metamatrix.se/globalassets/vara-tjanster/tillganglighetsguide_metamatrix_v16.pdf
-
 
 ## UD 1.4 Prototyping
 
@@ -70,7 +67,7 @@ Prototyperna Low-fidelity och High-fidelity prototypen kompletterar varandra gen
 
 ## UD 1.5 Personas och målgruppsanalys
 
-Inom webbutveckling är personas och målgruppsanalys viktiga verktyg för att skapa en design som är användarcentrerad och säkerställa att din webbplats eller applikation är relevant och användbar för dina användare. Här är en översikt över begreppen och deras betydelse:
+Inom webbutveckling är personas och målgruppsanalys viktiga verktyg för att skapa en design som är användarcentrerad och säkerställa att din webbplats eller applikation är relevant och användbar för dina användare. 
 
 En persona är en fiktiv representation av en idealiserad användare baserad på verkliga data och insikter om din målgrupp. Genom att skapa personas får utvecklare och designers en tydligare förståelse för användarnas behov, beteenden, mål och förväntningar.
 
@@ -80,7 +77,7 @@ Att analysera målgrupper är processen att undersöka och förstå de olika seg
 
 Analysen involverar att samla in och analysera data om dina användare. Det kan inkludera demografisk information, beteendemönster, preferenser och teknisk kompetens. Resultaten används för att skapa segment av användare med liknande egenskaper och behov. Målgruppsanalys ger insikter som vägleder utvecklingen av en webbplats. Genom att förstå olika segment av användare kan utvecklare anpassa design, innehåll och funktioner för att möta specifika behov och förväntningar hos varje grupp.
 
-Både personas och målgruppsanalys är kritiska verktyg för att säkerställa att din webbplats eller applikation är användarcentrerad och effektiv. Genom att skapa realistiska och väldefinierade personas samt genomföra en noggrann målgruppsanalys kan du skapa en mer meningsfull och engagerande användarupplevelse. Detta leder i sin tur till ökad användarnöjdhet och framgång för din webbplats.
+Både personas och målgruppsanalys är kritiska verktyg för att säkerställa att webbplats eller applikation är användarcentrerad och effektiv. Genom att skapa realistiska och väldefinierade personas samt genomföra en noggrann målgruppsanalys kan du skapa en mer meningsfull och engagerande användarupplevelse. Detta leder i sin tur till ökad användarnöjdhet och framgång för din webbplats.
 
 1. https://foretagsforumet.se/marknadssegment/
 2. https://www.toxic.se/blogg/vad-ar-skillnaden-pa-malgrupp-och-personas/
@@ -90,33 +87,31 @@ Både personas och målgruppsanalys är kritiska verktyg för att säkerställa 
 
 Empirisk forskning är en typ av forskning eller studie där slutsatserna baseras på konkreta och verifierbara empiriska bevis. Där man undersöker och obeserverar för att skaffa kunskap och för att samla in krav. Syftet med empirisk forskning är att använda statistiska testmetoder för att testa hypoteser och minska klyftan mellan teori och praktik. 
 
-Empirisk forskning bidrar till att förbättra, analysera och utvärdera procedurer och processer för mjukvaruutveckling. Den ger också riktlinjer för beslutsfattande. Empirisk forskning är användbar för forskare, akademiker och mjukvaruindustrin i olika scenarier.
+Empirisk forskning bidrar till att förbättra, analysera och utvärdera procedurer och processer för mjukvaruutveckling. Den ger också riktlinjer för beslutsfattande för att få ett säker reslutat. Empirisk forskning är användbar för forskare, akademiker och mjukvaruindustrin i olika scenarier. 
 
-Empirisk forskning kan användas för att besvara frågor som rör industriella metoder och kan förbättra strategier och metoder för mjukvaruutveckling. De prediktiva modeller som skapas inom ramen för empirisk forskning kan implementeras i liknande industriella tillämpningar i framtiden. Empirisk forskning möjliggör för mjukvaruutvecklare att tillämpa resultaten av experimentet och försäkra sig om att en uppsättning väl fungerande procedurer och processer följs vid någon punkt i mjukvaruutvecklingen. Empirisk forskning ger också vägledning för att bestämma de bästa mjukvaruprocesserna och produkterna som genereras.
+Den empiriska forskningen kan användas för att besvara frågor som rör industriella metoder och kan förbättra strategier och metoder för mjukvaruutveckling. De prediktiva modeller som skapas inom ramen för empirisk forskning kan implementeras i liknande industriella tillämpningar i framtiden. Empirisk forskning möjliggör för mjukvaruutvecklare att tillämpa resultaten av experimentet och försäkra sig om att en uppsättning väl fungerande procedurer och processer följs vid någon punkt i mjukvaruutvecklingen. Empirisk forskning ger också vägledning för att bestämma de bästa mjukvaruprocesserna och produkterna som genereras.
 
-Deltagarna är de personer som är involverade i forskningen som försökspersoner. De intervjuas noggrant för att erhålla forskningsresultaten. Etiska frågor inom empirisk forskning måste beaktas vid hanteringen av deltagarna för att säkerställa att de inte skadas på något sätt.
+Deltagarna är de personer som är involverade i forskningen som försökspersoner. De intervjuas noggrant för att erhålla forskningsresultaten. Etiska frågor inom empirisk forskning måste uppmärksammas vid hanteringen av deltagarna för att säkerställa att de inte skadas på något sätt.
 
 Resultatet av forskningen genererar en produkt. Det slutliga resultatet av empirisk forskning ger svar på forskningsfrågorna. En ny teknik eller metod kan betraktas som en produkt av den empiriska studien eller forskningen. Exempel på detta kan vara konferensartiklar, tidskriftspapper, avhandlingar och tekniska rapporter.
 
 1. https://www.geeksforgeeks.org/empirical-research-in-software-engineering/
 2. https://yufreepress.org/sv/empirisk-forskning-definition-metoder-typer-och-exempel/
 
-
 ## UD 1.7 Grundläggande kognitionspsykologi
 
-Kognitionspsykologi är en disciplin inom psykologin som undersöker hur människor bearbetar information, tänker, lär sig och minns. Inom webbutveckling är kunskap om kognitiva processer avgörande för att skapa användarvänliga och effektiva webbsidor. Här är några viktiga aspekter av kognitionspsykologi inom webbutveckling:
+Kognitionspsykologi är en disciplin inom psykologin som undersöker hur människor bearbetar information, tänker, lär sig och minns. Inom webbutveckling är kunskap om kognitiva processer avgörande för att skapa användarvänliga och effektiva webbsidor. 
 
-För att skapa en användarvänlig webbplats är det viktigt att förstå hur människor uppmärksammar och tolkar information. Genom att designa webbsidor med tydliga visuella hierarkier och användarvänliga gränssnitt kan man underlätta uppmärksamheten och navigeringen.
+För att skapa en användarvänlig webbplats är det viktigt att förstå hur människor uppmärksammar och tolkar information. Att kunna fånga och hålla användarens uppmärksamhet är kritiskt för en positiv användarupplevelse. Genom att designa webbsidor med tydliga visuella hierarkier och användarvänliga gränssnitt kan man inte bara underlätta uppmärksamheten utan även skapa en smidig och effektiv navigeringsupplevelse.
 
-Människors minneskapacitet påverkar hur de interagerar med webbsidor. För att underlätta minnesprocessen är det viktigt att använda korta och lättförståeliga texter, tydliga rubriker och skapa en logisk informationsstruktur.
+Människors minneskapacitet påverkar hur de interagerar med webbsidor. För att underlätta minnesprocessen är det viktigt att använda korta och lättförståeliga texter, tydliga rubriker och skapa en logisk informationsstruktur. Användarupplevelsen på en webbplats påverkas av hur väl användare kan lösa problem och fatta beslut. Skapa enkla och genomtänkta användargränssnitt för att underlätta interaktion och beslutsfattande.
 
-Användarupplevelsen på en webbplats påverkas av hur väl användare kan lösa problem och fatta beslut. Skapa enkla och intuitiva användargränssnitt för att underlätta interaktion och beslutsfattande.
-Responsiv design:
+Multitasking är en annan aspekt som påverkar användarupplevelsen. Eftersom användare ofta utför flera uppgifter samtidigt, såsom att navigera mellan flikar, skriva och söka information, är det viktigt att designa webbsidor som kan hantera multitasking. Tydliga indikatorer och enkel navigering underlättar för användare som engagerar sig i multitasking.
 
-Eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar är det viktigt att designa responsiva webbsidor. Anpassa layout och innehåll för olika skärmar för att ge en enhetlig upplevelse.
+Responsiv design är nödvändig eftersom användare kan komma åt webbsidor från olika enheter och skärmstorlekar. Det är avgörande att skapa responsiva webbsidor som anpassar sig dynamiskt till olika skärmstorlekar, vilket ger en enhetlig och smidig användarupplevelse.
 
-Använd tydligt och lättläst språk på webbsidor. Undvik jargong och tekniska termer som kan förvirra användare. Begreppsbildning är viktigt för att användare ska förstå och navigera på webbplatsen.
-Kognitionspsykologi inom webbutveckling avgörande för att skapa användarvänliga, effektiva och minnesvärda webbsidor. Genom att förstå hur människor tänker och interagerar kan vi skapa en bättre digital upplevelse för användarna.
+Kognitionspsykologi inom webbutveckling avgörande för att skapa användarvänliga, effektiva och minnesvärda webbsidor. Genom att integrera insikter om hur människor tänker och interagerar kan vi forma en digital upplevelse som överträffar användarnas förväntningar. Samtidigt är det viktigt att kontinuerligt följa utvecklingen inom kognitionspsykologi för att anpassa design och funktionalitet efter de senaste rönen och trenderna inom området.
 
 1. https://people.cs.umu.se/gabriel/mdi/2.html (Umeå Universitet)
 2. http://www.diva-portal.se/smash/get/diva2:728228/FULLTEXT01.pdf (Linköpings universitet)
+3. https://www.testingtime.com/en/blog/cognitive-psychology-in-ux/
