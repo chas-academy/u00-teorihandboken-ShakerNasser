@@ -102,7 +102,16 @@ $nyPerson = new Person("Anna");
 
 ## BE 1.3 Säkerhet i PHP
 
-Beskriv rubriken här
+Säkerhet är en viktig aspekt för att skydda information och system från obehörig åtkomst, skadlig kod och andra hot, särskilt inom IT. Här följer några relaterade begrepp:
+
+IT-säkerhet (Informationstekniksäkerhet):
+IT-säkerhet handlar om att skydda informationstekniksystem från obehörig åtkomst, användning, förändring eller förstörelse. Det innefattar olika åtgärder och tekniker för att säkerställa konfidentialitet, integritet och tillgänglighet av data och system.
+
+Applikationssäkerhet:
+Applikationssäkerhet fokuserar på att säkra programvaror och applikationer från olika hot och sårbarheter. Det innebär att implementera säkerhetsåtgärder i design, utveckling och drift av applikationer för att minimera riskerna för attacker och obehörig åtkomst.
+
+SQL-injektioner:
+SQL-injektioner är en typ av säkerhetshot som riktar sig mot databasdrivna applikationer. Vid en SQL-injektion kan en angripare infoga skadlig SQL-kod i en SQL-fråga som utförs av en applikation. Om sårbarheten utnyttjas framgångsrikt kan detta leda till obehörig åtkomst, manipulation eller förstörelse av databasen. För att förhindra SQL-injektioner bör utvecklare använda parametriserade frågor och sanitisering.
 
 ## BE 1.4 MVC
 
@@ -110,7 +119,15 @@ Beskriv rubriken här
 
 ## BE 1.5 Wordpress
 
-Beskriv rubriken här
+Wordpress är en hemsideverktyg med öppen källkod. Wordpress ger möljghet till att starta en sida och hosta besökare. Starten av Wordpress var att underlätta möjligheten till bloggplattformar att utvecklas. Nu används Wordpress av flera stora miljardföretag så som Microsoft och Spotify. 
+
+Plugins är tillägg som läggs till WordPress för att lägga till funktionalitet. Det finns tusentals plugins som täcker allt från sökmotoroptimering (SEO) till sociala medier och säkerhet.
+
+WordPress använder teman för att styra webbplatsens utseende och känsla. Det finns tusentals gratis och premiumteman tillgängliga för att anpassa utseendet på webbplatsen.
+
+WordPress stöder olika typer av innehåll, inklusive text, bilder, ljud och video.
+
+WordPress har utvecklats över tid och har blivit ett av de mest använda CMS-systemen globalt. Det har även blivit ett populärt val för både små och stora företag samt enskilda användare som vill skapa och underhålla sina egna webbplatser.
 
 ## BE 1.6 Heirarkiska databaser
 
@@ -237,7 +254,12 @@ Beskriv rubriken här
 
 ## BE 1.12 XML och andra dataformat
 
-Beskriv rubriken här
+XML (Extensible Markup Language):
+XML är en förkortning av "Extensible Markup Language". Det är ett strukturerat metaspråk som används för att definiera och organisera data. XML tillåter användare att skapa sina egna märkesspråk och definiera egna taggar för att strukturera och beskriva information. Det är användbart för att överföra och lagra data mellan olika program och plattformar. Eftersom det är textbaserat och strukturerat underlättar det för både datorer och människor att förstå och hantera data på ett enhetligt sätt.
+
+CSV (Comma-Separated Values):
+CSV står för "Comma-Separated Values". Det är ett enkelt filformat som används för att representera tabulära data, såsom en databastabell eller ett kalkylblad, i en textfil. I en CSV-fil separeras varje datapost med kommatecken, och varje rad representerar en rad i tabellen. CSV-filer är lätta att skapa, läsa och redigera manuellt, vilket gör dem mycket användbara för att överföra och dela tabulära data mellan olika program. CSV-filer stöds av många program, inklusive kalkylbladsprogram och databasverktyg.
+
 
 ## BE 1.13 Webbservrar
 
