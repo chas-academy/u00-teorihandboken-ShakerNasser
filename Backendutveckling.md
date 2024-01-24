@@ -176,12 +176,14 @@ Genom att använda SQL kan användare effektivt definiera och hantera både data
 Exempel på hur man kan skapa en SQL tabell med kommando (Create):
 
 ```sql
-CREATE TABLE UserData (
-    UserId INT PRIMARY KEY AUTO_INCREMENT,
-    Username VARCHAR(100),
-    Email VARCHAR(100),
-    Phonenumber VARCHAR(20)
-);
+DROP TABLE IF EXISTS `tasks`;
+CREATE TABLE `tasks` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `is_completed` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ;
 
 ```
 
@@ -263,4 +265,31 @@ CSV står för "Comma-Separated Values". Det är ett enkelt filformat som använ
 
 ## BE 1.13 Webbservrar
 
-Beskriv rubriken här
+Vad är en webbserver?
+www eller world-wide-web
+Webbserver tar emot frågor (request) och utsändrar information i från servar och skickar tillbaka respons. Detta skapar en HTML som skickas tillbaka. 
+
+Historia:
+Startades av Sir Tim Lee 1989. Starten var ett förslag om hur hypertext system skulle kunna delas. modellen hade bara GET och sedan lades POST till. 
+
+vad är en webbserver:
+
+En webbserver är en dator, anpassad för att hantera många hemsidor samtidigt. Webbserverna står oftast hos driftbolag med snabb och kraftfull internet uppkoppling där företagetspersonal har möjglighet till support. 
+
+webbservars vanliga uppgifter: 
+Att ta emot requests 
+att köra HTTP metoden
+Att svara klienten med ett HTTP respns
+Opptionellt loggar
+optionellt generera statiskt 
+
+Dem viktigaste server:
+HTTPd körs i bakgrunden och agerar server i klient-server modell, använder sig av HTTP/HTTPS protokoll.
+
+hur används en webbserver:
+
+exempel på webbservarar idag:
+Apache HTTP server
+Nginx HTTP server
+Lighttpd
+CERN HTTPd HTTP server 
