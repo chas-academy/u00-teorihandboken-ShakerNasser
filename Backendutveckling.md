@@ -1,6 +1,6 @@
 # Teorihandboken - Backendutveckling (BE)
 Studerande: Shaker Nasser
-
+![Alt text](images/Backend-utveckling.png)
 ## BE 1.1 PHP
 
 PHP (Hypertext Preprcessor) är en server-by-side skriptspråk. Ett skriptspråk som kan exekterveras (köras) utan ett komplitationssteg. Detta innebär att PHP hjälper märkspråk så som HTML till att genera sidor. Detta sker genom att man kopplar upp mot en databas. PHP är en väldigt användbar skriptspråk, runt 78% av dem undersökta webbsidor använder sig av PHP (W3techs, mars 2013).
@@ -121,11 +121,9 @@ Beskriv rubriken här
 
 Wordpress är en hemsideverktyg med öppen källkod. Wordpress ger möljghet till att starta en sida och hosta besökare. Starten av Wordpress var att underlätta möjligheten till bloggplattformar att utvecklas. Nu används Wordpress av flera stora miljardföretag så som Microsoft och Spotify. 
 
-Plugins är tillägg som läggs till WordPress för att lägga till funktionalitet. Det finns tusentals plugins som täcker allt från sökmotoroptimering (SEO) till sociala medier och säkerhet.
+Plugins är tillägg som läggs till WordPress för att lägga till funktionalitet. Det finns tusentals plugins som täcker allt från sökmotoroptimering (SEO) till sociala medier och säkerhet. WordPress stöder olika typer av innehåll, inklusive text, bilder, ljud och video.
 
 WordPress använder teman för att styra webbplatsens utseende och känsla. Det finns tusentals gratis och premiumteman tillgängliga för att anpassa utseendet på webbplatsen.
-
-WordPress stöder olika typer av innehåll, inklusive text, bilder, ljud och video.
 
 WordPress har utvecklats över tid och har blivit ett av de mest använda CMS-systemen globalt. Det har även blivit ett populärt val för både små och stora företag samt enskilda användare som vill skapa och underhålla sina egna webbplatser.
 
@@ -244,7 +242,16 @@ Beskriv rubriken här
 
 ## BE 1.9 HTTP-protokollet
 
-Beskriv rubriken här
+GET och POST anrop som kommuuncerar med servar. 
+
+Finns och nackdelar med båda protokollen. 
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+https://www.w3schools.com/php/php_forms.asp
+
+
 
 ## BE 1.10 cURL
 
@@ -265,31 +272,42 @@ CSV står för "Comma-Separated Values". Det är ett enkelt filformat som använ
 
 ## BE 1.13 Webbservrar
 
-Vad är en webbserver?
-www eller world-wide-web
-Webbserver tar emot frågor (request) och utsändrar information i från servar och skickar tillbaka respons. Detta skapar en HTML som skickas tillbaka. 
+En webbserver är en central komponent i den digitala världen, och dess roll är avgörande för att möjliggöra kommunikation och överföring av information över internet. Begreppet "webbserver" syftar vanligtvis till både hårdvaran och mjukvaran som krävs för att hantera och svara på förfrågningar från klientdatorer. I denna text kommer vi att utforska olika aspekter av webbservrar, inklusive deras historia, funktioner och några exempel på populära webbserverprogram.
 
-Historia:
-Startades av Sir Tim Lee 1989. Starten var ett förslag om hur hypertext system skulle kunna delas. modellen hade bara GET och sedan lades POST till. 
+Webbserverns historia kan spåras tillbaka till 1989 när Sir Tim Berners-Lee, en brittisk fysiker, föreslog en modell för ett hypertextsystem. Ursprungligen hade modellen bara stöd för GET-metoden, men senare lades POST-metoden till för att möjliggöra interaktion med servrar på ett mer komplett sätt. Det var detta innovativa förslag som lade grunden för den moderna webbservern.
 
-vad är en webbserver:
+En webbserver är i grund och botten en dator som är specialdesignad för att hantera förfrågningar och överföra data till och från andra servrar. Dessa servrar är oftast placerade hos driftbolag som erbjuder snabb och kraftfull internetuppkoppling.
 
-En webbserver är en dator, anpassad för att hantera många hemsidor samtidigt. Webbserverna står oftast hos driftbolag med snabb och kraftfull internet uppkoppling där företagetspersonal har möjglighet till support. 
+Webbserverns huvudsakliga uppgifter inkluderar att ta emot förfrågningar från klientdatorer, utföra HTTP-metoder, generera och skicka tillbaka HTTP-respons och vid behov logga händelser och generera statiska sidor.
 
-webbservars vanliga uppgifter: 
-Att ta emot requests 
-att köra HTTP metoden
-Att svara klienten med ett HTTP respns
-Opptionellt loggar
-optionellt generera statiskt 
+Vanliga Uppgifter för Webbservern:
 
-Dem viktigaste server:
-HTTPd körs i bakgrunden och agerar server i klient-server modell, använder sig av HTTP/HTTPS protokoll.
+Ta emot Förfrågningar: Webbservern fungerar som en mottagare för förfrågningar från klientdatorer, vilket kan vara allt från att hämta en webbsida till att skicka data till en databas.
 
-hur används en webbserver:
+Hantera HTTP-metoder: En central del av webbserverns arbete är att hantera olika HTTP-metoder som GET och POST för att möjliggöra kommunikation mellan klient och server.
 
-exempel på webbservarar idag:
-Apache HTTP server
-Nginx HTTP server
-Lighttpd
-CERN HTTPd HTTP server 
+Skicka HTTP-svar till Klienten: Webbservern genererar och skickar tillbaka HTTP-svar till klienten, vilket kan inkludera den begärda webbsidan eller annan data.
+
+Logga Händelser (valfritt): Många webbservrar erbjuder möjlighet att logga olika händelser och aktiviteter för övervakning och felsökning.
+
+Generera Statiskt Innehåll (valfritt): Vissa webbservrar kan också generera statiska sidor för att accelerera sidbelastningstider och minska belastningen på servern.
+
+De viktigaste serverprogrammen:
+
+En av de mest använda serverprogrammen är HTTPd, som fungerar i bakgrunden och agerar som en server i den övergripande klient-server-modellen. Det använder HTTP/HTTPS-protokollet för att underlätta kommunikationen mellan webbservern och klientdatorerna.
+
+Hur används en webbserver?
+
+En webbserver används genom att klientdatorer skickar förfrågningar till den för att hämta webbsidor eller annan information. Klienten gör detta genom att skicka HTTP-förfrågningar, och webbservern svarar med den begärda informationen i form av HTML eller andra filformat.
+
+Apache HTTP Server: En av de äldsta och mest använda webbserverprogrammen är Apache HTTP Server. Det är känt för sin stabilitet och flexibilitet.
+
+Nginx HTTP Server: En annan populär webbserver är Nginx HTTP Server, som är känd för sin höga prestanda och skalbarhet, särskilt när det gäller hantering av många samtidiga anslutningar.
+
+Lighttpd: En lättviktig webbserver som fokuserar på hög prestanda och låg minnesanvändning är Lighttpd.
+
+CERN HTTPd HTTP Server: CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
+
+Sammanfattningsvis är en webbserver en grundläggande komponent för att möjliggöra kommunikation och informationsutbyte över internet. Dess utveckling har varit en nyckelfaktor i tillväxten och spridningen av det moderna internet, och olika webbserverprogram erbjuder olika funktioner och fördelar beroende på användningsområdet.
+
+Intranet:
