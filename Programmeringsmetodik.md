@@ -81,9 +81,16 @@ Beskriv rubriken här
 ## PG 1.4 Deploy och staging
 Beskriv rubriken här
 
-## PG 1.5 Debugging
+## PG 1.5 Debugging 
 
-Debbugging (Felsökning) är en användbar felsökningsprocess inom programmeringsmiljö och systemutveckling. Utvecklare som skriver väldigt långa och omfattande koder brukar oftast stöta på syntaxfel och logiska fel, detta gör det svårt att diagnotisera. Debuggning kan ske genom att felsöka hela filen eller använda sig av brytpunkter. 
+Felsökning är en avgörande process inom programmering och systemutveckling som syftar till att upptäcka och rätta fel i koden. Det innefattar två huvudtyper av fel: syntaxfel och logiska fel. Syntaxfel är felaktigheter i koden som bryter mot språkets regler och vanligtvis leder till tydliga felmeddelanden från utvecklingsmiljön eller kompilatorn. Å andra sidan är logiska fel svårare att upptäcka eftersom de inte nödvändigtvis genererar felmeddelanden, utan snarare kan leda till felaktigt beteende eller resultat när programmet körs.
+
+För att åtgärda dessa fel och säkerställa att programmet fungerar korrekt används felsökningsmetoder. En vanlig metod är att använda brytpunkter, där programmeraren markerar specifika platser i koden där programmet ska pausa så att utvecklaren kan inspektera dess tillstånd och variabler. Genom att stegvis gå igenom koden kan man identifiera var felet uppstår och korrigera det. Andra metoder inkluderar användning av loggfiler för att spåra programflödet och användning av olika verktyg för att analysera minnesanvändning och prestanda.
+
+ESLint är ett verktyg för statisk kodanalys inom JavaScript-utveckling. Dess syfte är att upptäcka problem i JavaScript-koden genom fördefinierade regler och konfigurationer. Det bidrar till att upprätthålla kvalitet och enhetlighet genom att markera potentiella fel, stilbrott och andra problem i koden.
+
+Prettier är ett verktyg som används för att formatera kod automatiskt enligt förutbestämda regler och konventioner. Det är särskilt populärt inom webbutveckling.
+
 
 1. https://aws.amazon.com/what-is/debugging/
 2. 
