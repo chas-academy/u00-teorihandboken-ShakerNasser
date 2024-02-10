@@ -3,8 +3,7 @@ Studerande: Shaker Nasser
 ![Alt text](images/Backend-utveckling.png)
 ## BE 1.1 PHP
 
-PHP (Hypertext Preprcessor) är en server-by-side skriptspråk. Ett skriptspråk som kan exekterveras (köras) utan ett komplitationssteg. Detta innebär att PHP hjälper märkspråk så som HTML till att genera sidor. Detta sker genom att man kopplar upp mot en databas. PHP är en väldigt användbar skriptspråk, runt 78% av dem undersökta webbsidor använder sig av PHP (W3techs, mars 2013).
-Skriptspråket har sin grund i programmeringsspråket C och C++. PHP utveckaldes och utvidgades till en objektorienterad programmeringspråk.
+PHP (Hypertext Preprcessor) är en server-by-side skriptspråk. Ett skriptspråk som kan exekterveras (köras) utan ett komplitationssteg. Detta innebär att PHP hjälper märkspråk så som HTML till att genera sidor. Detta sker genom att man kopplar upp mot en databas. PHP är en väldigt användbar skriptspråk.
 
 PHP kan användas för programmering av konsolapplikationer och grafiskt användargränssnitt. Det används först och främst för programmering av dynamiska webbsidor på Internet. Genom PHP-programmering kan man skapa en dynamisk hemsida. En dynamisk hemsida gör att en besökare kan interagera med innehållet på ett helt annat sätt än om hemsidan enbart använde HTML. Det går exempelvis att köpa en produkt eller skriva ett meddelande på en dynamisk hemsida. Något värt att veta är att alla hemsidor har en del som är ren HTML-kodning. Detta för att besökarnas webbläsare ska få relevant information om hur den ska tolka kodningen.
 
@@ -13,7 +12,7 @@ PHP kan användas för programmering av konsolapplikationer och grafiskt använd
 
 ## BE 1.2 OOP i PHP
 
-OOP är objektorinterad progammering som används även i PHP. Detta gör att det är lättare att strukutera och läsa av en koden. Koden organiseras genom att använda objekt, som instanser av klasser. Modifiering blir enklare och avläsning både maskinellet och mänskligt blir enklare. Klasser definerar egenskaper (varibaler) och metoder(funktionerna) som kan användas från den klassen. OOP-koncept som inkapsling, arv och polymorfism är centrala för att förstå och använda objektorienterad programmering i PHP. 
+OOP är objektorinterad progammering som används även i PHP. Detta gör att det är lättare att strukutera och läsa av en koden. Koden organiseras genom att använda objekt, som instanser av klasser. Modifiering blir enklare och avläsning både maskinellet och mänskligt blir enklare. Klasser definerar egenskaper (varibaler) och metoder(funktionerna) som kan användas från den klassen. OOP-koncept som inkapsling, arv är centrala för att förstå och använda objektorienterad programmering i PHP. 
 Konstruktor används 
 
 ``` php
@@ -23,7 +22,6 @@ class Person {
     public $name;
     public $age;
 
-    // Konstruktor
     public function __construct($name, $age) {
         $this->name = $name;
         $this->age = $age;
@@ -31,7 +29,6 @@ class Person {
     }
 }
 
-// Skapa en instans av klassen (och kalla på konstruktorn)
 $person1 = new Person("Alice", 25);
 
 ?>
@@ -44,7 +41,7 @@ Ett objekt är en konkret instans av en klass. När du skapar ett objekt från e
 $minBil = new Bil();
 $minBil->modell = "Volvo";
 $minBil->färg = "Blå";
-$minBil->köra(); // Anropar metoden köra från klassen Bil
+$minBil->köra();
 
 ```
 
@@ -87,16 +84,15 @@ En konstruktor är en särskild metod i en klass som körs automatiskt när ett 
 class Person {
     public $namn;
 
-    // Konstruktor
+
     public function __construct($startNamn) {
         $this->namn = $startNamn;
         echo "En ny person skapades med namnet $startNamn.";
     }
 }
 
-// Skapa ett objekt och anropa konstruktorn automatiskt
-$nyPerson = new Person("Anna");
 
+$nyPerson = new Person("Anna");
 
 ```
 
@@ -115,7 +111,30 @@ SQL-injektioner är en typ av säkerhetshot som riktar sig mot databasdrivna app
 
 ## BE 1.4 MVC
 
-Beskriv rubriken här
+MVC, eller Model-View-Controller, är en designmönster som används inom mjukvaruutveckling för att organisera och strukturera koden på ett sätt som gör den mer modulär, underhållbar och skalbar. Genom att dela upp applikationen i tre huvudkomponenter separeras logik, presentation och datahantering. Modellen representerar data och regler för att hantera den, vyn är ansvarig för presentationen av data till användaren, och kontrollern hanterar interaktionen mellan modellen och vyn. Genom att använda sig av MVC-mönstret kan utvecklare skapa robusta applikationer med en tydlig separation av ansvar och möjliggöra enkel återanvändning av kod.
+
+Klienten skickar en HTTP-förfrågan till servern (hårdvara): I denna begäran specificeras en IP-adress och olika HTTP-metoder som GET, POST eller andra beroende på ändamålet med förfrågan.
+
+Förfrågan passerar genom webbservern (mjukvara): Webbservern tar emot och hanterar HTTP-förfrågan. Den är ansvarig för att vidarebefordra förfrågan till rätt del av applikationen och för att kommunicera med den.
+
+Kontrollerar kod och ger svar i form av HTTP-respons: Nu kommer MVC-arkitekturen in i bilden. Kontrollern tar emot förfrågan och bearbetar den. Den anropar den relevanta modellen för att hämta eller manipulera data, och kan även interagera med vyn för att få information om hur datan ska visas. Slutligen skickar kontrollern en HTTP-respons tillbaka till klienten.
+
+MVC gör det enkelt att återanvända en skriven kod och reducerar komplixtet i koden. Med detta så ökar flexibitet i kodskrivningen. Det minskar även återupprepning av händeleser. 
+
+Model: Bearbeta och skicka vidare data. Modellen har ansvaret för att behandla och hantera applikationens data. Det innebär att hämta information från externa källor, till exempel en databas, bearbeta och manipulera datan enligt affärsreglerna och sedan skicka den vidare till andra delar av systemet, särskilt till vyn för att visas för användaren.
+
+View: Här skriver vi våra frågor. Modellen innehåller vanligtvis metoder och funktioner för att skapa och utföra frågor (queries) för att hämta, uppdatera och spara data i en databas eller annan form av datalagring. Dessa frågor används för att interagera med datakällor och återspegla de önskade operationerna på datan.
+
+Controller: Vanligtvis ansluten till en databas. Modellen är oftast kopplad till en databas eller annan typ av datalagring. Den är ansvarig för att kommunicera med databasen och utföra de nödvändiga operationerna för att hämta eller uppdatera datan. Detta gör det möjligt att separera hanteringen av databasen från resten av applikationslogiken.
+
+----------------------------
+Separation av ansvar (Ansvarsfördelning) i MVC-strukturen innebär att varje komponent har ett specifikt ansvarsområde:
+
+Modeller (Models): Hanterar data och utför operationer relaterade till datalagring. Modellen behandlar och manipulerar data enligt applikationens affärslogik.
+
+Vyer (Views): Innehåller mallar eller templates för att definiera hur data ska representeras visuellt. Vyn är ansvarig för att presentera informationen för användaren på ett sätt som är användarvänligt och förståeligt.
+
+Kontrollanter (Controllers): Hanterar och bearbetar HTTP-förfrågningar. Kontrollanten samordnar interaktionen mellan modellen och vyn. Den avgör vilken modell och vy som ska användas för att svara på en specifik förfrågan och skickar därefter lämplig HTTP-respons till klienten.
 
 ## BE 1.5 Wordpress
 
@@ -189,45 +208,45 @@ Efter att tabellen är skapad så skapar man input data genom kommando (Insert):
 
 
 ```sql
-INSERT INTO UserData (Username, Email, Phonenumber)
-VALUES ('newuser', 'newuser@example.com', '123-456-7890');
+INSERT INTO `tasks` (`title`, `description`, `is_completed`)
+VALUES ('Min första uppgift', 'Detta är beskrivningen för min första uppgift', 0);
 
 ```
 
 För att söka data i SQL genom kommando (Read (SELECT)) 
 
 ```sql
-SELECT * FROM UserData;
+SELECT * FROM tasks;
 
 ```
 
 Select har väldigt många avändbara kommandon. Här räknar man anatal användare: 
 
 ```sql
-SELECT COUNT(*) AS AntalAnvandare FROM UserData;
+SELECT COUNT(*) AS AntalUppgifter FROM tasks;
 
 ```
 
 Här tar man ut den specifika datan från tabellen:
 
 ```sql 
-SELECT username, email FROM UserData;
+SELECT title, description FROM tasks;
 
 ```
 
 Uppdatera (Lägga till ex en rad till) data i SQL genom kommando (update) 
 
 ```sql
-UPDATE UserData
-SET Phonenumber = '987-654-3210'
-WHERE UserId = 1; -- Replace 1 with the actual user ID you want to update
+UPDATE tasks
+SET is_completed = 1
+WHERE id = 1;
 
 ```
 
 För att radera data med kommando(delete)
 
 ```sql
-DELETE FROM UserData WHERE UserId = 2;
+DELETE FROM tasks WHERE id = 2;
 
 ```
 
@@ -246,12 +265,8 @@ GET och POST anrop som kommuuncerar med servar.
 
 Finns och nackdelar med båda protokollen. 
 
-
-
 https://developer.mozilla.org/en-US/docs/Web/HTTP
 https://www.w3schools.com/php/php_forms.asp
-
-
 
 ## BE 1.10 cURL
 
@@ -259,7 +274,32 @@ Beskriv rubriken här
 
 ## BE 1.11 REST
 
-Beskriv rubriken här
+Förklara API:er:
+
+REST står för regler och struktur av API:er. Detta är samling av konveationer för hur API:er ska utformas och fungera. 
+
+Konveationer:
+
+Seperation av klient och server:
+Frontend och backend ska kunna utvecklas oberonende av varandra. 
+Utvecklning av kod som sker i Frontend ska inte påverka Backend och vice versa. 
+
+Statelessness:
+
+Svar som går att cache:a:
+
+
+
+Uniformt interface:
+
+
+REST (Representational, State och transfer.)
+
+Apier:
+Öppna
+Stängda
+
+https://restfulapi.net/rest-api-design-tutorial-with-example/
 
 ## BE 1.12 XML och andra dataformat
 
@@ -268,7 +308,6 @@ XML är en förkortning av "Extensible Markup Language". Det är ett strukturera
 
 CSV (Comma-Separated Values):
 CSV står för "Comma-Separated Values". Det är ett enkelt filformat som används för att representera tabulära data, såsom en databastabell eller ett kalkylblad, i en textfil. I en CSV-fil separeras varje datapost med kommatecken, och varje rad representerar en rad i tabellen. CSV-filer är lätta att skapa, läsa och redigera manuellt, vilket gör dem mycket användbara för att överföra och dela tabulära data mellan olika program. CSV-filer stöds av många program, inklusive kalkylbladsprogram och databasverktyg.
-
 
 ## BE 1.13 Webbservrar
 
@@ -308,6 +347,9 @@ Lighttpd: En lättviktig webbserver som fokuserar på hög prestanda och låg mi
 
 CERN HTTPd HTTP Server: CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
 
-Sammanfattningsvis är en webbserver en grundläggande komponent för att möjliggöra kommunikation och informationsutbyte över internet. Dess utveckling har varit en nyckelfaktor i tillväxten och spridningen av det moderna internet, och olika webbserverprogram erbjuder olika funktioner och fördelar beroende på användningsområdet.
-
 Intranet:
+
+
+# XSS attacks
+
+Cross site scripting, XSS, är ett datorrelaterat säkerhetsproblem. XSS-säkerhetsbrister kan exempelvis användas till att kapa inloggningar genom att stjäla webbkakor eller för att modifiera en webbsidas utseende och funktionalitet.

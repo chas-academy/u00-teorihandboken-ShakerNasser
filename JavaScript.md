@@ -1,6 +1,8 @@
 # Teorihandboken - JavaScript (JS)
+
 Studerande Shaker Nasser
 ![Teroihandboken - Tips](images/JavaS-tips.png)
+
 ## JS 1.1 JavaScript / ECMAScript
 
 Javascript är ett programmeringsspråk som utgavs 1995 och skapades av Brendan Eich och utvecklades tillsammans med många andra utvecklare. Programmeringsspråket utgör funktionalitet till webbsidor och gör dem dynamiska. Javascript tillsammans med HTML och CSS utgör dem tre grundläggande byggstenar i en dymanisk och full funktionuell webbsida. För att enklare kunna förklara javacript så kan man förklara med vad som "händer" på en webbsida när man navigerar, fyller i formulär eller trycker på en knapp. Javascripts vanligaste användningsområden är att det bestämmer vad som händer när användaren intergerar på olika sätt.
@@ -8,11 +10,12 @@ Javascript är ett programmeringsspråk som utgavs 1995 och skapades av Brendan 
 För att koden skall köras på ett rätt sätt så ska man definera variabler i dem ordningen som koden skall köras. Detta gör man pga att JavaScript läser koden uppifrån och nedåt.
 En variabel är en placeholder för en typ av datatyp/värde. I Javascript finns det följande varibaler:
 Automatically
-- Using var (äldre webbläsare) 
+
+- Using var (äldre webbläsare)
 - Using let
 - Using const
 
-Dessa datatyper/värden finns i JavaScript: 
+Dessa datatyper/värden finns i JavaScript:
 
 - String
 - Boolean
@@ -22,14 +25,14 @@ Dessa datatyper/värden finns i JavaScript:
 - Undefined
 - Null
 
-Här nedan följer ex på hur koden exkeveras (körs) med hjälp av console.log funktionen. 
+Här nedan följer ex på hur koden exkeveras (körs) med hjälp av console.log funktionen.
 
 ```
 let x = 1
 console.log(x)
 ```
 
-Javascript har väldigt många funktioner, en av dem mesta användabara i den nuvarande webbutveckling är API:er. Vi använder API:er i tex väderprogonos webbsidor (Klart.se) eller tex  bilupplysningssidor (biluppgifter.se)
+Javascript har väldigt många funktioner, en av dem mesta användabara i den nuvarande webbutveckling är API:er. Vi använder API:er i tex väderprogonos webbsidor (Klart.se) eller tex bilupplysningssidor (biluppgifter.se)
 Dessa webbsidor hämtar information från en annan källa. Dett kallas för Applikationsprogrammeringsgränssnitt. JavaScript underlättar hämtning av API:er som kan matas ut i HTML format som visas till användaren.
 
 Genom att lägga till evenlistners så blir interagtionen dynamisk med användaren. En eventlistener är en funktion som lyssnar efter en specifik händelse på en webbsida, till exempel en klick på en knapp eller en muspekare som rör sig över en bild. När händelsen inträffar, exekveras den kod som är kopplad till eventlistenern.
@@ -43,7 +46,7 @@ ECMAScript (förkortat ES) är en standard för skriptspråk och används huvuds
 
 Skillnaden mellan ECMAScript och JavaScript är subtil eftersom JavaScript är en praktiskt genomförande av ECMAScript-standarden. ECMAScript kan ses som den formella specifikationen, medan JavaScript är den mest kända genomförandet av denna specifikation. Termerna används ofta utbytbart, och i praktiken hänvisar de oftast till samma sak, särskilt när det gäller webbutveckling.
 
-Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till exempel används termen "ES6" ofta för att referera till ECMAScript 2015, som var en betydande uppdatering med många nya funktioner som arrow functions, template literals och block scope variables. Det är viktigt för utvecklare att hålla sig uppdaterade med de senaste versionerna av ECMAScript för att dra nytta av dess förbättringar och kunna skriva modern och effektiv JavaScript-kod.
+Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till exempel används termen "ES6" ofta för att referera till ECMAScript 2015, som var en betydande uppdatering med många nya funktioner som arrow functions, template literals och block scope variables.
 
 1. https://www.exsitec.se/blogg/vad-ar-javascript
 2. https://www.freecodecamp.org/news/javascript
@@ -51,18 +54,78 @@ Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till
 
 ## JS 1.2 JavaScript-ramverk och -bibliotek
 
-Beskriv rubriken här
+v. 11
 
 ## JS 1.3 Promises
 
-Beskriv rubriken här
+Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkrona funktionerna blir alltmer populära. Promises, även kallade "framtida löften" på svenska, används för att hantera asynkrona operationer på ett mer strukturerat sätt och erbjuder ett sätt att hantera och samordna flera asynkrona operationer. Med promises kan man koppla ihop asynkrona uppgifter med metoderna async och await, vilket minskar användningen av callback-funktioner. Detta gör koden mer läsbar och lättare att utveckla för framtida projekt.
+
+1. https://sunlightmedia.org/sv/tips-f%C3%B6r-javascript/
+2. 
 
 ## JS 1.4 OOP i JavaScript
 
+JavaScript är ett OOP-skriptspråk. OOP är fortkortning till Obejktorinterad programmering (Eng: Object Oriented Programming). Programmeringsmetoden gör det möljigt att använda sig av uppsättning av objekt som integerar med varandra och detta skapar effektiv och kraftfulla konstruktion vid stora program.
+
+Objekter är instanser av olika klasser.
+
+För att skapa en objekt börjar man med att deklarera variabeln och sedan namnger man egenskaperna mellan måsvingarna.
+
+```JavaScript
+
+var aboutShaker = {
+  hometown: "Skärholmen, Stockholm",
+  hobby: "eating"
+  birthday: ["month": 4, "day": 18, "year": 1997]
+
+};
+
+```
+
+
+
+https://sv.khanacademy.org/computing/computer-programming/programming/objects/a/review-objects
 
 ## JS 1.5 DOM-manipulation
 
-Beskriv rubriken här
+DOM-manipulation är en viktigt verktyg i Javascript där utvecklare kan integerera med HTML element för att skapa en dymanisk och interaktiv plattform. Genom att komma åt element och modifera struktur, styling och innehåll så blir användarupplevelsen mer dynamisk än att bara använda en statisk sida. 
+
+För att manilupera DOM trädet så behöver man komma åt elementen genom att använda DOM objekt vilket representerar hela HTML dokumentet. För att komma åt dessa element kan man använda följande exempel:
+
+```Js
+
+// Hämtar ett element efter dess ID
+const headerElement = document.getElementById('header');
+
+// Hämtar element efter klassnamn
+const paragraphs = document.getElementsByClassName('paragraph');
+
+// Hämtar element efter taggnamn
+const images = document.getElementsByTagName('img');
+```
+
+När man har lyckats komma åt dessa element så kan man modifera dess innehåll genom att använda detta egenskap: 
+
+```Js
+
+// Modifiera innehållet i ett element
+headerElement.innerHTML = 'Chas Academy';
+
+// Här nedan så kan vi se exempel på hur man kan modifera stylingen. 
+
+// Lägger till en klickhändelselyssnare på knappen
+colorButton.addEventListener('click', function() {
+// Ändrar färgstilen på stycket
+myParagraph.style.color = 'blue';
+});
+
+```
+
+
+1. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+2. https://www.freecodecamp.org/news/dom-manipulation-in-javascript/
+3. 
+
 
 ## JS 1.6 HTTP-requests
 
@@ -74,7 +137,24 @@ Beskriv rubriken här
 
 ## JS 1.8 Event handling
 
-Beskriv rubriken här
+Event referar till en handling där användaren interagerar med sidan och förväntar sig en dynamisk upplevelsen. En användaren vill till exempel kunna integerara genom att klicka på element så som knappar eller inmatningsfältar. Detta handling notiferar till webbläsaren att användaren har försökt komma åt en handling och behöver få respons. Detta sker genom en verktygsfunktion som kallas för event handler som lystnar på en särskild typ av begärd event. 
+
+Det finns olika typ av events där den mest användbara är 'onlick'. 
+
+
+```js
+// Lägg till en klickhändelselyssnare på knappen
+myButton.addEventListener('click', function() {
+    // Ändra färgen på texten när knappen klickas
+    myParagraph.style.color = 'blue';
+});
+
+```
+
+
+
+1. https://dev.to/shubhankarval/event-handling-in-javascript-51n3
+
 
 ## JS 1.9 Prototype inheritance
 
@@ -82,7 +162,7 @@ Beskriv rubriken här
 
 ## JS 1.10 Higher-order functions
 
-Beskriv rubriken här
+v. 11
 
 ## JS 1.11 Single-thread programming
 
@@ -92,8 +172,8 @@ asynkrona metoder
 
 ## JS 1.12 OAuth från frontend
 
-Beskriv rubriken här
+v 21
 
 ## JS 1.13 Websockets
 
-Beskriv rubriken här
+v 20
