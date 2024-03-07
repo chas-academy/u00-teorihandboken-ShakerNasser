@@ -1,8 +1,8 @@
 # Teorihandboken - Programmeringsmetodik (PG)
 Studerande: Shaker Nasser
-![Alt text](images/Programmeringsmetodik.png)
 
 ## PG 1.1 Versionshantering (Git)
+
 GIT är ett kraftfullt verktyg för versionshantering som används av utvecklare för att effektivt spåra och hantera ändringar i källkoden under projektutveckling. Det ger en strukturerad och samarbetsvänlig metod för att spåra historiken över projektet och underlättar samtidigt arbete från flera utvecklare. Nedan presenteras en översikt över viktiga koncept inom GIT-versionshantering.
 
 GIT möjliggör hantering av kodversioner över tid. Det skapar en tidslinje av ändringar, vilket gör det möjligt att återställa eller jämföra olika versioner av koden. Det är särskilt användbart när flera personer arbetar på samma projekt samtidigt.
@@ -21,7 +21,6 @@ Git har blivit det föredragna verktyget för versionshantering inom öppen käl
 ![GIT](images/GIT-Branchand-its-Operations.webp)
 
 Här nedan följer ett par grundläggande git kommandon:
-
 
 För att klona ner ett bifentligt repo (med git init mapp i):
 
@@ -51,13 +50,14 @@ git status
 
 //
 
-git log 
+git log
 
 ```
 
 1. https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 2. https://www.atlassian.com/git/tutorials/what-is-git
 3. https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/
+4. https://www.freecodecamp.org/news/10-important-git-commands-that-every-developer-should-know/
 
 ## PG 1.2 Benchmarking
 
@@ -65,7 +65,7 @@ Inom webbutveckling är benchmark ett vanligt begrepp som används för att mät
 
 Lighthouse är en av dem verkygen som Goolge har utvecklat för att testa webbsidor när det gäller prestanda, tillgänglighet, bästa praxis och SEO. Det ger en övergripande bild av hur bra en webbplats presterar och ger förslag på förbättringar. Lighthouse kan betraktas som ett benchmarkverktyg eftersom det ger objektiva mätningar och riktlinjer för att jämföra en webbplats prestanda med etablerade standarder.
 
-Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de flesta webbläsare. Inom DevTools kan man använda olika flikar såsom Audits. För att utföra prestandamätningar och få förslag på förbättringar. Detta gör det möjligt för utvecklare att identifiera och lösa problem som kan påverka prestandan. Goolge DevTools ger även möjlighet att följa dem vanliga HTML och CSS fel innan koden kan implenteras. Detta är en utmärkt verktyg för nybörjare inom webbutveckling. 
+Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de flesta webbläsare. Inom DevTools kan man använda olika flikar såsom Audits. För att utföra prestandamätningar och få förslag på förbättringar. Detta gör det möjligt för utvecklare att identifiera och lösa problem som kan påverka prestandan. Goolge DevTools ger även möjlighet att följa dem vanliga HTML och CSS fel innan koden kan implenteras. Detta är en utmärkt verktyg för nybörjare inom webbutveckling.
 
 ![DevTools LightHouse](images/DevTools-LightHouse.png)
 ![DevTools Verktygsfunktion ](images/DevTools.png)
@@ -73,17 +73,19 @@ Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de fl
 1. https://developer.chrome.com/docs/lighthouse/overview/
 2. https://developer.chrome.com/docs/devtools/open/
 3. https://nira.com/chrome-developer-tools/
+4. https://www.freecodecamp.org/news/chrome-devtools/
 
 ## PG 1.3 Testdriven utveckling
+
 Beskriv rubriken här
 
 ## PG 1.4 Deploy och staging
 
 När man pratar om deploy och staging inom webbutveckling så innebär det att man tar webbapplikationen från utvecklingsmiljön och sedan placerar den på en server där den kan vara tillgänglig för en användare. Enklare sagt detta är som att flytta applikationen från en laboratorie till en butik, där den kan vara tillgängkug för kunderna (användare).
 
-För att uppnå detta så måste man gå genom dessa faser: 
+För att uppnå detta så måste man gå genom dessa faser:
 
-Utvecklingsfasen, här arbetar man med att utveckla och förbättra. Tex när vi i grupparbetet (U05) fick i uppgift att skapa en IMDB clone och detta gjordes lokalt på en dator men sedan på en utvecklingsmiljö på en server. 
+Utvecklingsfasen, här arbetar man med att utveckla och förbättra. Tex när vi i grupparbetet (U05) fick i uppgift att skapa en IMDB clone och detta gjordes lokalt på en dator men sedan på en utvecklingsmiljö på en server.
 
 Commit och push till git, här commitade och pushade vi dem koderna vi ansåg vara klara till det gemensamma git-repot. Vi använde oss av GitHub-flow när vi versionhanterade.
 
@@ -97,13 +99,13 @@ Deploy till produktionsmiljön, när vi var nöjda med testningen och allt funge
 
 ![Imdb page](images/imdb.png)
 
-I vårt imdb Clone projekt använde vi oss av Vercel för att (mest) deploya fronend koderna och Aiven för att hantera databasinfrastruktur. 
+I vårt imdb Clone projekt använde vi oss av Vercel för att (mest) deploya fronend koderna och Aiven för att hantera databasinfrastruktur.
 
 1. https://www.techtarget.com/searchsoftwarequality/definition/staging-environment
 2. https://umbraco.com/knowledge-base/staging-environment/
 3. https://dev.to/flippedcoding/difference-between-development-stage-and-production-d0p
 
-## PG 1.5 Debugging 
+## PG 1.5 Debugging
 
 Felsökning är en avgörande process inom programmering och systemutveckling som syftar till att upptäcka och rätta fel i koden. Det innefattar två huvudtyper av fel: syntaxfel och logiska fel. Syntaxfel är felaktigheter i koden som bryter mot språkets regler och vanligtvis leder till tydliga felmeddelanden från utvecklingsmiljön eller kompilatorn. Å andra sidan är logiska fel svårare att upptäcka eftersom de inte nödvändigtvis genererar felmeddelanden, utan snarare kan leda till felaktigt beteende eller resultat när programmet körs.
 
@@ -111,19 +113,58 @@ För att åtgärda dessa fel och säkerställa att programmet fungerar korrekt a
 
 ESLint är ett verktyg för statisk kodanalys inom JavaScript-utveckling. Dess syfte är att upptäcka problem i JavaScript-koden genom fördefinierade regler och konfigurationer. Det bidrar till att upprätthålla kvalitet och enhetlighet genom att markera potentiella fel, stilbrott och andra problem i koden.
 
-Prettier är ett verktyg som används för att formatera kod automatiskt enligt förutbestämda regler och konventioner. Det är särskilt populärt inom webbutveckling.
+Ett annat användbar verktyg som används är prettier. Det används för att formatera kod automatiskt enligt förutbestämda regler och konventioner. Det är särskilt populärt inom webbutveckling.
 
+Fun fact:
+Det finns flera bolag där programmerare inom mnjukvaruutveckling använder sig av gummiandsteorin. Detta innebär att en programmerare förklarar sin kod för en gummiand (kan vara annat föremål) för att lösa problem eller förstå sin kod enklare.En höglösning för en programmerare kan vara en väldigt bra metodik.
+Denna teknik är ganska populär och effektiv där reslutat har visat sig positivt.
 
 1. https://aws.amazon.com/what-is/debugging/
-2. 
+2.
+3. https://www.freecodecamp.org/news/rubber-duck-debugging/
 
 ## PG 1.6 Dokumentation
-v. 36
+
+Dokumenatation inom webbutveckling är en viktig del inom utvecklingsprocessen. Detta innebär att skriva och organisera information om en webbapplikation eller ett webbprojekt. Dokumentets syfte är att ge en översikt, förklaring och instruktioner om aspekterna av projeket för att underlätta för utvecklare, användare och andra intressenter. Det mest förekommande typ av dokumentation är att man skriver kodkommentarer inuti själva koden. Detta är en förekommande dokumentation där utvecklare hjälper till att förstå och få utrymme för att utveckla koden.
+
+Det finns flera delar av dokumentation som fyller olika syften:
+
+Användardokumentation:
+Denna typ av dokumentation är avsedd för slutanvändare av webbapplikationen. Den innehåller vanligtvis användarinstruktioner, handledningar, FAQ och andra resurser som hjälper användare att förstå hur man använder applikationen, utför olika uppgifter och löser vanliga problem. Användardokumentationen fokuserar på att göra användarupplevelsen så smidig och intuitiv som möjligt.
+
+Interndokumentation:
+Interndokumentation är riktad till det interna utvecklingsteamet eller andra personer som är involverade i projektet. Detta kan inkludera tekniska specifikationer, interna processdokument, kodstandarder, utvecklingsriktlinjer och andra resurser som hjälper till att underlätta samarbete, förståelse och effektivitet inom teamet. Interndokumentationen är avgörande för att säkerställa att alla i teamet har en gemensam förståelse för projektet och arbetar i enlighet med bästa praxis och riktlinjer.
+
+1. https://www.kodamera.se/artiklar/hur-man-skriver-bra-dokumentation
+2. https://makemeaprogrammer.com/should-developers-write-documentation-yes-and-heres-why/
+3. https://document360.com/blog/user-documentation/
+4. https://www.nuclino.com/solutions/internal-documentation
 
 ## PG 1.7 Struktur av kod i projekt
-v. 4 
+
+En organiserad struktur av kod i ett projekt gör att utvecklare lättare att förstå, underhålla och utveckla projektet. Detta gör att man kan förbättra skalbarheten, flexibiliteten och återanvändbarheten i koden (projektet). Dem olika mapparna seperars där olika ansvarsområden är tyldiga. uppdelad i olika filer och mappar enligt en logisk struktur, med tydliga separeringar av olika delar av applikationen, såsom frontend, backend, databasåtkomst, konfiguration, resurser och så vidare.
+Detta förenklar även arbete i grupp där flera utvecklare integerar med samma mappar.
+
+- App: I vår mapp app har vi all affärslogik och hantering av IMDb-relaterade funktioner. Det inkluderar våra modeller för filmer, skådespelare, recensioner och andra relaterade objekt. Vi har även våra kontrollers här som hanterar begäranden och svarar med data från våra modeller.
+
+- Config: Alla våra konfigurationsfiler för vår IMDb clone finns här. Det kan inkludera inställningar för databasanslutningar, sessionshantering, användarautentisering och andra konfigurationer som är specifika för vårt projekt.
+
+- Database: I vår mapp database har vi våra migrationsfiler för att skapa och hantera vårt databasschema för IMDb-relaterade entiteter såsom filmer, skådespelare och recensioner. Vi kan också ha seeders här för att fylla vår databas med testdata.
+
+- Public: Alla våra offentligt tillgängliga filer såsom CSS och bilder ligger här. Detta inkluderar även vår ingångspunktsfil index.php, som är den första filen som webbläsaren laddar när en användare besöker vår webbplats.
+
+- Routes: Alla våra ruttkonfigurationer finns här. Det inkluderar definitioner för webbrutter (t.ex. web.php) för att hantera webbplatssidor
+
+- Storage: Här lagrar vi våra genererade filer, t.ex. cachefiler, sessionsdata och uppladdade filer såsom filmaffischer. Denna mapp bör vara skrivskyddad från webbservern för att säkerställa säkerhet och integritet för våra data.
+
+- Vendor: Här ligger våra Laravel-installerade beroenden och eventuella tredjepartsbibliotek som vi har installerat via Composer. Det inkluderar själva Laravel-ramverket.
+
+I detta grupp projekt använde oss MVC designmönster, följ länken nedan:
+
+[BE 1.4 MVC](Backendutveckling.md#be-14-mvc)
 
 ## PG 1.8 Automatisering av arbetsflöde
+
 Beskriv rubriken här
 
 ## PG 1.9 Virtualisering av utvecklingsmiljö
@@ -141,20 +182,20 @@ Det finns olika sätt att implementera virtualisering av utvecklingsmiljöer, in
 Docker-container
 En körbar mjukvarupaket som innehåller allt som behövs för att köras, och som finns i en isolerad miljö (som ett eget operativsystem).
 
- * Kan byggas och köras oberoende av plattform
- * Isolerar mjukvaran från sin omgivning
- * Gör det enklare att testa på ett annat sätt
- * Om något går fel, påverkar det bara behållaren och inte ens eget operativsystem
- * Minskar konflikter som kan uppstå i teamet
- * Olika lokala inställningar står inte i konflikt med varandra
+- Kan byggas och köras oberoende av plattform
+- Isolerar mjukvaran från sin omgivning
+- Gör det enklare att testa på ett annat sätt
+- Om något går fel, påverkar det bara behållaren och inte ens eget operativsystem
+- Minskar konflikter som kan uppstå i teamet
+- Olika lokala inställningar står inte i konflikt med varandra
 
 1. https://barrazacarlos.com/sv/fordelar-och-nackdelar-med-virtualisering/
 2. https://www.dustin.se/solutions/kunskapsbanken/archive/docker-ett-trovaerdigt-alternativ-i-datahallen
 3. https://docker-curriculum.com/
 4. https://www.ibm.com/topics/docker
 
-
 ## PG 1.10 Bundeling-verktyg
+
 Beskriv rubriken här
 
 ## PG 1.11 Terminalinterface
@@ -171,11 +212,11 @@ Båda dessa verktyg är kraftfulla och ger avancerad kontroll och flexibilitet f
 
 ![Git- Bash- terminal](<images/Git-Bash -.png>)
 
-Grundläggande kommandon för Bash terminal: 
+Grundläggande kommandon för Bash terminal:
 
 Navigera mellan mappar:
 
-```bash 
+```bash
 
 cd <mappnamn>
 
@@ -183,22 +224,21 @@ cd <mappnamn>
 
 Visa innehållet i en mapp:
 
-
-```bash 
+```bash
 ls
 
 ```
 
 Skapa en ny mapp:
 
-```bash 
+```bash
 mkdir <mappnamn>
 
 ```
 
-Ta bort en fil: 
+Ta bort en fil:
 
-```bash 
+```bash
 
 rm <filnamn>
 
