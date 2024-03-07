@@ -22,14 +22,9 @@ Git har blivit det föredragna verktyget för versionshantering inom öppen käl
 
 Här nedan följer ett par grundläggande git kommandon:
 
-Skapa en ny Git-repo:
 
-```bash
-git init
+För att klona ner ett bifentligt repo (med git init mapp i):
 
-```
-
-För att klona ner ett bifentligt repo:
 ```bash
 git clone <repo-url>
 
@@ -53,6 +48,10 @@ Den mest användbara kommandon (enligt mig):
 
 ```bash
 git status
+
+//
+
+git log 
 
 ```
 
@@ -79,7 +78,30 @@ Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de fl
 Beskriv rubriken här
 
 ## PG 1.4 Deploy och staging
-Beskriv rubriken här
+
+När man pratar om deploy och staging inom webbutveckling så innebär det att man tar webbapplikationen från utvecklingsmiljön och sedan placerar den på en server där den kan vara tillgänglig för en användare. Enklare sagt detta är som att flytta applikationen från en laboratorie till en butik, där den kan vara tillgängkug för kunderna (användare).
+
+För att uppnå detta så måste man gå genom dessa faser: 
+
+Utvecklingsfasen, här arbetar man med att utveckla och förbättra. Tex när vi i grupparbetet (U05) fick i uppgift att skapa en IMDB clone och detta gjordes lokalt på en dator men sedan på en utvecklingsmiljö på en server. 
+
+Commit och push till git, här commitade och pushade vi dem koderna vi ansåg vara klara till det gemensamma git-repot. Vi använde oss av GitHub-flow när vi versionhanterade.
+
+![commits- fail och godkänd](images/repo.png)
+
+CI/CD pipeline övervakade vårt Git-repo och initierade automatiskt när vi pushade kod till main. Inom denna pipeline körs olika tester för att säkerställa att vår kod fungerar korrekt. Om några tester misslyckas, får vi varningar om fel som måste åtgärdas innan fortsatt utrullning. (Denna stadie gick inte bra för oss i grupp).
+
+Stagingmiljön, om alla tester lyckas deployas vår kod till en "stagingmiljö". Detta är en miljö som liknar produktionsmiljön, vi i team kunde noggrant testa applikationen innan den släpps till allmänheten.
+
+Deploy till produktionsmiljön, när vi var nöjda med testningen och allt fungerar som det ska i stagingmiljön, deployade vi koderna till den faktiska produktionsmiljön. Här var vår IMDB Clone-upplaga tillgänglig för användare på internet.
+
+![Imdb page](images/imdb.png)
+
+I vårt imdb Clone projekt använde vi oss av Vercel för att (mest) deploya fronend koderna och Aiven för att hantera databasinfrastruktur. 
+
+1. https://www.techtarget.com/searchsoftwarequality/definition/staging-environment
+2. https://umbraco.com/knowledge-base/staging-environment/
+3. https://dev.to/flippedcoding/difference-between-development-stage-and-production-d0p
 
 ## PG 1.5 Debugging 
 
