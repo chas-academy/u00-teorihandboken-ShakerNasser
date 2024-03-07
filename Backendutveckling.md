@@ -257,7 +257,41 @@ DELETE FROM tasks WHERE id = 2;
 
 ## BE 1.8 OAuth i backend
 
-Beskriv rubriken här
+
+Autentisering (Eng: Authentication) handlar om att verifiera vem någon påstår sig vara.
+
+Autentisering används av en server för att känna igen vem som försöker få tillgång till specifik information. En användare eller dator bekräftar sin identitet för servern genom att ange användarnamn eller lösenord. Det kan också göras med andra autentiseringsmetoder som kort eller appar, samt moderna igenkänningsverktyg som röst- eller näthinneigenkänning.
+
+Exempel:
+
+1. På ChasAcademy använder de appen Securitas Flow för att komma in i skollokalen.
+2. Fingeravtryck används i många moderna telefoner för att bekräfta identitet.
+
+Det här steget handlar inte om att bestämma vad personen får göra i systemet, utan bara om att identifiera dem.
+
+Auktorisering: Står för vad autensierad entiet har för rättigheter att göra på en (plattform).
+
+I denna process så handlar det om att avgöra vad en klient har för rättigheter att använda resuresen. Detta sker oftast i sammband med autisering för att få en uppfattning om vem klieten är. 
+
+Oauth2: 
+
+Oauth2 används för autentisering och behörighetskontroll och denna standard är de vnaligaste sättet att sköta authorization och öka säkerheten i en applikation. I många aplikkationer kan man hitta andra befientliga leverantörer av Oauth som även går under namnet "Third Party Auth Providers". 
+Dessa kan oftast se om man tex vill logga in på TikTok där det står "Sign in with [AppleLogin]".
+Genom att använda detta steg så slipper man implemntera hantering av lösenord och kryptering då dessa sköts av Oauth leverantören. 
+
+Grant types:
+Olika sätt att applikationer får tillgång till användardata från autentiserande tjänster som Google eller Facebook, innefattar följande:
+
+Client Credentials: Används när två maskiner, som till exempel två olika applikationer eller API:er, behöver kommunicera med varandra. 
+
+Authorization Code: Typiskt används denna typ för att logga in på en tjänst eller applikation. Till exempel, när en användare loggar in på en webbplats med sitt Google-konto, används denna metod för att verifiera användarens identitet och ge dem åtkomst till tjänsten.
+
+Password Grant: Denna typ kräver att användaren anger sina faktiska inloggningsuppgifter, som användarnamn och lösenord, för att få åtkomst till resurser. Detta sker när en användare loggar in direkt på en tjänst.
+
+Refresh Grant: Används för att skapa en ny åtkomsttoken när en tidigare token har utgått. 
+
+1. https://medium.com/web-security/understanding-oauth2-a50f29f0fbf7
+2. https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
 
 ## BE 1.9 HTTP-protokollet
 
@@ -348,8 +382,3 @@ Lighttpd: En lättviktig webbserver som fokuserar på hög prestanda och låg mi
 CERN HTTPd HTTP Server: CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
 
 Intranet:
-
-
-# XSS attacks
-
-Cross site scripting, XSS, är ett datorrelaterat säkerhetsproblem. XSS-säkerhetsbrister kan exempelvis användas till att kapa inloggningar genom att stjäla webbkakor eller för att modifiera en webbsidas utseende och funktionalitet.
