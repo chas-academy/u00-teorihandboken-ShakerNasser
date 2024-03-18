@@ -27,20 +27,13 @@ Dessa datatyper/värden finns i JavaScript:
 
 Här nedan följer ex på hur koden exkeveras (körs) med hjälp av console.log funktionen.
 
-```
+```js
 let x = 1
 console.log(x)
 ```
 
 Javascript har väldigt många funktioner, en av dem mesta användabara i den nuvarande webbutveckling är API:er. Vi använder API:er i tex väderprogonos webbsidor (Klart.se) eller tex bilupplysningssidor (biluppgifter.se)
 Dessa webbsidor hämtar information från en annan källa. Dett kallas för Applikationsprogrammeringsgränssnitt. JavaScript underlättar hämtning av API:er som kan matas ut i HTML format som visas till användaren.
-
-Genom att lägga till evenlistners så blir interagtionen dynamisk med användaren. En eventlistener är en funktion som lyssnar efter en specifik händelse på en webbsida, till exempel en klick på en knapp eller en muspekare som rör sig över en bild. När händelsen inträffar, exekveras den kod som är kopplad till eventlistenern.
-
-```
-element.addEventListener(event, function);
-
-```
 
 ECMAScript (förkortat ES) är en standard för skriptspråk och används huvudsakligen för att definiera JavaScript. ECMAScript-standarden har utvecklats av organisationen Ecma International och syftar till att standardisera kärnan i JavaScript för att säkerställa att olika webbläsare kan tolka och köra JavaScript på ett enhetligt sätt.
 
@@ -60,8 +53,11 @@ v. 11
 
 Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkrona funktionerna blir alltmer populära. Promises, även kallade "framtida löften" på svenska, används för att hantera asynkrona operationer på ett mer strukturerat sätt och erbjuder ett sätt att hantera och samordna flera asynkrona operationer. Med promises kan man koppla ihop asynkrona uppgifter med metoderna async och await, vilket minskar användningen av callback-funktioner. Detta gör koden mer läsbar och lättare att utveckla för framtida projekt.
 
+Promise presenterar värde så som pending (väntande), fullfied (uppfyllt) eller rejected (avvisat). När en promise är "pending", så väntar den på att en asynkron operation ska slutföras. När operationen slutförs, går promisen över till antingen "fulfilled" eller "rejected" beroende på om operationen lyckades eller misslyckades.
+
+
 1. https://sunlightmedia.org/sv/tips-f%C3%B6r-javascript/
-2. 
+2. https://www.freecodecamp.org/news/javascript-promise-object-explained/
 
 ## JS 1.4 OOP i JavaScript
 
@@ -71,20 +67,21 @@ Objekter är instanser av olika klasser.
 
 För att skapa en objekt börjar man med att deklarera variabeln och sedan namnger man egenskaperna mellan måsvingarna.
 
-```JavaScript
+```Js
 
-var aboutShaker = {
-  hometown: "Skärholmen, Stockholm",
-  hobby: "eating"
-  birthday: ["month": 4, "day": 18, "year": 1997]
+function Person(hometown, hobby, birthday) {
+  this.hometown = hometown;
+  this.hobby = hobby;
+  this.birthday = birthday;
+}
 
-};
-
+// Skapa en instans av Person
+var aboutShaker = new Person("Skärholmen, Stockholm", "eating", {month: 4, day: 18, year: 1997});
 ```
 
 
-
-https://sv.khanacademy.org/computing/computer-programming/programming/objects/a/review-objects
+1. https://www.freecodecamp.org/news/how-javascript-implements-oop/
+2. https://sv.khanacademy.org/computing/computer-programming/programming/objects/a/review-objects
 
 ## JS 1.5 DOM-manipulation
 
@@ -121,10 +118,9 @@ myParagraph.style.color = 'blue';
 
 ```
 
-
 1. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 2. https://www.freecodecamp.org/news/dom-manipulation-in-javascript/
-3. 
+3. https://www.honeybadger.io/blog/javascript-oop/
 
 
 ## JS 1.6 HTTP-requests
@@ -150,8 +146,6 @@ myButton.addEventListener('click', function() {
 });
 
 ```
-
-
 
 1. https://dev.to/shubhankarval/event-handling-in-javascript-51n3
 

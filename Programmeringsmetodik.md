@@ -67,6 +67,8 @@ Lighthouse är en av dem verkygen som Goolge har utvecklat för att testa webbsi
 
 Goolge DevTools är en uppsättning av webbutvecklingsverktyg som ingår i de flesta webbläsare. Inom DevTools kan man använda olika flikar såsom Audits. För att utföra prestandamätningar och få förslag på förbättringar. Detta gör det möjligt för utvecklare att identifiera och lösa problem som kan påverka prestandan. Goolge DevTools ger även möjlighet att följa dem vanliga HTML och CSS fel innan koden kan implenteras. Detta är en utmärkt verktyg för nybörjare inom webbutveckling.
 
+DevTools gör det möjligt att effektivt debugga (felsöka) webbplatser i realtid. Ett praktiskt exempel på detta var i vårt IMDB-clone-projekt där vår grupp (grupp5) stötte på problem med att bilder och CSS-filer inte tillämpades korrekt i webbläsaren. Genom att använda DevTools kunde vi noggrant följa upp felkoden och identifiera varför vissa stilar och resurser inte visas som förväntat. Med den realtids information kunde vi sedan snabbt vidta åtgärder för att lösa problemen och säkerställa att vår webbplats fungerade korrekt för användarna.
+
 ![DevTools LightHouse](images/DevTools-LightHouse.png)
 ![DevTools Verktygsfunktion ](images/DevTools.png)
 
@@ -107,9 +109,13 @@ I vårt imdb Clone projekt använde vi oss av Vercel för att (mest) deploya fro
 
 ## PG 1.5 Debugging
 
-Felsökning är en avgörande process inom programmering och systemutveckling som syftar till att upptäcka och rätta fel i koden. Det innefattar två huvudtyper av fel: syntaxfel och logiska fel. Syntaxfel är felaktigheter i koden som bryter mot språkets regler och vanligtvis leder till tydliga felmeddelanden från utvecklingsmiljön eller kompilatorn. Å andra sidan är logiska fel svårare att upptäcka eftersom de inte nödvändigtvis genererar felmeddelanden, utan snarare kan leda till felaktigt beteende eller resultat när programmet körs.
+Felsökning är en avgörande process inom programmering och systemutveckling som syftar till att upptäcka och rätta fel i koden. Det innefattar två huvudtyper av fel: syntaxfel och logiska fel. Syntaxfel är felaktigheter i koden som bryter mot språkets regler och vanligtvis leder till tydliga felmeddelanden från utvecklingsmiljön eller kompilatorn. Logiska fel svårare att upptäcka eftersom de inte nödvändigtvis genererar felmeddelanden, utan snarare kan leda till felaktigt beteende eller resultat när programmet körs.
+
+![code-debugg](images/vscode-debug-1.gif)
 
 För att åtgärda dessa fel och säkerställa att programmet fungerar korrekt används felsökningsmetoder. En vanlig metod är att använda brytpunkter, där programmeraren markerar specifika platser i koden där programmet ska pausa så att utvecklaren kan inspektera dess tillstånd och variabler. Genom att stegvis gå igenom koden kan man identifiera var felet uppstår och korrigera det. Andra metoder inkluderar användning av loggfiler för att spåra programflödet och användning av olika verktyg för att analysera minnesanvändning och prestanda.
+
+![code-debugg brytpunkt](images/debug-break.gif)
 
 ESLint är ett verktyg för statisk kodanalys inom JavaScript-utveckling. Dess syfte är att upptäcka problem i JavaScript-koden genom fördefinierade regler och konfigurationer. Det bidrar till att upprätthålla kvalitet och enhetlighet genom att markera potentiella fel, stilbrott och andra problem i koden.
 
@@ -120,20 +126,27 @@ Det finns flera bolag där programmerare inom mnjukvaruutveckling använder sig 
 Denna teknik är ganska populär och effektiv där reslutat har visat sig positivt.
 
 1. https://aws.amazon.com/what-is/debugging/
-2.
+2. https://www.ibm.com/topics/debugging
 3. https://www.freecodecamp.org/news/rubber-duck-debugging/
+4. https://www.jondjones.com/architecture/frameworks/visual-studio-code/learn-to-use-the-javascript-debugger-in-visual-studio-code/
 
 ## PG 1.6 Dokumentation
 
 Dokumenatation inom webbutveckling är en viktig del inom utvecklingsprocessen. Detta innebär att skriva och organisera information om en webbapplikation eller ett webbprojekt. Dokumentets syfte är att ge en översikt, förklaring och instruktioner om aspekterna av projeket för att underlätta för utvecklare, användare och andra intressenter. Det mest förekommande typ av dokumentation är att man skriver kodkommentarer inuti själva koden. Detta är en förekommande dokumentation där utvecklare hjälper till att förstå och få utrymme för att utveckla koden.
 
-Det finns flera delar av dokumentation som fyller olika syften:
+Det finns flera delar av dokumentation som fyller olika syften, här nedan nämns dem två vanligaste:
 
 Användardokumentation:
 Denna typ av dokumentation är avsedd för slutanvändare av webbapplikationen. Den innehåller vanligtvis användarinstruktioner, handledningar, FAQ och andra resurser som hjälper användare att förstå hur man använder applikationen, utför olika uppgifter och löser vanliga problem. Användardokumentationen fokuserar på att göra användarupplevelsen så smidig och intuitiv som möjligt.
 
 Interndokumentation:
 Interndokumentation är riktad till det interna utvecklingsteamet eller andra personer som är involverade i projektet. Detta kan inkludera tekniska specifikationer, interna processdokument, kodstandarder, utvecklingsriktlinjer och andra resurser som hjälper till att underlätta samarbete, förståelse och effektivitet inom teamet. Interndokumentationen är avgörande för att säkerställa att alla i teamet har en gemensam förståelse för projektet och arbetar i enlighet med bästa praxis och riktlinjer.
+![Interndok](images/interndok.png)
+
+I större projekt är kvaliteten på internadokumentationen en avgörande faktor för projektets framgång. Genom en utförlig dokumentation kan flera utvecklare arbeta mot samma mål och hålla sig uppdaterade. I vårt IMDB-clone-projekt använde vi internadokumentation både i mapproten och i externa filer i form av en Google Drive-mapp. Denna form av dokumentation bidrog till att vi höll oss uppdaterade och minimerade tidsspillet på att leta efter svar från varandra. Användardokumentationen skapades i form av en README.md-fil där förklaringar ges om hur användaren kan använda och navigera genom sidan.
+![Användardok](images/Användardok.png)
+
+Utöver dessa typer av dokumentation kan man också inkludera testdokumentation och underhållsdokumentation. Dessa typer blir särskilt relevanta i större projekt och inom större bolag. Det är viktigt att ha kännedom om dem och att inkludera dem i projektets dokumentationsstrategi.
 
 1. https://www.kodamera.se/artiklar/hur-man-skriver-bra-dokumentation
 2. https://makemeaprogrammer.com/should-developers-write-documentation-yes-and-heres-why/
@@ -163,6 +176,10 @@ I detta grupp projekt använde oss MVC designmönster, följ länken nedan:
 
 [BE 1.4 MVC](Backendutveckling.md#be-14-mvc)
 
+1. https://mitcommlab.mit.edu/broad/commkit/file-structure/
+2. https://medium.com/@deshayk/programming-101-file-structures-2e4699ac0fc2
+3. https://dev.to/sathishskdev/part-2-folder-structure-building-a-solid-foundation-omh
+
 ## PG 1.8 Automatisering av arbetsflöde
 
 Beskriv rubriken här
@@ -179,7 +196,7 @@ Genom att använda virtuella maskiner kan utvecklare undvika kostnaderna för at
 
 Det finns olika sätt att implementera virtualisering av utvecklingsmiljöer, inklusive användning av virtualiseringsprogram, containerteknik (som Docker) och molnbaserade utvecklingsmiljöer. Valet beror på specifika behov och krav för projektet och organisationen.
 
-Docker-container
+Docker-container:
 En körbar mjukvarupaket som innehåller allt som behövs för att köras, och som finns i en isolerad miljö (som ett eget operativsystem).
 
 - Kan byggas och köras oberoende av plattform
