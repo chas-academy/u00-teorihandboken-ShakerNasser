@@ -213,7 +213,26 @@ En körbar mjukvarupaket som innehåller allt som behövs för att köras, och s
 
 ## PG 1.10 Bundeling-verktyg
 
-Beskriv rubriken här
+Bundling-verktyg används i större projekt för att kombinera flera separata filer med källkod (till exempel HTML, CSS, Javascript) till färre. Koden levereras mer hanterbar till webbläsaren och koden läses av på ett korrekt sätt. Dessa verktyg är väldigt användbara och avgörande för en utvecklingsprocess. Dessa verktyg effektiviserar utvecklingsprocessen och optimerar prestandan på webbplatser genom att minimera filstorlekar och HTTP-requesten.
+
+De mest populära bundlingverktygen inom webbutveckling är Webpack och Parcel. Webpack erbjuder också en mängd olika plugins och loaders som kan utöka dess funktionalitet och möjliggöra en rad olika användningsområden. Till exempel kan loaders användas för att konvertera filer från ett format till ett annat (till exempel att konvertera SCSS till vanlig CSS eller TypeScript till vanlig JavaScript), medan plugins kan användas för att utföra uppgifter som minifiering, filoptimering och cache.
+
+I vårt IMDB-clone-projekt, innan vi bestämde oss att använda Tailwind som styling CSS-ramverk så använde vi oss av SCSS som krävde bundlingverktyg för att kompilera till CSS.
+Detta genom att inkludera följande:
+
+Mapp -> resources/sass/app.scss kompileras till -> public/css
+
+```bash
+mix.sass('resources/sass/app.scss', 'public/css');
+```
+
+I Angular används Angular CLI för att skapa och hantera projekt, med detta så kommer även ett inbyggt supportsystem där Webpack är en bundler. Automatisk konfiguration där Webpack hanterar beroenden och kompilerar källkoden.
+
+De flesta bundlingsverktyg erbjuder möjligheten att anpassa och konfigurerar hur koden ska bundlas och optimeras för specifika projekt behov. Detta kan inkludera att lägga till olika plugins, loaders och andra inställningar för att optimera prestanda och hantera olika typer av resuser.
+
+1. https://medium.com/fusebox/beginner-web-developers-use-a-bundler-31ab0c91d2f5
+2. https://blog.stackademic.com/bundling-in-angular-d8079e7da03b
+3. https://www.youtube.com/watch?v=19T3O7XWJkA
 
 ## PG 1.11 Terminalinterface
 
