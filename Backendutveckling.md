@@ -304,36 +304,27 @@ https://www.w3schools.com/php/php_forms.asp
 
 ## BE 1.10 cURL
 
-Beskriv rubriken här
+1. https://developer.ibm.com/articles/what-is-curl-command/
+2. https://medium.com/@kevinkoech265/curl-a-deep-dive-into-command-line-data-transfer-8361a85b177d
+3. 
 
 ## BE 1.11 REST
 
-Förklara API:er:
+REST är förkortning för Representational State Transfer, är en ramverksstruktur som riktar sig mot utvecklingen av applikationsgränssnitt (API:er). Det utgör en samling konventioner som reglerar hur dessa API:er ska formuleras och fungera. Genom att följa dessa konventioner möjliggörs skapandet av enhetliga och lättförståeliga API:er som kan integreras smidigt med olika system.
 
-REST står för regler och struktur av API:er. Detta är samling av konveationer för hur API:er ska utformas och fungera. 
+En av de grundläggande principerna inom REST är att separera klienten från servern. Det innebär att utvecklingen av frontend(klient) och backend(server) bör ske oberoende av varandra. Förändringar eller uppdateringar i frontend-koden bör inte påverka backend-koden och vice versa. 
 
-Konveationer:
-
-Seperation av klient och server:
-Frontend och backend ska kunna utvecklas oberonende av varandra. 
-Utvecklning av kod som sker i Frontend ska inte påverka Backend och vice versa. 
-
-Statelessness:
-
+En annan viktig princip inom REST är att vara statlös, vilket innebär att varje förfrågan (request) från klienten till servern måste innehålla all den information som behövs för att förstå och hantera förfrågan. Servern behåller ingen information om tidigare förfrågningar eller tillstånd (state) för klienten mellan förfrågningarna. Detta underlättar enklare och mer pålitlig hantering av förfrågningar och gör det också enklare att skala systemet.
 Svar som går att cache:a:
 
+För att uppnå detta främjar REST användningen av en enhetlig gränssnitt mellan klienten och servern. Det innebär att API:ets gränssnitt är konsekvent och enhetligt utformat, vilket underlättar för utvecklare att förstå och använda API:et. Genom att använda standardiserade HTTP-metoder som GET, POST, PUT och DELETE för att utföra olika operationer på resurser skapas en tydlighet och förutsägbarhet i API:ets beteende.
 
+REST möjliggör även att svar från servern kan cache lagras. Det innebär att servern kan indikera om vissa resurser kan sparas i cache av klienten eller andra mellanliggande system. Genom att använda cache för svar minskar man onödig databehandling och nätverkstrafik, vilket förbättrar både prestanda och skalbarhet.
 
-Uniformt interface:
-
-
-REST (Representational, State och transfer.)
-
-Apier:
-Öppna
-Stängda
-
-https://restfulapi.net/rest-api-design-tutorial-with-example/
+1. https://aws.amazon.com/what-is/restful-api/
+2. https://restfulapi.net/rest-api-design-tutorial-with-example/
+3. https://www.codecademy.com/article/what-is-rest
+4. https://newseed.se/fakta/rest-api-vad-betyder-det/
 
 ## BE 1.12 XML och andra dataformat
 
@@ -347,38 +338,22 @@ CSV står för "Comma-Separated Values". Det är ett enkelt filformat som använ
 
 En webbserver är en central komponent i den digitala världen, och dess roll är avgörande för att möjliggöra kommunikation och överföring av information över internet. Begreppet "webbserver" syftar vanligtvis till både hårdvaran och mjukvaran som krävs för att hantera och svara på förfrågningar från klientdatorer. I denna text kommer vi att utforska olika aspekter av webbservrar, inklusive deras historia, funktioner och några exempel på populära webbserverprogram.
 
-Webbserverns historia kan spåras tillbaka till 1989 när Sir Tim Berners-Lee, en brittisk fysiker, föreslog en modell för ett hypertextsystem. Ursprungligen hade modellen bara stöd för GET-metoden, men senare lades POST-metoden till för att möjliggöra interaktion med servrar på ett mer komplett sätt. Det var detta innovativa förslag som lade grunden för den moderna webbservern.
-
 En webbserver är i grund och botten en dator som är specialdesignad för att hantera förfrågningar och överföra data till och från andra servrar. Dessa servrar är oftast placerade hos driftbolag som erbjuder snabb och kraftfull internetuppkoppling.
 
 Webbserverns huvudsakliga uppgifter inkluderar att ta emot förfrågningar från klientdatorer, utföra HTTP-metoder, generera och skicka tillbaka HTTP-respons och vid behov logga händelser och generera statiska sidor.
 
-Vanliga Uppgifter för Webbservern:
+Webbservern fungerar som en mottagare för förfrågningar från klientdatorer, vilket kan vara allt från att hämta en webbsida till att skicka data till en databas.
 
-Ta emot Förfrågningar: Webbservern fungerar som en mottagare för förfrågningar från klientdatorer, vilket kan vara allt från att hämta en webbsida till att skicka data till en databas.
+En central del av webbserverns arbete är att hantera olika HTTP-metoder som GET och POST för att möjliggöra kommunikation mellan klient och server. Webbservern genererar och skickar tillbaka HTTP-svar till klienten, vilket kan inkludera den begärda webbsidan eller annan data. Många webbservrar erbjuder möjlighet att logga olika händelser och aktiviteter för övervakning och felsökning.
 
-Hantera HTTP-metoder: En central del av webbserverns arbete är att hantera olika HTTP-metoder som GET och POST för att möjliggöra kommunikation mellan klient och server.
-
-Skicka HTTP-svar till Klienten: Webbservern genererar och skickar tillbaka HTTP-svar till klienten, vilket kan inkludera den begärda webbsidan eller annan data.
-
-Logga Händelser (valfritt): Många webbservrar erbjuder möjlighet att logga olika händelser och aktiviteter för övervakning och felsökning.
-
-Generera Statiskt Innehåll (valfritt): Vissa webbservrar kan också generera statiska sidor för att accelerera sidbelastningstider och minska belastningen på servern.
-
-De viktigaste serverprogrammen:
+Vissa webbservrar kan också generera statiska sidor för att accelerera sidbelastningstider och minska belastningen på servern.
 
 En av de mest använda serverprogrammen är HTTPd, som fungerar i bakgrunden och agerar som en server i den övergripande klient-server-modellen. Det använder HTTP/HTTPS-protokollet för att underlätta kommunikationen mellan webbservern och klientdatorerna.
 
-Hur används en webbserver?
-
 En webbserver används genom att klientdatorer skickar förfrågningar till den för att hämta webbsidor eller annan information. Klienten gör detta genom att skicka HTTP-förfrågningar, och webbservern svarar med den begärda informationen i form av HTML eller andra filformat.
 
-Apache HTTP Server: En av de äldsta och mest använda webbserverprogrammen är Apache HTTP Server. Det är känt för sin stabilitet och flexibilitet.
+En av de äldsta och mest använda webbserverprogrammen är Apache HTTP Server. Det är känt för sin stabilitet och flexibilitet.
 
-Nginx HTTP Server: En annan populär webbserver är Nginx HTTP Server, som är känd för sin höga prestanda och skalbarhet, särskilt när det gäller hantering av många samtidiga anslutningar.
+En annan populär webbserver är Nginx HTTP Server, som är känd för sin höga prestanda och skalbarhet, särskilt när det gäller hantering av många samtidiga anslutningar.
 
-Lighttpd: En lättviktig webbserver som fokuserar på hög prestanda och låg minnesanvändning är Lighttpd.
-
-CERN HTTPd HTTP Server: CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
-
-Intranet:
+CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
