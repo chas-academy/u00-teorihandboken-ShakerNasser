@@ -79,7 +79,45 @@ DevTools gör det möjligt att effektivt debugga (felsöka) webbplatser i realti
 
 ## PG 1.3 Testdriven utveckling
 
-Beskriv rubriken här
+Test Driven Development (TDD) är en utvecklingsmetod där man först skriver tester för den funktionalitet som ska implementeras. Målet är att låta dessa tester misslyckas för att identifiera potentiella risker i koden. Sedan skrivs själva koden på ett enkelt sätt för att uppnå att testerna går igenom. Detta möjliggör enklare refaktorisering och utveckling av koden. En viktig princip är att koden bör vara uppdelad i små, isolerade komponenter med funktionaliteten uppdelad i flera olika metoder. Denna uppdelning underlättar förståelsen och underhållet av koden samt möjliggör en mer strukturerad och robust utvecklingsprocess.
+
+Det finns olika typer av testning som delas upp i manuella, automatiserade och kontinuerliga.
+För webbutveckling är enhetstester och end-to-end-tester de mest relevanta.
+Enhetstester handlar om att testa enskilda metoder och funktioner i klassen, komponenter eller användas av programvaran. Det innebär att man isolerar delarna av applikationen och testar dem separat från allt annat.
+End-to-end-tester innebär att man replikerar användarbeteendet i mjukvaran i en komplett applikationsmiljö genom att visualisera hur användaren skulle interagera för att utvärdera resultatet.
+
+I Angular använder vi Jasmine-ramverket för att konfigurera våra tester och Karma för att köra dem. Jasmine används för att skriva våra testfall och definiera deras beteende, medan Karma hanterar exekveringen av testerna i olika webbläsare och miljöer.
+
+Mappar som slutar med ".spec.ts" genereras automatiskt för oss när vi skapar nya filer för både services och komponenter. Dessa specifikationsfiler innehåller våra testfall och definierar hur våra komponenter och tjänster bör fungera.
+
+För att köra våra tester måste vi vara i rätt katalog i projektets rotmapp och sedan köra följande kommando i terminalen:
+
+```bash
+
+npm run test
+
+```
+
+Detta kommando triggar Karma och kör alla testfiler som slutar med ".spec.ts" i den aktuella katalogen och dess undermappar. Resultaten från testkörningen visas sedan i browser och i terminalen och eventuella fel eller misslyckanden rapporteras där.
+
+
+```bash
+ng test --no-watch --code-coverage
+
+```
+
+Detta kommando används för att köra Angular-testerna en gång utan att lyssna på filändringar och generera en rapport om kodtäckning.
+
+Outpt i terminalen: 
+
+![Ng test coverage](images/ngtest.png)
+
+
+1. https://dev.to/qarunqb/tdd-in-angular-understanding-an-angular-unit-test-jja
+2. https://www.youtube.com/watch?v=uefGmRcIm3c&pp=ygULYW5ndWxhciB0ZGQ%3D
+3. https://testdriven.io/test-driven-development/
+https://medium.com/@dees3g/a-guide-to-test-driven-development-tdd-with-real-world-examples-d92f7c801607
+4. Lektion 2024-03-21 
 
 ## PG 1.4 Deploy och staging
 
