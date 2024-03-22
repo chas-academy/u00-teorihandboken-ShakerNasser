@@ -100,7 +100,6 @@ npm run test
 
 Detta kommando triggar Karma och kör alla testfiler som slutar med ".spec.ts" i den aktuella katalogen och dess undermappar. Resultaten från testkörningen visas sedan i browser och i terminalen och eventuella fel eller misslyckanden rapporteras där.
 
-
 ```bash
 ng test --no-watch --code-coverage
 
@@ -112,6 +111,9 @@ Outpt i terminalen:
 
 ![Ng test coverage](images/ngtest.png)
 
+Outpt i Google brwoser: 
+
+![Output broswer](images/ngtestbroswer.png)
 
 1. https://dev.to/qarunqb/tdd-in-angular-understanding-an-angular-unit-test-jja
 2. https://www.youtube.com/watch?v=uefGmRcIm3c&pp=ygULYW5ndWxhciB0ZGQ%3D
@@ -179,7 +181,13 @@ Denna typ av dokumentation är avsedd för slutanvändare av webbapplikationen. 
 
 Interndokumentation:
 Interndokumentation är riktad till det interna utvecklingsteamet eller andra personer som är involverade i projektet. Detta kan inkludera tekniska specifikationer, interna processdokument, kodstandarder, utvecklingsriktlinjer och andra resurser som hjälper till att underlätta samarbete, förståelse och effektivitet inom teamet. Interndokumentationen är avgörande för att säkerställa att alla i teamet har en gemensam förståelse för projektet och arbetar i enlighet med bästa praxis och riktlinjer.
+<br>
+Exempel 1 på interndok i kod.
 ![Interndok](images/interndok.png)
+<br>
+Exempel 2 på interndok i kod.
+
+![Larvel API comment](images/dokinside.png)
 
 I större projekt är kvaliteten på internadokumentationen en avgörande faktor för projektets framgång. Genom en utförlig dokumentation kan flera utvecklare arbeta mot samma mål och hålla sig uppdaterade. I vårt IMDB-clone-projekt använde vi internadokumentation både i mapproten och i externa filer i form av en Google Drive-mapp. Denna form av dokumentation bidrog till att vi höll oss uppdaterade och minimerade tidsspillet på att leta efter svar från varandra. Användardokumentationen skapades i form av en README.md-fil där förklaringar ges om hur användaren kan använda och navigera genom sidan.
 ![Användardok](images/Användardok.png)
@@ -291,32 +299,25 @@ Grundläggande kommandon för Bash terminal:
 Navigera mellan mappar:
 
 ```bash
-
 cd <mappnamn>
-
 ```
 
 Visa innehållet i en mapp:
 
 ```bash
 ls
-
 ```
 
 Skapa en ny mapp:
 
 ```bash
 mkdir <mappnamn>
-
 ```
 
 Ta bort en fil:
 
 ```bash
-
 rm <filnamn>
-
-
 ```
 
 1. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line
