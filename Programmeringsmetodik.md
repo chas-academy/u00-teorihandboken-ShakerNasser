@@ -123,7 +123,7 @@ https://medium.com/@dees3g/a-guide-to-test-driven-development-tdd-with-real-worl
 
 ## PG 1.4 Deploy och staging
 
-När man pratar om deploy och staging inom webbutveckling så innebär det att man tar webbapplikationen från utvecklingsmiljön och sedan placerar den på en server där den kan vara tillgänglig för en användare. Enklare sagt detta är som att flytta applikationen från en laboratorie till en butik, där den kan vara tillgängkug för kunderna (användare).
+När man pratar om deploy och staging inom webbutveckling så innebär det att man tar webbapplikationen från utvecklingsmiljön och sedan placerar den på en server där den kan vara tillgänglig för en användare. Enklare sagt detta är som att flytta applikationen från en laboratorie till en butik, där den kan vara tillgängiug för kunderna (användare).
 
 För att uppnå detta så måste man gå genom dessa faser:
 
@@ -228,7 +228,19 @@ I detta grupp projekt använde oss MVC designmönster, följ länken nedan:
 
 ## PG 1.8 Automatisering av arbetsflöde
 
-Beskriv rubriken här
+Inom webbutveckling handlar automatisering om att effektivisera och förenkla repetitiva uppgifter. Genom att använda molnbaserade tjänster och plattformar kan utvecklare spara tid och förbättra kvaliteten på sina projekt.
+
+En viktig aspekt av automatisering är att använda Continuous Integration (CI) och Continuous Deployment (CD) plattformar som GitHub Actions. Dessa tjänster integreras med versionshanteringssystem som Git för att automatiskt bygga, testa och distribuera kod så fort nya ändringar pushas till repositoryn.
+
+Användningen av ramverk och verktyg för automatisering avgörande för att effektivisera utvecklingsprocessen. Genom att använda moderna ramverk som React, Angular eller Vue.js kan utvecklare dra nytta av inbyggda funktioner för att automatisera upprepade uppgifter och förbättra koden. Till exempel erbjuder dessa ramverk byggsystem och pakethanterare som automatiserar processen för att bygga och distribuera webbapplikationer.
+
+I vårt IMDb Clone-projekt använde vi Vercel för Continuous Deployment (CD) för front-end-koden och Aiven för att hantera databasinfrastrukturen. Detta gjorde det möjligt för oss att automatisera processen för att distribuera både vår front-end och hantera vårt datalager effektivt, vilket resulterade i en smidigare och mer tillförlitlig utvecklingscykel. (Även om Vercel inte var det bästa valet).
+
+Liknande automatiseringsmetoder kommer att användas i den individuella uppgiften U06 - RecipeApp. I denna uppgift planerar jag att använda Render för att deploya backend-koden och Netlify för frontend-koden. Genom att tillämpa automatisering för både backend och frontend, kommer jag att kunna säkerställa en snabb och effektiv utvecklingsprocess för RecipeApp-projektet, vilket möjliggör en smidigare hantering och distribuering av kodändringar.
+
+1. https://www.redhat.com/en/topics/devops/what-is-ci-cd
+2. https://oneflow.com/se/blog/automatisering-av-arbetsfloden/
+3. https://computersweden.se/article/1289938/vad-ar-ci-och-cd-sa-funkar-det-standiga-flodet.html
 
 ## PG 1.9 Virtualisering av utvecklingsmiljö
 
