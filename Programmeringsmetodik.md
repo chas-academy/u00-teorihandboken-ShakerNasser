@@ -228,9 +228,9 @@ I detta grupp projekt använde oss MVC designmönster, följ länken nedan:
 
 ## PG 1.8 Automatisering av arbetsflöde
 
-Inom webbutveckling handlar automatisering om att effektivisera och förenkla repetitiva uppgifter. Genom att använda molnbaserade tjänster och plattformar kan utvecklare spara tid och förbättra kvaliteten på sina projekt.
+Inom webbutveckling handlar automatisering om att effektivisera och förenkla repetitiva uppgifter. Genom att använda molnbaserade tjänster och plattformar kan utvecklare spara tid och förbättra kvaliteten på sina projekt. Dessa verktyg möjliggör tidsbesparingar och höjer projektens kvalitet. 
 
-En viktig aspekt av automatisering är att använda Continuous Integration (CI) och Continuous Deployment (CD) plattformar som GitHub Actions. Dessa tjänster integreras med versionshanteringssystem som Git för att automatiskt bygga, testa och distribuera kod så fort nya ändringar pushas till repositoryn.
+En viktig aspekt av automatisering är att använda Continuous Integration (CI) och Continuous Deployment (CD). Dessa tjänster integreras med versionshanteringssystem som Git för att automatiskt bygga, testa och distribuera kod så fort nya ändringar pushas till repositoryn. Stagingmijön där kod deployas om alla tester lyckas, möjliggör noggranna tester innan applikationen släpps till aanvändaren.
 
 Användningen av ramverk och verktyg för automatisering avgörande för att effektivisera utvecklingsprocessen. Genom att använda moderna ramverk som React, Angular eller Vue.js kan utvecklare dra nytta av inbyggda funktioner för att automatisera upprepade uppgifter och förbättra koden. Till exempel erbjuder dessa ramverk byggsystem och pakethanterare som automatiserar processen för att bygga och distribuera webbapplikationer.
 
@@ -271,7 +271,7 @@ En körbar mjukvarupaket som innehåller allt som behövs för att köras, och s
 
 ## PG 1.10 Bundeling-verktyg
 
-Bundling-verktyg används i större projekt för att kombinera flera separata filer med källkod (till exempel HTML, CSS, Javascript) till färre. Koden levereras mer hanterbar till webbläsaren och koden läses av på ett korrekt sätt. Dessa verktyg är väldigt användbara och avgörande för en utvecklingsprocess. Dessa verktyg effektiviserar utvecklingsprocessen och optimerar prestandan på webbplatser genom att minimera filstorlekar och HTTP-requesten.
+Bundling-verktyg används i större projekt för att kombinera flera separata filer med källkod (till exempel HTML, CSS, Javascript) till färre. Koden levereras mer hanterbar till webbläsaren och koden läses av på ett korrekt sätt. Dessa verktyg är väldigt användbara och avgörande för en utvecklingsprocess. Dessa verktyg effektiviserar utvecklingsprocessen och optimerar prestandan på webbplatser genom att minimera filstorlekar och HTTP-requesten. Dem moderna ramverken erbjuder bundler-verktyg redan vid installation. 
 
 De mest populära bundlingverktygen inom webbutveckling är Webpack och Parcel. Webpack erbjuder också en mängd olika plugins och loaders som kan utöka dess funktionalitet och möjliggöra en rad olika användningsområden. Till exempel kan loaders användas för att konvertera filer från ett format till ett annat (till exempel att konvertera SCSS till vanlig CSS eller TypeScript till vanlig JavaScript), medan plugins kan användas för att utföra uppgifter som minifiering, filoptimering och cache.
 
@@ -294,15 +294,15 @@ De flesta bundlingsverktyg erbjuder möjligheten att anpassa och konfigurerar hu
 
 ## PG 1.11 Terminalinterface
 
-Terminalgränssnittet och Git Bash är verktyg för att interagera med datorns operativsystem genom kommandoraden. De möjliggör för användare att utföra kommandon och genomföra olika uppgifter utan att använda en grafisk användargränssnitt.
+Terminalgränssnittet och Git Bash är verktyg för att interagera med datorns operativsystem genom kommandoraden. De möjliggör för användare att utföra kommandon och genomföra olika uppgifter utan att använda en grafisk användargränssnitt. Ett terminalgränssnitt är en textbaserad miljö där användaren interagerar med datorn genom att skriva kommandon i en kommandorad eller terminal. I Unix-baserade system, såsom Linux och macOS, används ofta Terminal-appen. I Windows används kommandotolken (Command Prompt) eller PowerShell som exempel på terminalgränssnitt.
 
-Ett terminalgränssnitt är en textbaserad miljö där användaren interagerar med datorn genom att skriva kommandon i en kommandorad eller terminal. I Unix-baserade system, såsom Linux och macOS, används ofta Terminal-appen. I Windows används kommandotolken (Command Prompt) eller PowerShell som exempel på terminalgränssnitt.
+Med hjälp av terminalgränssnittet kan användare navigera genom filsystemet, hantera filer och mappar, utföra systemkommandon, installera och hantera programvara, samt utföra olika utvecklingsrelaterade uppgifter som till exempel användning av versionshanteringssystem som Git.
 
 Git Bash är en terminalapplikation som ingår i Git-paketet. Den erbjuder en kommandoradsmiljö för användning med Git och andra Unix-verktyg direkt på Windows-systemet. Git Bash ger användare tillgång till Git-kommandon och Unix-liknande kommandon i en bekväm miljö på Windows-plattformen. Resultatet av kommandon och operationer visas vanligtvis som text direkt i terminalfönstret, vilket ger användaren tydlig feedback.
 
 Terminalgränssnitt är vanligtvis beroende av operativsystemet. Till exempel används Terminal-appen i Linux eller macOS, medan Git Bash är specifikt utformad för Windows.Terminalgränssnitt kan vara allmänt och används för att utföra olika systemrelaterade uppgifter. Git Bash är mer specialiserad och fokuserar på Git-kommandon och verktyg.
 
-Båda dessa verktyg är kraftfulla och ger avancerad kontroll och flexibilitet för användare som föredrar att använda kommandoraden för att hantera sina system och Git-repositorier.
+Båda dessa verktyg är kraftfulla och ger avancerad kontroll och flexibilitet för användare som föredrar att använda kommandoraden för att hantera sina system och Git-repositorier. Terminalgränssnitt och Git Bash ger användare kraftfulla verktyg för systemkontroll, men det är viktigt att vara medveten om säkerhetsrisker. Man bör följa bästa praxis för att undvika hot som skadlig kod och oavsiktliga åtgärder som kan skada systemet eller exponera känslig information.
 
 ![Git- Bash- terminal](<images/Git-Bash -.png>)
 
@@ -335,3 +335,10 @@ rm <filnamn>
 1. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line
 2. https://www.redhat.com/sysadmin/shortcuts-command-line-navigation
 3. https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce
+-----------------------------------------------------------------------------------------------------
+
+<-- Egna notes, att läsa själv: 
+1. https://www.freecodecamp.org/news/introduction-to-git-and-github/
+2. https://www.dell.com/support/kbdoc/sv-se/000152030/how-to-use-the-ubuntu-linux-terminal-on-your-dell-pc
+3. https://dev.to/granitebps/my-terminal-setup-as-full-stack-developer-1k7o
+ -->
