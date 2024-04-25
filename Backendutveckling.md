@@ -109,7 +109,18 @@ Applikationssäkerhet fokuserar på att säkra programvaror och applikationer fr
 SQL-injektioner:
 SQL-injektioner är en typ av säkerhetshot som riktar sig mot databasdrivna applikationer. Vid en SQL-injektion kan en angripare infoga skadlig SQL-kod i en SQL-fråga som utförs av en applikation. Om sårbarheten utnyttjas framgångsrikt kan detta leda till obehörig åtkomst, manipulation eller förstörelse av databasen. För att förhindra SQL-injektioner bör utvecklare använda parametriserade frågor och sanitisering.
 
-PHP säkerhet inom PHP ramverk 
+PHP ramverken erbjuder robust säkerhet. I Laravel erbjuds ett inbyggt CSRF-skydd för att förhindra CSRF-attacker. Detta åstadkoms genom att generera och kontrollera CSRF-token för varje formulär som skickas till servern. Genom att inkludera @csrf-direktivet i formulär läggs automatiskt ett CSRF-token till varje POST-formulär. Detta använde vi tex i vår IMDB clone projekt där vi skapade flera formulär som användare integrerade med. 
+
+För att få detta att fungera i en distribuerad miljö var jag tvungen att lägga till en kodsnutt i 'Providers -> AppServiceProvider.php':
+
+```php
+    public function boot(): void
+    {
+        if ($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
+    }
+```
 
 1. https://www.cloudways.com/blog/php-security/#sql - SQL injection
 2. https://www.cloudways.com/blog/php-security/#cross
@@ -186,7 +197,7 @@ I en relationsdatabas är det viktigt att förstå skillnaden mellan en primärn
 
 En primärnyckel fungerar som en unik identifierare för varje post i en tabell och säkerställer att varje rad kan identifieras på ett entydigt sätt. Den måste ha unika värden och får inte vara NULL. Primärnyckeln är avgörande för att upprätthålla dataintegriteten och underlättar effektiv hämtning av data.
 
-Å andra sidan är en främmande nyckel ett fält i en tabell som skapar en länk till primärnyckeln i en annan tabell. Denna länk skapar en relation mellan de två tabellerna och möjliggör implementeringen av referentiell integritet. Med andra ord motsvarar en främmande nyckel i en tabell primärnyckeln i en annan tabell och främjar anslutningen mellan relaterade data över olika tabeller i databasen.
+En främmande nyckel i ett fält i en tabell som skapar en länk till primärnyckeln i en annan tabell. Denna länk skapar en relation mellan de två tabellerna och möjliggör implementeringen av referentiell integritet. Med andra ord motsvarar en främmande nyckel i en tabell primärnyckeln i en annan tabell och främjar anslutningen mellan relaterade data över olika tabeller i databasen.
 
 ![Bild på Realtionsdatabas](images/Relationsdatabas.png)
 
@@ -305,12 +316,39 @@ Refresh Grant: Används för att skapa en ny åtkomsttoken när en tidigare toke
 
 ## BE 1.9 HTTP-protokollet
 
-GET och POST anrop som kommuuncerar med servar. 
+HTTP (Hypertext Transfer Protocol) är ett sätt att skicka information på internet mellan en webbserver där webbsidorna finns och webbläsare på datorn. Det är genom HTTP som webbläsare kan visa innehållet från olika webbplatser som man besöker.
 
-Finns och nackdelar med båda protokollen. 
+Inom mjukvarutveckling används ofta HTTP för att implementera API:er (Application Programming Interfaces) som följer REST-arkitekturen (Representational State Transfer). Detta innebär att olika resurser i en applikation till exempel dataobjekt eller tjänster kan manipuleras med standardiserade HTTP-metoder som GET, POST, PUT och DELETE.
 
-https://developer.mozilla.org/en-US/docs/Web/HTTP
-https://www.w3schools.com/php/php_forms.asp
+Även här är det viktigt att vara medveten om säkerhetsaspekterna av HTTP, som t.ex. skydd mot CSRF (Cross-Site Request Forgery) och XSS (Cross-Site Scripting). Dessutom är kunskap om HTTP/2 och HTTPS (HTTP Secure) viktigt för att optimera prestanda och säkerhet för moderna webbapplikationer.
+
+Inom Laravel används HTTP på olika sätt för att skapa API:er och dynamiska webbapplikationer. Laravel använder en RESTful routing-struktur som matchar HTTP-metoder med kontrollerfunktioner. 
+Till exempel kan en HTTP GET-förfrågan till "/users" användas för att hämta användarlistan från en databas med hjälp av Laravel's Eloquent ORM:
+
+```php
+use App\Models\User;
+use Illuminate\Http\Request;
+
+Route::get('/users', function () {
+    $users = User::all();
+    return response()->json($users);
+});
+```
+
+Till exempel kan en HTTP POST-förfrågan till "/users" användas för att skicka användarlistan till en databas med hjälp av Laravel's Eloquent ORM:
+
+```php
+Route::get('/users', function () {
+    $users = User::all();
+    return response()->json($users);
+});
+```
+
+Som utvecklare är det viktigt att ha förståelse för HTTP-protokollet centrala för utveckling eftersom det möjliggör effektiv kommunikation och samarbete mellan olika delar av en webbapplikationer, från användargränssnitt till serverbackend och omvänd.
+
+1. https://developer.mozilla.org/en-US/docs/Web/HTTP
+2. https://www.w3schools.com/php/php_forms.asp
+3. https://internetkunskap.se/artiklar/ordlista/http/
 
 ## BE 1.10 cURL
 
