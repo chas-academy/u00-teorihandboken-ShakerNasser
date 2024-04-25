@@ -3,12 +3,24 @@ Studerande: Shaker Nasser
 ![Alt text](images/Backend-utveckling.png)
 ## BE 1.1 PHP
 
-PHP (Hypertext Preprcessor) är en server-by-side skriptspråk. Ett skriptspråk som kan exekterveras (köras) utan ett komplitationssteg. Detta innebär att PHP hjälper märkspråk så som HTML till att genera sidor. Detta sker genom att man kopplar upp mot en databas. PHP är en väldigt användbar skriptspråk.
+PHP (Hypertext Preprocessor) är ett serversidigt skriptspråk. Det är ett skriptspråk som kan exekveras (köras) utan ett kompileringssteg. Detta innebär att PHP hjälper märkspråk som HTML att generera sidor. Detta sker genom att man kan ansluta till en databas. PHP är ett mycket användbart skriptspråk.
 
-PHP kan användas för programmering av konsolapplikationer och grafiskt användargränssnitt. Det används först och främst för programmering av dynamiska webbsidor på Internet. Genom PHP-programmering kan man skapa en dynamisk hemsida. En dynamisk hemsida gör att en besökare kan interagera med innehållet på ett helt annat sätt än om hemsidan enbart använde HTML. Det går exempelvis att köpa en produkt eller skriva ett meddelande på en dynamisk hemsida. Något värt att veta är att alla hemsidor har en del som är ren HTML-kodning. Detta för att besökarnas webbläsare ska få relevant information om hur den ska tolka kodningen.
+PHP kan användas för att skapa konsolapplikationer och grafiska användargränssnitt, men det används främst för att programmera dynamiska webbsidor på internet. Genom PHP-programmering kan man skapa en dynamisk webbplats. En dynamisk webbplats gör att en besökare kan interagera med innehållet på ett helt annat sätt än om webbplatsen enbart använde HTML. Det går till exempel att köpa en produkt eller skriva ett meddelande på en dynamisk webbplats. Det är också värt att notera att alla webbsidor innehåller en del ren HTML-kodning. Detta behövs för att besökarnas webbläsare ska få relevant information om hur koden ska tolkas.
+
+När en internetanvändare använder en webbläsare och begär en PHP-sida från servern, dirigerar servern förfrågan till en webbtjänst på servern. Webbservern känner av behovet av PHP-databasen och bearbetar den som ett program med hjälp av en PHP-modul, istället för att skicka dess innehåll direkt till klienten. Programmets utdata, vanligtvis i form av standardutdata, skickas sedan till klienten som svar på förfrågan. Klienten identifierar typen av resultat (HTML-kod, bild, PDF-innehåll, arkiv osv.), och resultaten visas sedan för klienten på motsvarande sätt.
+
+Nyligen har PHP nått en högre nivå med hjälp av paket (PHP-ramverk) som används som verktyg för att snabbare och säkrare utveckla webbapplikationer. Dessa paket syftar till att sätta samman färdiga verktyg från olika teknologier inom ett praktiskt ramverk, så att skapade paket kan användas som verktyg. Detta gör att utvecklare kan ha tillgång till grundläggande teknologiska funktioner som de använder, och fokusera enbart på logiken i den applikation de bygger, istället för att oroa sig för filorganisation, objektklassificering och säkerhetsproblem.
+
+PHP ramverken följer vanligtvis MVC strukturen. En av dem mest använda ramverken inom PHP är laravel. Laravel följer en väldigt tydlig sturkur mapp och det gör den till den optimala ramverk att börja med när man jobbar inom fullstack. Detta hjälper även till när man går vidare till att jobba med andra ramverk inom webbuteckling, tex Angular. 
+
+MVC strukturen i Laravel går enligt följande:
+
+Modellen lagrar affärslogiken och applikationsdata. Den skickar data till Vyn, presentationslagret. Användaren interagerar med Vyn och kan mata in instruktioner via Kontrollern. Kontrollern skickar dessa kommandon till Modellen, och cykeln fortsätter.
 
 1. https://www.oxfordwebstudio.com/sv/vet-du/vad-ar-php 
 2. https://dbwebb.se/kunskap/kom-i-gang-med-php-pa-20-steg
+3. https://kinsta.com/blog/php-frameworks/
+4. https://dev.to/kinsta/master-laravel-with-these-free-tutorials-5gco
 
 ## BE 1.2 OOP i PHP
 
@@ -16,8 +28,6 @@ OOP är objektorinterad progammering som används även i PHP. Detta gör att de
 Konstruktor används 
 
 ``` php
-<?php
-
 class Person {
     public $name;
     public $age;
@@ -28,27 +38,21 @@ class Person {
         echo "En ny person har skapats.";
     }
 }
-
-$person1 = new Person("Alice", 25);
-
-?>
+$person1 = new Person("Shaker", 25);
 ```
 
 Ett objekt är en konkret instans av en klass. När du skapar ett objekt från en klass, får objektet tillgång till de egenskaper och metoder som definierats i klassen. Objekten är de faktiska "föremålen" eller "instanserna" som skapas enligt klassens specifikationer.
 
 ```php
-
 $minBil = new Bil();
 $minBil->modell = "Volvo";
 $minBil->färg = "Blå";
 $minBil->köra();
-
 ```
 
 Publika medlemmar (variabler och metoder) är de som kan nås och användas utanför klassen. De är synliga och tillgängliga för andra delar av koden, inklusive andra klasser.
 
 ```php
-
 class Konto {
     public $saldo;
 
@@ -76,11 +80,9 @@ class Användare {
 }
 
 ```
-
 En konstruktor är en särskild metod i en klass som körs automatiskt när ett objekt skapas. Dess huvudsakliga syfte är att initialisera objektets egenskaper eller utföra andra förberedande åtgärder. Konstruktorn kallas automatiskt när du skapar ett objekt och används för att ge objektet
 
 ```php
-
 class Person {
     public $namn;
 
@@ -90,18 +92,16 @@ class Person {
         echo "En ny person skapades med namnet $startNamn.";
     }
 }
-
-
-$nyPerson = new Person("Anna");
-
+$nyPerson = new Person("Shaker");
 ```
+
+1. https://www.tutorialspoint.com/php/php_object_oriented.htm
+2. https://www.honeybadger.io/blog/in-depth-guide-to-object-oriented-programming-in-php/
+3. https://medium.com/@imadevguyanand/php-what-is-oop-413b566f9a94
 
 ## BE 1.3 Säkerhet i PHP
 
-Säkerhet är en viktig aspekt för att skydda information och system från obehörig åtkomst, skadlig kod och andra hot, särskilt inom IT. Här följer några relaterade begrepp:
-
-IT-säkerhet (Informationstekniksäkerhet):
-IT-säkerhet handlar om att skydda informationstekniksystem från obehörig åtkomst, användning, förändring eller förstörelse. Det innefattar olika åtgärder och tekniker för att säkerställa konfidentialitet, integritet och tillgänglighet av data och system.
+Säkerhet är en viktig aspekt för att skydda information och system från obehörig åtkomst, skadlig kod och andra hot, särskilt inom IT. IT-säkerhet handlar om att skydda informationstekniksystem från obehörig åtkomst, användning, förändring eller förstörelse. Det innefattar olika åtgärder och tekniker för att säkerställa konfidentialitet, integritet och tillgänglighet av data och system.
 
 Applikationssäkerhet:
 Applikationssäkerhet fokuserar på att säkra programvaror och applikationer från olika hot och sårbarheter. Det innebär att implementera säkerhetsåtgärder i design, utveckling och drift av applikationer för att minimera riskerna för attacker och obehörig åtkomst.
@@ -109,42 +109,52 @@ Applikationssäkerhet fokuserar på att säkra programvaror och applikationer fr
 SQL-injektioner:
 SQL-injektioner är en typ av säkerhetshot som riktar sig mot databasdrivna applikationer. Vid en SQL-injektion kan en angripare infoga skadlig SQL-kod i en SQL-fråga som utförs av en applikation. Om sårbarheten utnyttjas framgångsrikt kan detta leda till obehörig åtkomst, manipulation eller förstörelse av databasen. För att förhindra SQL-injektioner bör utvecklare använda parametriserade frågor och sanitisering.
 
+PHP säkerhet inom PHP ramverk 
+
+1. https://www.cloudways.com/blog/php-security/#sql - SQL injection
+2. https://www.cloudways.com/blog/php-security/#cross
+3. https://laravel.com/docs/11.x/csrf - Laravel Security tokens 
+4. https://www.geeksforgeeks.org/laravel-csrf-protection/
+
 ## BE 1.4 MVC
 
-MVC, eller Model-View-Controller, är en designmönster som används inom mjukvaruutveckling för att organisera och strukturera koden på ett sätt som gör den mer modulär, underhållbar och skalbar. Genom att dela upp applikationen i tre huvudkomponenter separeras logik, presentation och datahantering. Modellen representerar data och regler för att hantera den, vyn är ansvarig för presentationen av data till användaren, och kontrollern hanterar interaktionen mellan modellen och vyn. Genom att använda sig av MVC-mönstret kan utvecklare skapa robusta applikationer med en tydlig separation av ansvar och möjliggöra enkel återanvändning av kod.
+MVC (Model-View-Controller) är ett designmönster inom mjukvaruutveckling som används för att organisera och strukturera koden på ett sätt som gör den mer modulär, underhållbar och skalbar. Genom att dela upp applikationen i tre huvudkomponenter separeras logik, presentation och datahantering. Modellen representerar data och regler för att hantera den. Vyn är ansvarig för presentationen av data till användaren, medan kontrollern hanterar interaktionen mellan modellen och vyn. Användning av MVC-mönstret möjliggör skapandet av robusta applikationer med en tydlig ansvarsfördelning och enkel återanvändning av kod.
 
-Klienten skickar en HTTP-förfrågan till servern (hårdvara): I denna begäran specificeras en IP-adress och olika HTTP-metoder som GET, POST eller andra beroende på ändamålet med förfrågan.
+Klienten skickar en HTTP-förfrågan till servern (hårdvara): Förfrågan specificerar en IP-adress och olika HTTP-metoder som GET, POST eller andra beroende på ändamålet med förfrågan. Denna förfrågan passerar genom webbservern (mjukvara), som tar emot och hanterar HTTP-förfrågan, vidarebefordrar den till rätt del av applikationen och kommunicerar med den.
 
-Förfrågan passerar genom webbservern (mjukvara): Webbservern tar emot och hanterar HTTP-förfrågan. Den är ansvarig för att vidarebefordra förfrågan till rätt del av applikationen och för att kommunicera med den.
+Koden kontrolleras och svar ges i form av en HTTP-respons: Här träder MVC-arkitekturen in i bilden. Kontrollern tar emot förfrågan, bearbetar den, anropar den relevanta modellen för att hämta eller manipulera data, och interagerar även med vyn för att definiera hur datan ska visas. Slutligen skickar kontrollern en HTTP-respons tillbaka till klienten.
 
-Kontrollerar kod och ger svar i form av HTTP-respons: Nu kommer MVC-arkitekturen in i bilden. Kontrollern tar emot förfrågan och bearbetar den. Den anropar den relevanta modellen för att hämta eller manipulera data, och kan även interagera med vyn för att få information om hur datan ska visas. Slutligen skickar kontrollern en HTTP-respons tillbaka till klienten.
+MVC möjliggör enkel återanvändning av kod och minskar komplexiteten. Det ökar flexibiliteten vid kodskrivning och minskar upprepning av händelser.
 
-MVC gör det enkelt att återanvända en skriven kod och reducerar komplixtet i koden. Med detta så ökar flexibitet i kodskrivningen. Det minskar även återupprepning av händeleser. 
+**Modell (Model):** Bearbetar och hanterar data. Modellen hämtar och bearbetar information från externa källor som databaser enligt affärsregler och skickar den sedan vidare till andra delar av systemet, särskilt till vyn för att visas för användaren.
 
-Model: Bearbeta och skicka vidare data. Modellen har ansvaret för att behandla och hantera applikationens data. Det innebär att hämta information från externa källor, till exempel en databas, bearbeta och manipulera datan enligt affärsreglerna och sedan skicka den vidare till andra delar av systemet, särskilt till vyn för att visas för användaren.
+**Vy (View):** Hanterar visuell presentation av data. Vyn innehåller metoder för att skapa och utföra frågor för att interagera med datakällor och återspegla de önskade operationerna.
 
-View: Här skriver vi våra frågor. Modellen innehåller vanligtvis metoder och funktioner för att skapa och utföra frågor (queries) för att hämta, uppdatera och spara data i en databas eller annan form av datalagring. Dessa frågor används för att interagera med datakällor och återspegla de önskade operationerna på datan.
+**Kontroller (Controller):** Hanterar HTTP-förfrågningar. Kontrollanten samordnar interaktionen mellan modellen och vyn, väljer lämplig modell och vy för att svara på en förfrågan, och skickar sedan en lämplig HTTP-respons till klienten.
 
-Controller: Vanligtvis ansluten till en databas. Modellen är oftast kopplad till en databas eller annan typ av datalagring. Den är ansvarig för att kommunicera med databasen och utföra de nödvändiga operationerna för att hämta eller uppdatera datan. Detta gör det möjligt att separera hanteringen av databasen från resten av applikationslogiken.
+I ett Laravelprojekt används MVC-arkitekturen så här: Modeller representerar databastabeller och hanterar datalagring. Vyer definierar användargränssnittet med Blade-mallar. Kontroller hanterar HTTP-förfrågningar och skapar svar baserat på modelldata för visning i vyerna. Detta ger en strukturerad och modulär kodbas för enklare underhåll och skalbarhet.
 
-----------------------------
-Separation av ansvar (Ansvarsfördelning) i MVC-strukturen innebär att varje komponent har ett specifikt ansvarsområde:
-
-Modeller (Models): Hanterar data och utför operationer relaterade till datalagring. Modellen behandlar och manipulerar data enligt applikationens affärslogik.
-
-Vyer (Views): Innehåller mallar eller templates för att definiera hur data ska representeras visuellt. Vyn är ansvarig för att presentera informationen för användaren på ett sätt som är användarvänligt och förståeligt.
-
-Kontrollanter (Controllers): Hanterar och bearbetar HTTP-förfrågningar. Kontrollanten samordnar interaktionen mellan modellen och vyn. Den avgör vilken modell och vy som ska användas för att svara på en specifik förfrågan och skickar därefter lämplig HTTP-respons till klienten.
+1. https://kinsta.com/blog/php-frameworks/ - MVC strukur 
+2. https://www.geeksforgeeks.org/mvc-framework-introduction/
+3. https://fkrihnif.medium.com/understanding-the-mvc-architecture-in-laravel-a-comprehensive-guide-8f620cc139b6
+4. https://medium.com/@nnadichime04/laravel-mvc-architecture-explained-21e783dbbd14
 
 ## BE 1.5 Wordpress
 
 Wordpress är en hemsideverktyg med öppen källkod. Wordpress ger möljghet till att starta en sida och hosta besökare. Starten av Wordpress var att underlätta möjligheten till bloggplattformar att utvecklas. Nu används Wordpress av flera stora miljardföretag så som Microsoft och Spotify. 
 
-Plugins är tillägg som läggs till WordPress för att lägga till funktionalitet. Det finns tusentals plugins som täcker allt från sökmotoroptimering (SEO) till sociala medier och säkerhet. WordPress stöder olika typer av innehåll, inklusive text, bilder, ljud och video.
+En av de mest framträdande funktionerna i WordPress är dess användning av plugins, vilka tillåter användare att utöka funktionaliteten hos sina webbsidor. Det finns tusentals plugins tillgängliga, som täcker allt från sökmotoroptimering (SEO) till säkerhet och sociala medier. På liknande sätt kontrollerar WordPress utseendet på en webbplats med hjälp av teman. Det finns ett brett utbud av gratis och premiumteman tillgängliga för att anpassa utseendet och känslan på en webbplats.
 
-WordPress använder teman för att styra webbplatsens utseende och känsla. Det finns tusentals gratis och premiumteman tillgängliga för att anpassa utseendet på webbplatsen.
+WordPress stöder en mängd olika innehållstyper, inklusive text, bilder, ljud och video, vilket gör det till ett mångsidigt verktyg för webbutveckling. Plattformen har vuxit och förfinats över tid och har blivit ett populärt val inte bara för stora företag utan även för småföretag och enskilda användare som vill skapa och underhålla sina egna webbplatser utan att behöva djupgående tekniska kunskaper. Med dess enkelhet och flexibilitet har WordPress blivit en viktig del av internets webbutvecklingslandskap.
 
-WordPress har utvecklats över tid och har blivit ett av de mest använda CMS-systemen globalt. Det har även blivit ett populärt val för både små och stora företag samt enskilda användare som vill skapa och underhålla sina egna webbplatser.
+WordPress fortsätter att utvecklas och förbättras med regelbundna uppdateringar och ett engagerat community av utvecklare och användare som bidrar till dess tillväxt och anpassningsbarhet. Det är en plattform som erbjuder möjligheter för alla, från nybörjare till erfarna webbutvecklare, att skapa professionella och unika webbplatser på en intuitiv och effektiv plattform.
+
+WordPress fortsätter att vara av stor betydelse genom regelbundna uppdateringar och ett starkt community som stöder dess tillväxt och mångsidighet på webbutvecklingsområdet.
+
+1. https://kinsta.com/se/kunskapsbas/vad-ar-php/
+2. https://www.one.com/sv/webbhotell-hosting/vad-ar-php
+3. https://kinsta.com/knowledgebase/what-is-wordpress/
+4. https://www.whitepeakdigital.com/blog/what-is-wordpress/
 
 ## BE 1.6 Heirarkiska databaser
 
