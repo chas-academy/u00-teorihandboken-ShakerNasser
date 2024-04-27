@@ -103,14 +103,14 @@ $nyPerson = new Person("Shaker");
 Säkerhet är en viktig aspekt för att skydda information och system från obehörig åtkomst, skadlig kod och andra hot, särskilt inom IT. IT-säkerhet handlar om att skydda informationstekniksystem från obehörig åtkomst, användning, förändring eller förstörelse. Det innefattar olika åtgärder och tekniker för att säkerställa konfidentialitet, integritet och tillgänglighet av data och system.
 
 Applikationssäkerhet:
-Applikationssäkerhet fokuserar på att säkra programvaror och applikationer från olika hot och sårbarheter. Det innebär att implementera säkerhetsåtgärder i design, utveckling och drift av applikationer för att minimera riskerna för attacker och obehörig åtkomst.
+Applikationssäkerhet fokuserar på att säkra programvaror och applikationer från olika hot och sårbarheter. Det innebär att implementera säkerhetsåtgärder i design, utveckling och drift av applikationer för att minimera riskerna för attacker och obehörig åtkomst. Säkerhet innebär att skydda program och appar från hot genom att använda säkerhetsåtgärder vid design, utveckling och drift. Det inkluderar övervakning, sårbarhetsanalys och utbildning för att förhindra attacker.
 
 SQL-injektioner:
 SQL-injektioner är en typ av säkerhetshot som riktar sig mot databasdrivna applikationer. Vid en SQL-injektion kan en angripare infoga skadlig SQL-kod i en SQL-fråga som utförs av en applikation. Om sårbarheten utnyttjas framgångsrikt kan detta leda till obehörig åtkomst, manipulation eller förstörelse av databasen. För att förhindra SQL-injektioner bör utvecklare använda parametriserade frågor och sanitisering.
 
-PHP ramverken erbjuder robust säkerhet. I Laravel erbjuds ett inbyggt CSRF-skydd för att förhindra CSRF-attacker. Detta åstadkoms genom att generera och kontrollera CSRF-token för varje formulär som skickas till servern. Genom att inkludera @csrf-direktivet i formulär läggs automatiskt ett CSRF-token till varje POST-formulär. Detta använde vi tex i vår IMDB clone projekt där vi skapade flera formulär som användare integrerade med. 
+PHP ramverken erbjuder kraftig säkerhet. I Laravel erbjuds ett inbyggt CSRF-skydd för att förhindra CSRF-attacker. Detta åstadkoms genom att generera och kontrollera CSRF-token för varje formulär som skickas till servern. Genom att inkludera @csrf-direktivet i formulär läggs automatiskt ett CSRF-token till varje POST-formulär. Detta använde vi tex i vår IMDB clone projekt där vi skapade flera formulär som användare integrerade med. 
 
-För att få detta att fungera i en distribuerad miljö var jag tvungen att lägga till en kodsnutt i 'Providers -> AppServiceProvider.php':
+Jag implementerade en åtgärd i 'Providers -> AppServiceProvider.php' för att säkerställa att CSRF-skyddet fungerar korrekt även i en distribuerad miljö. Åtgärden innebar att jag tvingade Laravel att generera HTTPS-länkar istället för HTTP-länkar.
 
 ```php
     public function boot(): void
@@ -174,7 +174,7 @@ Hierarkiska databaser är en specifik modell inom databasvärlden som organisera
 
 Denna modell används inom olika områden, till exempel för att representera organisationsträd där avdelningar och anställda struktureras hierarkiskt. Likaså återspeglar filsystemet på datorer en hierarkisk struktur, där varje mapp representerar en nod och filer ligger som löv i trädet. Hierarkiska databaser lämpar sig också väl för att hantera produktstrukturer där varje komponent kan ha underdelar.
 
-Fördelarna med hierarkiska databaser inkluderar deras effektivitet när det gäller att hantera naturligt hierarkisk data och möjligheten att snabbt navigera mellan närliggande noder. Genom att använda hierarkiska databaser kan man enkelt organisera och strukturera data på ett sätt som återspeglar verkliga hierarkier.
+Fördelarna med hierarkiska databaser inkluderar deras effektivitet när det gäller att hantera naturligt hierarkisk data och möjligheten att snabbt navigera mellan närliggande noder. Genom att använda hierarkiska databaser kan man enkelt organisera och strukturera data på ett sätt som återspeglar verkliga hierarkier. Hierarkiska databaser kan dock vara mindre flexibla jämfört med relationsdatabaser, vilket kan begränsa deras användbarhet i vissa scenarier.
 
 Strukturen i hirearkiska databaser är väldigt minneskrävande till skillnad från relationsdatabaser. Sökningen av data generaras långsamt. Dessutom erbjuder hierarkiska databaser enkelhetsfaktor vid sökning och åtkomst av data. Eftersom varje nod har tydliga föräldrar och underordnade noder, kan man snabbt hitta och manipulera specifika datapunkter utan att behöva söka igenom hela databasen.
 
@@ -277,7 +277,6 @@ DELETE FROM tasks WHERE id = 2;
 
 ## BE 1.8 OAuth i backend
 
-
 Autentisering (Eng: Authentication) handlar om att verifiera vem någon påstår sig vara.
 
 Autentisering används av en server för att känna igen vem som försöker få tillgång till specifik information. En användare eller dator bekräftar sin identitet för servern genom att ange användarnamn eller lösenord. Det kan också göras med andra autentiseringsmetoder som kort eller appar, samt moderna igenkänningsverktyg som röst- eller näthinneigenkänning.
@@ -310,8 +309,12 @@ Password Grant: Denna typ kräver att användaren anger sina faktiska inloggning
 
 Refresh Grant: Används för att skapa en ny åtkomsttoken när en tidigare token har utgått. 
 
+I Laravel-projektet för IMDB-klonen implementerade vi autentisering och auktorisering med hjälp av RBAC-modellen för att hantera användares behörigheter och åtkomstnivåer. För att förstärka säkerheten och möjliggöra autentisering av API-anrop integrerade vi även Laravel Sanctum breeze. Breeze är en Laravel-paket som tillhandahåller färdiga funktioner för autentisering, inklusive inloggning, registrering, lösenordsåterställning och bekräftelse av e-postadress.
+
 1. https://medium.com/web-security/understanding-oauth2-a50f29f0fbf7
 2. https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
+3. https://zivukushingai.medium.com/everything-you-need-to-know-about-frontend-and-backend-authentication-ultimate-guide-7142a752249c
+4. https://mohamedadell.medium.com/15-steps-for-perfect-authentication-flow-in-the-backend-d5e287a9ce0a
 
 ## BE 1.9 HTTP-protokollet
 
@@ -343,6 +346,8 @@ Route::get('/users', function () {
 });
 ```
 
+HTTP möjliggör inte bara överföring av statiska webbsidor utan också dynamiskt genererat innehåll genom serverapplikationer. Genom att utnyttja HTTP-metoder som GET för att hämta data och POST för att skicka data till servern, kan interaktion mellan klient och server ske sömlöst. Med den ökande användningen av webbapplikationer är förståelse för HTTP och dess protokollavgörande för utvecklare och systemadministratörer för att säkerställa optimal prestanda och säkerhet.
+
 Som utvecklare är det viktigt att ha förståelse för HTTP-protokollet centrala för utveckling eftersom det möjliggör effektiv kommunikation och samarbete mellan olika delar av en webbapplikationer, från användargränssnitt till serverbackend och omvänd.
 
 1. https://developer.mozilla.org/en-US/docs/Web/HTTP
@@ -351,7 +356,7 @@ Som utvecklare är det viktigt att ha förståelse för HTTP-protokollet central
 
 ## BE 1.10 cURL
 
-cURL är kommandoradsverktyg som hjälper till att överföra data från eller till en annan server. Det använder sig av HTTP-protokollet så som HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP och FILE. cURL utvecklades av den självlärda programmeraren Daniel Stenberg och 20-tal andra programmerare över hela världen. De
+cURL är kommandoradsverktyg som hjälper till att överföra data från eller till en annan server. Det använder sig av HTTP-protokollet så som HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP och FILE. cURL utvecklades av den självlärda programmeraren Daniel Stenberg och 20-tal andra programmerare över hela världen. Med stöd för en mängd olika protokoll och möjligheten att anpassa och automatisera dataöverföringar är cURL ett nödvändig verktyg inom områden som webbutveckling, nätverksadministration och systemintegration.
 
 Ett exempel på dess användning är att göra en HTTP GET-förfrågan till en API. I det givna kommandot använder vi Curl för att anropa Edamam API:en för att söka efter recept som innehåller "chicken curry". Genom att specificera flaggor som -X 'GET' indikerar vi att vi gör en GET-förfrågan. Sedan specificerar vi URL:en till API:en, inklusive autentiseringsparametrar som app_id och app_key. Med flaggan -H 'accept: application/json' begär vi JSON-format för svaret från servern. Dessutom använder vi -H 'Accept-Language: en' för att ange att vi vill ha svar på engelska. 
 
