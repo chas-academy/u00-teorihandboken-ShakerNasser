@@ -24,7 +24,7 @@ Modellen lagrar affärslogiken och applikationsdata. Den skickar data till Vyn, 
 
 ## BE 1.2 OOP i PHP
 
-OOP är objektorinterad progammering som används även i PHP. Detta gör att det är lättare att strukutera och läsa av en koden. Koden organiseras genom att använda objekt, som instanser av klasser. Modifiering blir enklare och avläsning både maskinellet och mänskligt blir enklare. Klasser definerar egenskaper (varibaler) och metoder(funktionerna) som kan användas från den klassen. OOP-koncept som inkapsling, arv är centrala för att förstå och använda objektorienterad programmering i PHP.
+Objektorienterad programmering (OOP) är en metodik som används flitigt även inom PHP. Denna metodik möjliggör en mer strukturerad och läsbar kodbas. Genom att organisera koden med objekt, som är instanser av klasser, blir både modifiering och avläsning av koden betydligt smidigare. Klasser definierar egenskaper (variabler) och metoder (funktioner) som kan åberopas från instanser av den klassen. Koncept som inkapsling och arv är avgörande för att förstå och effektivt tillämpa objektorienterad programmering i PHP.
 
 ``` php
 class Person {
