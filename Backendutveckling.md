@@ -24,8 +24,7 @@ Modellen lagrar affärslogiken och applikationsdata. Den skickar data till Vyn, 
 
 ## BE 1.2 OOP i PHP
 
-OOP är objektorinterad progammering som används även i PHP. Detta gör att det är lättare att strukutera och läsa av en koden. Koden organiseras genom att använda objekt, som instanser av klasser. Modifiering blir enklare och avläsning både maskinellet och mänskligt blir enklare. Klasser definerar egenskaper (varibaler) och metoder(funktionerna) som kan användas från den klassen. OOP-koncept som inkapsling, arv är centrala för att förstå och använda objektorienterad programmering i PHP. 
-Konstruktor används 
+OOP är objektorinterad progammering som används även i PHP. Detta gör att det är lättare att strukutera och läsa av en koden. Koden organiseras genom att använda objekt, som instanser av klasser. Modifiering blir enklare och avläsning både maskinellet och mänskligt blir enklare. Klasser definerar egenskaper (varibaler) och metoder(funktionerna) som kan användas från den klassen. OOP-koncept som inkapsling, arv är centrala för att förstå och använda objektorienterad programmering i PHP.
 
 ``` php
 class Person {
@@ -352,9 +351,33 @@ Som utvecklare är det viktigt att ha förståelse för HTTP-protokollet central
 
 ## BE 1.10 cURL
 
+cURL är kommandoradsverktyg som hjälper till att överföra data från eller till en annan server. Det använder sig av HTTP-protokollet så som HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP och FILE. cURL utvecklades av den självlärda programmeraren Daniel Stenberg och 20-tal andra programmerare över hela världen. De
+
+Ett exempel på dess användning är att göra en HTTP GET-förfrågan till en API. I det givna kommandot använder vi Curl för att anropa Edamam API:en för att söka efter recept som innehåller "chicken curry". Genom att specificera flaggor som -X 'GET' indikerar vi att vi gör en GET-förfrågan. Sedan specificerar vi URL:en till API:en, inklusive autentiseringsparametrar som app_id och app_key. Med flaggan -H 'accept: application/json' begär vi JSON-format för svaret från servern. Dessutom använder vi -H 'Accept-Language: en' för att ange att vi vill ha svar på engelska. 
+
+```bash
+curl -X 'GET' \
+  'https://api.edamam.com/api/recipes/v2?type=public&q=chicken%20curry&app_id=6d7aa4&app_key=51360e3a2f2c71bcfc98131a0a7161' \
+  -H 'accept: application/json' \
+  -H 'Accept-Language: en'
+
+```
+För mer avancerade testning och felsökning av API:er kan användare också dra nytta av verktyg som Insomnia, som erbjuder en intuitiv gränssnitt för att skicka HTTP-förfrågningar, hantera autentisering och analysera svar på ett enkelt sätt. Det finns fler alterantiv, tex postman eller Swagger. Dessa verktyg underlättar även skapandet av ett API genom att underlätta dokumentationen med publish funktioner. Varje dokumenation får ett unikt id kopplat till det API:et.
+
+Här är ett exempel på ett arbetsprov jag har gjort:
+
+[Arbetsprov](https://documenter.getpostman.com/view/34481210/2sA3BrWpSL)
+
+Response med insomnia appen: 
+
+![cURL response](images/insomniaa.png)
+
+Curl är ett väldigt användbar verktyg för utvecklare och dataexperter för att effektivt kommunicera med olika webbtjänster direkt från kommandoraden.
+
 1. https://developer.ibm.com/articles/what-is-curl-command/
 2. https://medium.com/@kevinkoech265/curl-a-deep-dive-into-command-line-data-transfer-8361a85b177d
-3. 
+3. https://blog.apilayer.com/what-is-curl-and-how-does-it-relate-to-apis%EF%BF%BC/
+4. https://www.geeksforgeeks.org/how-to-import-curl-request-into-postman/
 
 ## BE 1.11 REST
 
@@ -376,11 +399,41 @@ REST möjliggör även att svar från servern kan cache lagras. Det innebär att
 
 ## BE 1.12 XML och andra dataformat
 
+Dataformat handlar om hur information är organiserad och strukturerad i datorer. Det inkluderar både själva datan och beskrivningar om datan, som till exempel vem som skapat den och när. Om dessa beskrivningar är otillräckliga kan det göra det svårare att använda datan på ett bra sätt och minska förtroendet för den. Det är vanligt att data publiceras utan tillräcklig information om dess egenskaper, särskilt när det gäller öppen data.
+
 XML (Extensible Markup Language):
-XML är en förkortning av "Extensible Markup Language". Det är ett strukturerat metaspråk som används för att definiera och organisera data. XML tillåter användare att skapa sina egna märkesspråk och definiera egna taggar för att strukturera och beskriva information. Det är användbart för att överföra och lagra data mellan olika program och plattformar. Eftersom det är textbaserat och strukturerat underlättar det för både datorer och människor att förstå och hantera data på ett enhetligt sätt.
+XML är ett strukturerat metaspråk som används för att definiera och organisera data. Det tillåter användare att skapa egna märkesspråk och taggar för att strukturera och beskriva information. XML är användbart för att överföra och lagra data mellan olika program och plattformar, och dess textbaserade, strukturerade natur underlättar både för datorer och människor att förstå och hantera data enhetligt.
 
 CSV (Comma-Separated Values):
-CSV står för "Comma-Separated Values". Det är ett enkelt filformat som används för att representera tabulära data, såsom en databastabell eller ett kalkylblad, i en textfil. I en CSV-fil separeras varje datapost med kommatecken, och varje rad representerar en rad i tabellen. CSV-filer är lätta att skapa, läsa och redigera manuellt, vilket gör dem mycket användbara för att överföra och dela tabulära data mellan olika program. CSV-filer stöds av många program, inklusive kalkylbladsprogram och databasverktyg.
+CSV är ett enkelt filformat för att representera tabulära data, som databastabeller eller kalkylblad, i en textfil. Varje datapost i en CSV-fil separeras med kommatecken, och varje rad representerar en rad i tabellen. CSV-filer är lätta att skapa, läsa och redigera manuellt, vilket gör dem användbara för att överföra och dela tabulär data mellan olika program. De stöds av många program, inklusive kalkylbladsprogram och databasverktyg.
+
+JSON (JavaScript Object Notation):
+JSON är en förkortning av "JavaScript Object Notation". Det är ett lättviktigt, textbaserat datautbytesformat som är enkelt för människor att läsa och skriva, samt för datorer att tolka och generera. JSON använder en läsbar textformat som består av nycklar och värden, där nycklar är strängar och värden kan vara olika datatyper, såsom strängar, numeriska värden, boolean-värden, objekt eller listor (arrayer) av värden. Det är vanligt förekommande i webbutveckling och API:er för att överföra data mellan klienter och servrar på ett enhetligt och läsbart sätt.
+
+Här är ett exempel på hur ett svar kan se ut i JSON-format:
+
+```json
+{
+  "recipe": {
+    "id": "123456",
+    "name": "Pasta Carbonara",
+    "ingredients": [
+      "Pasta",
+      "Ägg",
+      "Bacon",
+      "Parmesanost"
+    ],
+    "instructions": "Koka pastan. Stek bacon. Blanda ägg och parmesan. Blanda allt ihop och servera varmt.",
+    "servings": 2
+  }
+}
+```
+
+1. https://www.clearbyte.org/?p=2106&lang=sv - enkel beskrivning av dataformat begreppet
+2. https://support.microsoft.com/sv-se/office/xml-f%C3%B6r-nyb%C3%B6rjare-a87d234d-4c2e-4409-9cbc-45e4eb857d44
+3. https://labcollector.com/sv/support/knowledge-base/what-is-a-csv-file/?print=pdf
+4. Lektion 2024-01-18 om Dataformat
+
 
 ## BE 1.13 Webbservrar
 
@@ -388,20 +441,16 @@ En webbserver är en central komponent i den digitala världen, och dess roll ä
 
 En webbserver är i grund och botten en dator som är specialdesignad för att hantera förfrågningar och överföra data till och från andra servrar. Dessa servrar är oftast placerade hos driftbolag som erbjuder snabb och kraftfull internetuppkoppling.
 
-Webbserverns huvudsakliga uppgifter inkluderar att ta emot förfrågningar från klientdatorer, utföra HTTP-metoder, generera och skicka tillbaka HTTP-respons och vid behov logga händelser och generera statiska sidor.
-
 Webbservern fungerar som en mottagare för förfrågningar från klientdatorer, vilket kan vara allt från att hämta en webbsida till att skicka data till en databas.
+En webbserver används genom att klientdatorer skickar förfrågningar till den för att hämta webbsidor eller annan information. Klienten gör detta genom att skicka HTTP-förfrågningar, och webbservern svarar med den begärda informationen i form av HTML eller andra filformat. Webbserverns huvudsakliga uppgifter inkluderar att ta emot förfrågningar från klientdatorer, utföra HTTP-metoder, generera och skicka tillbaka HTTP-respons och vid behov logga händelser och generera statiska sidor.
 
 En central del av webbserverns arbete är att hantera olika HTTP-metoder som GET och POST för att möjliggöra kommunikation mellan klient och server. Webbservern genererar och skickar tillbaka HTTP-svar till klienten, vilket kan inkludera den begärda webbsidan eller annan data. Många webbservrar erbjuder möjlighet att logga olika händelser och aktiviteter för övervakning och felsökning.
 
-Vissa webbservrar kan också generera statiska sidor för att accelerera sidbelastningstider och minska belastningen på servern.
-
 En av de mest använda serverprogrammen är HTTPd, som fungerar i bakgrunden och agerar som en server i den övergripande klient-server-modellen. Det använder HTTP/HTTPS-protokollet för att underlätta kommunikationen mellan webbservern och klientdatorerna.
 
-En webbserver används genom att klientdatorer skickar förfrågningar till den för att hämta webbsidor eller annan information. Klienten gör detta genom att skicka HTTP-förfrågningar, och webbservern svarar med den begärda informationen i form av HTML eller andra filformat.
+En av de äldsta och mest använda webbserverprogrammen är Apache HTTP Server. Det är känt för sin stabilitet och flexibilitet. En annan populär webbserver är Nginx HTTP Server, som är känd för sin höga prestanda och skalbarhet, särskilt när det gäller hantering av många samtidiga anslutningar.
 
-En av de äldsta och mest använda webbserverprogrammen är Apache HTTP Server. Det är känt för sin stabilitet och flexibilitet.
-
-En annan populär webbserver är Nginx HTTP Server, som är känd för sin höga prestanda och skalbarhet, särskilt när det gäller hantering av många samtidiga anslutningar.
-
-CERN HTTPd HTTP Server är en tidigare webbserver som spelade en viktig roll i webbens historia och utveckling.
+1. https://java21v.lms.nodehill.se/article/vad-ar-en-webserver
+2. https://www.oxfordwebstudio.com/sv/vet-du/vad-ar-server
+3. https://nobox.se/begrepp-pa-webben/
+4. https://kinsta.com/se/blog/nginx-vs-apache/
