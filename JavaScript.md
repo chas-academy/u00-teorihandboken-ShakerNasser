@@ -152,7 +152,33 @@ För att följa dem WCAG riktlinjer så är det völidgt vitkigt at använda enk
 
 ## JS 1.7 Lexical scope
 
-Beskriv rubriken här
+Lexical scope är ett fundamentalt koncept inom programmering, framför allt inom JavaScript-programmering. Lexical scope avgör tillgängligheten för variabler som deklareras i den fullständiga källkoden. När en variabel deklareras i en global scope är den tillgänglig över hela JavaScript-koden. Nackdelen med en global scope är att den kan leda till svårigheter med felsökning och testning, eftersom variabler lätt kan skrivas över av misstag eller påverka andra delar av programmet oavsiktligt. Lexical scope löser detta genom att tillåta variabler att endast vara tillgängliga inom den funktion där de är deklarerade eller i de inre funktionerna, vilket skapar en tydligare struktur och minskar risken för oväntade bieffekter.
+
+Däremot finns det lokala scop som deklareras inuti en funktion och är endast tillgängliga inuti den funktionen. Dessa variabler är vanligtvis att föredra eftersom de minskar risken för namnkonflikter och håller variabler begränsade till de delar av koden där de verkligen behövs.
+
+```js
+
+function outerFunction() {
+  var outerVar = "I'm in outer-scope";
+  
+  function innerFunction() {
+    var innerVar = "I'm in inner-scope";
+    console.log(outerVar); // Vi kan komma åt outerVar här eftersom den är i det omfånget där innerFunction() definieras.
+  }
+  
+  innerFunction();
+  console.log(innerVar); // Detta skulle orsaka en fel, eftersom innerVar bara är definierad i det omfånget av innerFunction().
+}
+
+outerFunction();
+```
+
+En förändring som kom med ECMAScript 2015 (ES6) var möjligheten att använda `let` och `const` för att skapa block scope. Detta innebär att variabler som deklareras med `let` eller `const` är endast tillgängliga inom det block där de är deklarerade. Till exempel, om vi deklarerar variabler inuti ett `if`-block eller en loop med `let` eller `const`, kommer de endast vara tillgängliga inuti det specifika blocket och inte utanför det. Detta ger utvecklare bättre kontroll över variabler och minimerar risken för oönskade sido effekter. Block scope med `let` och `const` bidrar till att förbättra kodens läsbarhet och underhållbarhet genom att tydligt definiera var variabler är tillgängliga och när de går ut ur omfånget. Detta är särskilt användbart i komplexa kodbaser där olika delar av koden kan ha olika krav på variabler.
+
+
+1. https://cleverzone.medium.com/lexical-scope-in-javascript-929789101dab
+2. https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/
+3. https://www.freecodecamp.org/news/write-less-do-more-with-javascript-es6-5fd4a8e50ee2/
 
 ## JS 1.8 Event handling
 
