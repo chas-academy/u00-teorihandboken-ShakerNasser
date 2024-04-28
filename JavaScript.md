@@ -28,8 +28,8 @@ Dessa datatyper/värden finns i JavaScript:
 Här nedan följer ex på hur koden exkeveras (körs) med hjälp av console.log funktionen.
 
 ```js
-let x = 1
-console.log(x)
+let x = 1;
+console.log(x);
 ```
 
 Javascript har väldigt många funktioner, en av dem mesta användabara i den nuvarande webbutveckling är API:er. Vi använder API:er i tex väderprogonos webbsidor (Klart.se) eller tex bilupplysningssidor (biluppgifter.se)
@@ -47,14 +47,16 @@ Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till
 
 ## JS 1.2 JavaScript-ramverk och -bibliotek
 
-v. 11
+1. https://generalassemb.ly/blog/what-is-a-javascript-framework/
+2. https://medium.com/@evincedevelop/top-10-most-popular-javascript-frameworks-to-choose-in-2024-269453cdaf35
+3. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks
+4. https://builtin.com/software-engineering-perspectives/react-framework - React förklarad
 
 ## JS 1.3 Promises
 
 Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkrona funktionerna blir alltmer populära. Promises, även kallade "framtida löften" på svenska, används för att hantera asynkrona operationer på ett mer strukturerat sätt och erbjuder ett sätt att hantera och samordna flera asynkrona operationer. Med promises kan man koppla ihop asynkrona uppgifter med metoderna async och await, vilket minskar användningen av callback-funktioner. Detta gör koden mer läsbar och lättare att utveckla för framtida projekt.
 
 Promise presenterar värde så som pending (väntande), fullfied (uppfyllt) eller rejected (avvisat). När en promise är "pending", så väntar den på att en asynkron operation ska slutföras. När operationen slutförs, går promisen över till antingen "fulfilled" eller "rejected" beroende på om operationen lyckades eller misslyckades.
-
 
 1. https://sunlightmedia.org/sv/tips-f%C3%B6r-javascript/
 2. https://www.freecodecamp.org/news/javascript-promise-object-explained/
@@ -79,13 +81,12 @@ function Person(hometown, hobby, birthday) {
 var aboutShaker = new Person("Skärholmen, Stockholm", "eating", {month: 4, day: 18, year: 1997});
 ```
 
-
 1. https://www.freecodecamp.org/news/how-javascript-implements-oop/
 2. https://sv.khanacademy.org/computing/computer-programming/programming/objects/a/review-objects
 
 ## JS 1.5 DOM-manipulation
 
-DOM-manipulation är en viktigt verktyg i Javascript där utvecklare kan integerera med HTML element för att skapa en dymanisk och interaktiv plattform. Genom att komma åt element och modifera struktur, styling och innehåll så blir användarupplevelsen mer dynamisk än att bara använda en statisk sida. 
+DOM-manipulation är en viktigt verktyg i Javascript där utvecklare kan integerera med HTML element för att skapa en dymanisk och interaktiv plattform. Genom att komma åt element och modifera struktur, styling och innehåll så blir användarupplevelsen mer dynamisk än att bara använda en statisk sida.
 
 För att manilupera DOM trädet så behöver man komma åt elementen genom att använda DOM objekt vilket representerar hela HTML dokumentet. För att komma åt dessa element kan man använda följande exempel:
 
@@ -101,14 +102,14 @@ const paragraphs = document.getElementsByClassName('paragraph');
 const images = document.getElementsByTagName('img');
 ```
 
-När man har lyckats komma åt dessa element så kan man modifera dess innehåll genom att använda detta egenskap: 
+När man har lyckats komma åt dessa element så kan man modifera dess innehåll genom att använda detta egenskap:
 
 ```Js
 
 // Modifiera innehållet i ett element
 headerElement.innerHTML = 'Chas Academy';
 
-// Här nedan så kan vi se exempel på hur man kan modifera stylingen. 
+// Här nedan så kan vi se exempel på hur man kan modifera stylingen.
 
 // Lägger till en klickhändelselyssnare på knappen
 colorButton.addEventListener('click', function() {
@@ -122,14 +123,13 @@ myParagraph.style.color = 'blue';
 2. https://www.freecodecamp.org/news/dom-manipulation-in-javascript/
 3. https://www.honeybadger.io/blog/javascript-oop/
 
-
 ## JS 1.6 HTTP-requests
 
 Kommunikationen mellan frontend och backend bygger på HTTP-förfrågningar. Genom detta protokoll kan vi använda funktioner som kräver integration med backend, vilket förenklar hanteringen av data som behöver lagras på en server. För att interagera med en server behöver vi förstå HTTP-protokollet och dess metoder. Vi kan använda HTTP-metoder såsom CRUD (Create, Read, Update, Delete) med hjälp av dedikerade HTTP-verb som POST, GET, PUT/PATCH och DELETE.
 
 När vi kommunicerar med servern skickar den tillbaka ett svar beroende på förfrågans giltighet. Om förfrågan lyckas, skickar servern tillbaka data vanligtvis i JSON-format (ibland XML). Om förfrågan misslyckas, skickar servern tillbaka ett felmeddelande. Felmeddelandet beskrivs oftast med en statuskod, till exempel:
 
-```Bash 
+```Bash
 ”HTTP 401 error – unauthorized”
 ”401 unauthorized ”
 ”Access denied”
@@ -157,15 +157,14 @@ Lexical scope är ett fundamentalt koncept inom programmering, framför allt ino
 Däremot finns det lokala scop som deklareras inuti en funktion och är endast tillgängliga inuti den funktionen. Dessa variabler är vanligtvis att föredra eftersom de minskar risken för namnkonflikter och håller variabler begränsade till de delar av koden där de verkligen behövs.
 
 ```js
-
 function outerFunction() {
   var outerVar = "I'm in outer-scope";
-  
+
   function innerFunction() {
     var innerVar = "I'm in inner-scope";
     console.log(outerVar); // Vi kan komma åt outerVar här eftersom den är i det omfånget där innerFunction() definieras.
   }
-  
+
   innerFunction();
   console.log(innerVar); // Detta skulle orsaka en fel, eftersom innerVar bara är definierad i det omfånget av innerFunction().
 }
@@ -175,29 +174,25 @@ outerFunction();
 
 En förändring som kom med ECMAScript 2015 (ES6) var möjligheten att använda `let` och `const` för att skapa block scope. Detta innebär att variabler som deklareras med `let` eller `const` är endast tillgängliga inom det block där de är deklarerade. Till exempel, om vi deklarerar variabler inuti ett `if`-block eller en loop med `let` eller `const`, kommer de endast vara tillgängliga inuti det specifika blocket och inte utanför det. Detta ger utvecklare bättre kontroll över variabler och minimerar risken för oönskade sido effekter. Block scope med `let` och `const` bidrar till att förbättra kodens läsbarhet och underhållbarhet genom att tydligt definiera var variabler är tillgängliga och när de går ut ur omfånget. Detta är särskilt användbart i komplexa kodbaser där olika delar av koden kan ha olika krav på variabler.
 
-
 1. https://cleverzone.medium.com/lexical-scope-in-javascript-929789101dab
 2. https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/
 3. https://www.freecodecamp.org/news/write-less-do-more-with-javascript-es6-5fd4a8e50ee2/
 
 ## JS 1.8 Event handling
 
-Event referar till en handling där användaren interagerar med sidan och förväntar sig en dynamisk upplevelsen. En användaren vill till exempel kunna integerara genom att klicka på element så som knappar eller inmatningsfältar. Detta handling notiferar till webbläsaren att användaren har försökt komma åt en handling och behöver få respons. Detta sker genom en verktygsfunktion som kallas för event handler som lystnar på en särskild typ av begärd event. 
+Event referar till en handling där användaren interagerar med sidan och förväntar sig en dynamisk upplevelsen. En användaren vill till exempel kunna integerara genom att klicka på element så som knappar eller inmatningsfältar. Detta handling notiferar till webbläsaren att användaren har försökt komma åt en handling och behöver få respons. Detta sker genom en verktygsfunktion som kallas för event handler som lystnar på en särskild typ av begärd event.
 
-Det finns olika typ av events där den mest användbara är 'onlick'. 
-
+Det finns olika typ av events där den mest användbara är 'onlick'.
 
 ```js
 // Lägg till en klickhändelselyssnare på knappen
-myButton.addEventListener('click', function() {
-    // Ändra färgen på texten när knappen klickas
-    myParagraph.style.color = 'blue';
+myButton.addEventListener("click", function () {
+  // Ändra färgen på texten när knappen klickas
+  myParagraph.style.color = "blue";
 });
-
 ```
 
 1. https://dev.to/shubhankarval/event-handling-in-javascript-51n3
-
 
 ## JS 1.9 Prototype inheritance
 
