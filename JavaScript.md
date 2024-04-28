@@ -125,7 +125,30 @@ myParagraph.style.color = 'blue';
 
 ## JS 1.6 HTTP-requests
 
-Beskriv rubriken här
+Kommunikationen mellan frontend och backend bygger på HTTP-förfrågningar. Genom detta protokoll kan vi använda funktioner som kräver integration med backend, vilket förenklar hanteringen av data som behöver lagras på en server. För att interagera med en server behöver vi förstå HTTP-protokollet och dess metoder. Vi kan använda HTTP-metoder såsom CRUD (Create, Read, Update, Delete) med hjälp av dedikerade HTTP-verb som POST, GET, PUT/PATCH och DELETE.
+
+När vi kommunicerar med servern skickar den tillbaka ett svar beroende på förfrågans giltighet. Om förfrågan lyckas, skickar servern tillbaka data vanligtvis i JSON-format (ibland XML). Om förfrågan misslyckas, skickar servern tillbaka ett felmeddelande. Felmeddelandet beskrivs oftast med en statuskod, till exempel:
+
+```Bash 
+”HTTP 401 error – unauthorized”
+”401 unauthorized ”
+”Access denied”
+```
+
+GET. Detta är den mest använda HTTP-förfrågningsmetoden. En GET-förfrågan ber servern om en specifik bit information eller resurs. När du ansluter till en webbplats skickar din webbläsare vanligtvis flera GET-förfrågningar för att få den data den behöver för att sidan ska laddas.
+
+POST. Din webbläsare använder POST-HTTP-förfrågningsmetoden när den behöver skicka data till servern. Till exempel, om du fyller i ett kontaktformulär på en webbplats och skickar det, använder du en POST-förfrågan så att servern tar emot den informationen.
+
+PUT. PUT-förfrågningar är liknande i funktionalitet som POST-metoden. Men istället för att skicka data använder du PUT-förfrågningar för att uppdatera information som redan finns på slutservern.
+
+För att följa dem WCAG riktlinjer så är det völidgt vitkigt at använda enkel och lättförståelig språklig stil i felmeddelanden så att användaren inte känner sig förvirrad eller överväldigad av tekniska termer. Åroblemet ska förkalras på ett sätt som gör det möjligt för användaren att vidta åtgärder för att lösa det.
+
+![HTTP](images/HTTP-JS.png)
+
+1. https://kinsta.com/knowledgebase/javascript-http-request/
+2. https://www.freecodecamp.org/news/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa/
+3. https://kinsta.com/se/kunskapsbas/401-felet/
+4. https://kinsta.com/knowledgebase/what-is-an-http-request/
 
 ## JS 1.7 Lexical scope
 
