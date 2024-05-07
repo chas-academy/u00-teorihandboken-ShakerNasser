@@ -47,6 +47,21 @@ Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till
 
 ## JS 1.2 JavaScript-ramverk och -bibliotek
 
+JavaScript-ramverk är förpackningar av färdigskrivna kodbitar som gör det enklare att bygga webbapplikationer. De ger en strukturerad miljö för utvecklare att arbeta inom och följer ofta ett designmönster som heter Model-View-Controller (MVC). MVC delar upp kod i tre delar: modellen hanterar data, vyn visar data för användaren, och kontrollen tar emot användarinput och styr modellen eller vyn. Det här gör det lättare att bygga och underhålla webbapplikationer. Jämfört med kodbibliotek erbjuder ramverk fler verktyg för att skapa applikationer. JavaScript-ramverk är viktiga för att bygga moderna och starka webbapplikationer.
+
+Angular: 
+
+
+
+React: 
+
+
+
+Backend ramverken så som Express och NextJS:
+
+
+
+
 1. https://generalassemb.ly/blog/what-is-a-javascript-framework/
 2. https://medium.com/@evincedevelop/top-10-most-popular-javascript-frameworks-to-choose-in-2024-269453cdaf35
 3. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks
@@ -197,6 +212,11 @@ myButton.addEventListener("click", function () {
 ## JS 1.9 Prototype inheritance
 
 Beskriv rubriken här
+
+1. https://www.freecodecamp.org/news/prototypes-and-inheritance-in-javascript/
+2. https://medium.com/@kevincennis/prototypal-inheritance-781bccc97edb
+3. https://medium.com/@amitbadala/understanding-and-implementing-prototype-inheritance-in-javascript-fef72c2341fa
+4. https://reference.codeproject.com/javascript/inheritance_and_the_prototype_chain
 
 ## JS 1.10 Higher-order functions
 
