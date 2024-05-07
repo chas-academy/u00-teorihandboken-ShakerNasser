@@ -50,11 +50,11 @@ Nya versioner av ECMAScript släpps med nya funktioner och förbättringar. Till
 JavaScript-ramverk är förpackningar av färdigskrivna kodbitar som gör det enklare att bygga webbapplikationer. De ger en strukturerad miljö för utvecklare att arbeta inom och följer ofta ett designmönster som heter Model-View-Controller (MVC). MVC delar upp kod i tre delar: modellen hanterar data, vyn visar data för användaren, och kontrollen tar emot användarinput och styr modellen eller vyn. Det här gör det lättare att bygga och underhålla webbapplikationer. Jämfört med kodbibliotek erbjuder ramverk fler verktyg för att skapa applikationer. JavaScript-ramverk är viktiga för att bygga moderna och starka webbapplikationer.
 
 Angular: 
-
+Angular är en open source plattform med Type-Script baserat utvecklingsform. Plattformen är utvecklat av Google och har en väldigt stark support samt dokumenation. Angular använder sig av komponententer för att kunna bygga starka och robust webbapplikationer. Genom att erbjuda en uppsättning utvecklarverktyg för att hjälpa till att utveckla, bygga, testa och uppdatera koden så är angular en väldigt attraktiv plattform bland utvecklare. 
 
 
 React: 
-
+React är ett open source verktyg på JavaScript som hjälper till att bygga användargränssnitt för webbplatser. Det skapades av Facebook och är perfekt för appar som behöver vara interaktiva och snabba. React är alltså bibliotek och inte ett ramverk, vilket innebär att det är mer flexibelt och kan användas tillsammans med andra verktyg och bibliotek för att skapa den perfekta lösningen för ett projekt. Med React kan man skapa dynamiska och effektiva webbapplikationer genom att använda koncept som virtuell DOM och effektiv hantering av tillstånd. React är ett omtyckt och populärt val bland utvecklare tack vare dess förmåga att effektivt hantera användargränssnitt, modularisera kod och skapa skalbara webbapplikationer.
 
 
 Backend ramverken så som Express och NextJS:
@@ -66,6 +66,7 @@ Backend ramverken så som Express och NextJS:
 2. https://medium.com/@evincedevelop/top-10-most-popular-javascript-frameworks-to-choose-in-2024-269453cdaf35
 3. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks
 4. https://builtin.com/software-engineering-perspectives/react-framework - React förklarad
+5. https://www.entire.se/artiklar/javascript-ramverk-en-jamforelse-av-angular-react-och-vue 
 
 ## JS 1.3 Promises
 
@@ -227,6 +228,12 @@ v. 11
 Beskriv rubriken här
 
 asynkrona metoder
+
+
+1. https://medium.com/swlh/what-does-it-mean-by-javascript-is-single-threaded-language-f4130645d8a9
+2. https://dev.to/bbarbour/if-javascript-is-single-threaded-how-is-it-asynchronous-56gd
+3. https://elijahtrillionz.com/why-is-javascript-single-threaded-and-non-blocking
+
 
 ## JS 1.12 OAuth från frontend
 
