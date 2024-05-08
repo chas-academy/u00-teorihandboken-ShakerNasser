@@ -70,7 +70,7 @@ Backend ramverken så som Express och NextJS:
 
 ## JS 1.3 Promises
 
-Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkrona funktionerna blir alltmer populära. Promises, även kallade "framtida löften" på svenska, används för att hantera asynkrona operationer på ett mer strukturerat sätt och erbjuder ett sätt att hantera och samordna flera asynkrona operationer. Med promises kan man koppla ihop asynkrona uppgifter med metoderna async och await, vilket minskar användningen av callback-funktioner. Detta gör koden mer läsbar och lättare att utveckla för framtida projekt.
+Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkrona funktionerna blir alltmer populära. Promises som även kallade "framtida löften" på svenska används för att hantera asynkrona operationer på ett mer strukturerat sätt och erbjuder ett sätt att hantera och samordna flera asynkrona operationer. Med promises kan man koppla ihop asynkrona uppgifter med metoderna async och await, vilket minskar användningen av callback-funktioner. Detta gör koden mer läsbar och lättare att utveckla för framtida projekt.
 
 Promise presenterar värde så som pending (väntande), fullfied (uppfyllt) eller rejected (avvisat). När en promise är "pending", så väntar den på att en asynkron operation ska slutföras. När operationen slutförs, går promisen över till antingen "fulfilled" eller "rejected" beroende på om operationen lyckades eller misslyckades.
 
@@ -198,17 +198,39 @@ En förändring som kom med ECMAScript 2015 (ES6) var möjligheten att använda 
 
 Event referar till en handling där användaren interagerar med sidan och förväntar sig en dynamisk upplevelsen. En användaren vill till exempel kunna integerara genom att klicka på element så som knappar eller inmatningsfältar. Detta handling notiferar till webbläsaren att användaren har försökt komma åt en handling och behöver få respons. Detta sker genom en verktygsfunktion som kallas för event handler som lystnar på en särskild typ av begärd event.
 
+Det finns massor av olika händelser som kan hanteras i JavaScript, som när en användare integerar applikationen med klicka med musen, trycker på en tangent, rör musen, fyller i ett formulärfält, laddar en sida, och mycket mer. Genom att lyssna och hantera dessa händelser kan webbsidor bli interaktiva och reagera på det användaren integerar med görs på ett smidigt sätt.
+
+När eventhanteraren körs, kan den också få reda på information om själva händelsen, som vilket element användaren klickade på, vilken knapp användaren tryckte ner eller vilken tangent användaren tryckte på. Den här informationen kan vara användbar för att göra olika saker beroende på vad som hände och när det hände.
+
+Eventhantering är viktigt för webbutveckling eftersom det gör det möjligt att skapa användarvänliga gränssnitt och ge användarna en bra upplevelse när de använder webbapplikationer.
+
 Det finns olika typ av events där den mest användbara är 'onlick'.
 
 ```js
-// Lägg till en klickhändelselyssnare på knappen
-myButton.addEventListener("click", function () {
-  // Ändra färgen på texten när knappen klickas
-  myParagraph.style.color = "blue";
+// Hämta referens till knappen
+var minKnapp = document.getElementById("minKnapp");
+
+// Lägg till en eventhanterare för klickhändelser på knappen
+minKnapp.addEventListener("click", function() {
+    // Kod som ska köras när knappen klickas på
+    alert("Knappen klickades på!");
 });
+
 ```
+Event handling i ramverket Angular (ex tagen från Recipe-APP): 
+
+<button [disabled]="!loginObj.email || !loginObj.password" type="submit" (click) ="onLogin()">Sign in</button>
+
+Mouseover och Mouseout events är användbara för hover-effekter på webbsidor, där något aktiveras när muspekaren går över eller lämnar ett element. Det kan vara att ändra färg på en knapp eller visa mer information när musen sveper över en bild.
+
+Keydown, Keypress och Keyup events fångar tangenttryckningar från användaren, vilket är avgörande för att hantera användarinmatning på webbsidor. De är särskilt användbara för att skapa interaktiva formulär eller möjliggöra tangentbordsnavigering.
+
+Att förstå sig på eventhandling kommer även att underlätta hur man testar sin applikation och använder sig av benchmarking verktyg så som DevTools. Detta kommer hjälpa en att inspektera i konsolen och leta efter sårbarheter i koden och förminska spillotiden.
 
 1. https://dev.to/shubhankarval/event-handling-in-javascript-51n3
+2. https://www.scaler.com/topics/javascript/event-handling-in-javascript/
+3. https://medium.com/@theriyasharma24/event-handling-in-angular-a5854a61b4a5
+4. https://medium.com/@ratnesh4209211786/mastering-event-handling-in-javascript-a-comprehensive-guide-51204c2cf552
 
 ## JS 1.9 Prototype inheritance
 
