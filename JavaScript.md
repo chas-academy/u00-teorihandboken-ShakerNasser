@@ -52,14 +52,11 @@ JavaScript-ramverk är förpackningar av färdigskrivna kodbitar som gör det en
 Angular: 
 Angular är en open source plattform med Type-Script baserat utvecklingsform. Plattformen är utvecklat av Google och har en väldigt stark support samt dokumenation. Angular använder sig av komponententer för att kunna bygga starka och robust webbapplikationer. Genom att erbjuda en uppsättning utvecklarverktyg för att hjälpa till att utveckla, bygga, testa och uppdatera koden så är angular en väldigt attraktiv plattform bland utvecklare. 
 
-
 React: 
 React är ett open source verktyg på JavaScript som hjälper till att bygga användargränssnitt för webbplatser. Det skapades av Facebook och är perfekt för appar som behöver vara interaktiva och snabba. React är alltså bibliotek och inte ett ramverk, vilket innebär att det är mer flexibelt och kan användas tillsammans med andra verktyg och bibliotek för att skapa den perfekta lösningen för ett projekt. Med React kan man skapa dynamiska och effektiva webbapplikationer genom att använda koncept som virtuell DOM och effektiv hantering av tillstånd. React är ett omtyckt och populärt val bland utvecklare tack vare dess förmåga att effektivt hantera användargränssnitt, modularisera kod och skapa skalbara webbapplikationer.
 
-
 Backend ramverken så som Express och NextJS:
-
-
+Express och Next.js är två kraftfulla JavaScript-ramverk för backend-utveckling. Express är minimalistiskt och flexibelt medan Next.js erbjuder server-side rendering och API Routes. Dessa verktyg underlättar skapandet av skalbara och lättunderhållna webbapplikationer.
 
 
 1. https://generalassemb.ly/blog/what-is-a-javascript-framework/
