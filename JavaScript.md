@@ -240,7 +240,65 @@ Beskriv rubriken här
 
 ## JS 1.10 Higher-order functions
 
-v. 11
+I JavaScript är 'higher-order functions' (högre ordningens funktioner) funktioner som antingen tar andra funktioner som argument eller returnerar en funktion som resultat, eller både och. En funktion i sig är en serie instruktioner för att utföra en viss typ av operation, och dessa funktioner använder parametrar för att definiera de värden som ska behandlas när koden körs. Dessa funktioner är kraftfulla eftersom det går att återanvända dem i koden. 
+
+För att kunna förstå sig på högre higher-order functions så är det bättre att bryta ner dem och förstå de mindre delarna innan man närmar sig konceptet som helhet. 
+
+I detta exempel nedan så är `greet` namnet av funktionen och `name` är det parametern som skickas in i funktionen.  
+
+En defintion av en enkel JavaScript function:
+
+```js
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+```
+
+Callbackfunktioner är som instruktioner som man ger till någon annan att använda vid behov. När den andra personen är klar med sin uppgift, följer de  instruktioner och gör det som har ombetts att gör.
+
+I det här enkla exemplet:
+
+```javascript
+function promptInput(callbackFn) {
+  const name = prompt('Vad är ditt namn?');
+  callbackFn(name);
+}
+
+promptInput(name => console.log(`Hej ${name}!`));
+```
+
+Funktionen `promptInput` ber användaren att ange sitt namn. När användaren gör det, anropar den den medföljande instruktionen (callbackfunktionen) för att säga hej med det namn som angavs.
+
+Callbackfunktioner är användbara när man behöver att något ska hända efter en viss händelse eller efter en uppgift är klar, som att hämta data från en databas eller när man vill reagera på en knapptryckning på en webbsida.
+
+Här nedan följs ett enklare exempel på Higher-order funktion: 
+
+```js
+function sayHello() {
+  console.log("Hej!");
+}
+
+function sayGoodbye() {
+  console.log("Hejdå!");
+}
+
+function greet(saySomething) {
+  saySomething(); // Här används higher-order funktionen 
+}
+
+greet(sayHello);    // Output: Hej!
+greet(sayGoodbye);  // Output: Hejdå!
+```
+I greet-funktionen tar den parameter saySomething, vilket förväntas vara en annan funktion. Sedan använder den denna funktion genom att helt enkelt kalla den, vilket innebär att den andra funktionen utförs när greet kallas.
+
+I de två anropen till greet, skickar vi sayHello respektive sayGoodbye som argument. Så när vi kallar greet(sayHello), kör den sayHello-funktionen och skriver ut "Hej!" på konsolen. När vi kallar greet(sayGoodbye), kör den sayGoodbye-funktionen och skriver ut "Hejdå!".
+
+1. https://www.reddit.com/r/learnjavascript/comments/r1z131/can_someone_help_explain_what_a_higherorder/ 
+(Tog reddit för just denna förklarar väldigt bra)
+2. https://medium.com/@rabailzaheer/first-class-and-higher-order-functions-86d14e40c688
+3. https://www.telerik.com/blogs/master-higher-order-functions-javascript (Förklarar alla slags (användbara) funktioner också)
+4. https://www.almabetter.com/bytes/tutorials/javascript/higher-order-functions
+
 
 ## JS 1.11 Single-thread programming
 
