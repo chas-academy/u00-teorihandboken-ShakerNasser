@@ -71,8 +71,29 @@ Promises standardiserades efter den femte utgåvan av ECMAScript där de asynkro
 
 Promise presenterar värde så som pending (väntande), fullfied (uppfyllt) eller rejected (avvisat). När en promise är "pending", så väntar den på att en asynkron operation ska slutföras. När operationen slutförs, går promisen över till antingen "fulfilled" eller "rejected" beroende på om operationen lyckades eller misslyckades.
 
+För att hantera resultatet eller felet från ett löfte används metoder som then() och catch(). Metoden then() tar en funktion som argument och körs när löftet uppfylls, medan catch() används för att hantera eventuella fel som uppstår under löftets exekvering.
+
+Här nedan följs en enklare kod exempel på promises som används vid API anrop, StarWars API. 
+
+```js
+// Hämta data från API:et med Fetch och logga till konsolen
+fetch('https://swapi.dev/api/people/')
+  .then(response => response.json())
+  .then(data => {
+    data.results.forEach(person => {
+      console.log(`Namn: ${person.name}, Hemvärld: ${person.homeworld}`);
+    });
+  })
+  .catch(error => console.error('Något gick fel:', error));
+```
+
+Promises gör det möjligt att skriva mer läsbar och underhållbar asynkron kod jämfört med callback-metoden. De är också grunden för async/await-syntaxen som introducerades i ECMAScript 2017 och gör asynkron kod ännu lättare att läsa och skriva. Innan det var möjligt att använda sig av asynkrona metoder så kunde utvecklare hamna i så kallade callback-hell. Callback-hell uppstod när man hade flera inbäddade eller nästlade callback-funktioner, vilket resulterade i djupt nästlad och svåråtkomlig kod.
+
 1. https://sunlightmedia.org/sv/tips-f%C3%B6r-javascript/
 2. https://www.freecodecamp.org/news/javascript-promise-object-explained/
+3. https://medium.com/@shriharim006/javascript-promises-from-beginner-to-expert-a-comprehensive-tutorial-899454b6f17f
+4. https://dev.to/alexmercedcoder/understanding-javascript-promises-in-depth-5ga9
+
 
 ## JS 1.4 OOP i JavaScript
 
