@@ -323,9 +323,15 @@ I de två anropen till greet, skickar vi sayHello respektive sayGoodbye som argu
 
 ## JS 1.11 Single-thread programming
 
-Beskriv rubriken här
+I ett single-thread (Enkeltrådad programmering) programmerings språk innebär det att språket använder sig av bara ett tråd. Trådet ekuveras innan den ekuverar nästa tråd.
 
-asynkrona metoder
+JavaScripts enkeltrådiga karaktär kommer av dess rötter som ett språk för webbläsare, där dess huvudsyfte är att interagera med användaren genom att manipulera HTML, CSS samt hantera händelser. Att bara ha en tråd kan förenkla utvecklingsprocessen då det tar bort behovet av att hantera trådsynkronisering och andra komplexa problem som kan uppstå vid användning av flera trådar.
+
+Dock kan JavaScripts enkeltrådiga natur även vara en begränsning i vissa fall. Till exempel kan intensiva beräkningar eller långsamma I/O-operationer ge intrycket att webbläsaren fastnar eftersom den enda tråden är upptagen med att utföra dessa operationer och kan inte svara på andra användarinteraktioner under tiden.
+
+För att bemöta detta har JavaScript infört koncept såsom asynkron programmering och händelsebaserade arkitekturer. Med hjälp av funktioner som callbacks, promises och async/await kan utvecklare skapa icke-blockerande kod som tillåter andra operationer att fortsätta samtidigt som intensiva eller långsamma operationer behandlas i bakgrunden.
+
+React och Angular hjälper till med enkeltrådad programmering genom att erbjuda möjligheter till komponentbaserad utveckling och hantering av tillstånd. Dessa ramverk tillåter utvecklare att skapa modulära och återanvändbara komponenter som kan interagera med varandra utan att orsaka problem med enkeltrådadhet. Genom att hantera DOM-manipulation och tillståndshantering åt utvecklaren, underlättar dessa ramverk processen att bygga responsiva och dynamiska användargränssnitt utan att behöva oroa sig för att hantera flera trådar manuellt.
 
 
 1. https://medium.com/swlh/what-does-it-mean-by-javascript-is-single-threaded-language-f4130645d8a9
