@@ -32,13 +32,13 @@ CSS erbjuder även möjligheten att använda hierarki. Om två eller flera regle
 
 I HTML:
 
-```
+```js
 <p>Chas Academy is the best.</p>
 ```
 
 I CSS: 
 
-```
+```js
 p {
   text-align: center;
   color: red;
@@ -69,7 +69,7 @@ Mediefrågor som är CSS-tekniker. Dem spelar en viktig roll i responsiv design.
 
 Såhär kan en media fråga se ut: 
 
-``` 
+``` js
 @media screen and (max-width: 992px) {
   body {
     background-color: blue;
