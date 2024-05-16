@@ -345,4 +345,49 @@ v 21
 
 ## JS 1.13 Websockets
 
-v 20
+Websockets möjliggör snabb och effektiv tvåvägskommunikation mellan en webbläsare och en webbserver. Genom att använda full duplex-kommunikation kan både klienten och servern skicka och ta emot meddelanden samtidigt, vilket ger en mer responsiv och interaktiv användarupplevelse. För att etablera en websocket-anslutning initierar klienten en HTTP-förfrågan till servern, vilket sedan leder till att en ihållande kommunikationskanal skapas mellan dem. Denna teknik är särskilt användbar för realtidsapplikationer såsom chattprogram, spel och dataströmning, där snabb och kontinuerlig kommunikation är avgörande för en bra användarupplevelse. Websockets gör det möjligt för webbapplikationer att erbjuda snabb och responsiv kommunikation i realtid. Detta förbättrar användarupplevelsen och skapar möjligheter för olika applikationer som behöver omedelbar dataöverföring och interaktivitet.
+
+Websockets inte bara möjliggör snabbare kommunikation jämfört med traditionella HTTP-förfrågningar. utan de minskar också överföringen av onödig data. Genom att ha en öppen anslutning kan både klienten och servern skicka och ta emot data utan att behöva upprepa handskakningsprocessen som krävs för varje HTTP-förfrågan och svar. Detta leder till lägre latens och minskad belastning på nätverks- och serverresurser.
+
+WebSocket-anslutningar skapas normalt sett med klient-sidan JavaScript enligt följande:
+
+```js
+var ws = new WebSocket("wss://normal-website.com/chat");
+
+```
+
+För realtidsapplikationer är fördelarna med websockets särskilt tydliga. Till exempel kan chattapplikationer dra nytta av omedelbar leverans av meddelanden utan fördröjning. Spel kan använda websockets för att synkronisera spelstatus och möjliggöra realtidsinteraktion mellan flera spelare. Även inom dataströmning kan websockets användas för att leverera kontinuerlig information, som aktiekurser eller sensoravläsningar, till användare i realtid.
+
+
+Detta sker även genom en "handskakning" som sker via en HTTP förfråga:
+
+```js
+GET /chat HTTP/1.1
+Host: normal-website.com
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: wDqumtseNBJdhkihL6PW7w==
+Connection: keep-alive, Upgrade
+Cookie: session=KOsEJNuflw4Rd9BDNrVmvwBF9rEijeE2
+Upgrade: websocket
+
+```
+
+När server har accepterat kommunaktionen så får man föjande som svar:
+
+```js
+HTTP/1.1 101 Switching Protocols
+Connection: Upgrade
+Upgrade: websocket
+Sec-WebSocket-Accept: 0FFP+2nmNIf/h+4BP36k9uzrYGk=
+
+```
+
+Google Docs är en väldigt bra exempel att använda. Där kan flera medlemmar skriva samtidigt och få en realatidförändring. 
+Även inom aktiedataströmmning så är det viktigt med WebSockets för att prenumerera på och strömma kontinuerliga uppdateringar från en server. Genom att använda WebSockets kan användare få omedelbar tillgång till den senaste marknadsinformationen utan att behöva uppdatera sidan manuellt. 
+
+
+1. https://it-ord.idg.se/ord/websocket/
+2. https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/
+3. https://medium.com/@Arockne/networking-introduction-to-websockets-7c0ffc3c2d6e
+4. https://www.educative.io/answers/what-is-websocket
+5. https://portswigger.net/web-security/websockets/what-are-websockets
