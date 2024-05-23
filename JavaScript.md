@@ -15,15 +15,15 @@ Automatically
 - Using let
 - Using const
 
-Dessa datatyper/värden finns i JavaScript:
+De olika datatyperna och värdena som kan hanteras i JavaScript inkluderar:
 
-- String
-- Boolean
-- Number
-- Array
-- Object
-- Undefined
-- Null
+- Strängar (Strings)
+- Booleska värden (Boolean)
+- Numeriska värden (Number)
+- Arrayer (Arrays)
+- Objekt (Objects)
+- Odefinierat värde (Undefined)
+- Null-värde (Null)
 
 Här nedan följer ex på hur koden exkeveras (körs) med hjälp av console.log funktionen.
 
@@ -99,7 +99,7 @@ Promises gör det möjligt att skriva mer läsbar och underhållbar asynkron kod
 
 JavaScript är ett OOP-skriptspråk. OOP är fortkortning till Obejktorinterad programmering (Eng: Object Oriented Programming). Programmeringsmetoden gör det möljigt att använda sig av uppsättning av objekt som integerar med varandra och detta skapar effektiv och kraftfulla konstruktion vid stora program.
 
-Objekter är instanser av olika klasser.
+Inom OOP representerar objekten verkliga entiteter med specifika egenskaper och beteenden. Ett objekt är en instans av en klass, där klassen kan ses som en mall eller ett blåtryck för objektet. Klassen definierar vilka egenskaper (attribut) och metoder (funktioner) objektet kommer att ha.
 
 För att skapa en objekt börjar man med att deklarera variabeln och sedan namnger man egenskaperna mellan måsvingarna.
 
@@ -114,15 +114,18 @@ function Person(hometown, hobby, birthday) {
 // Skapa en instans av Person
 var aboutShaker = new Person("Skärholmen, Stockholm", "eating", {month: 4, day: 18, year: 1997});
 ```
+Genom att använda objekt på detta sätt kan man skapa strukturerade och modulära program där olika delar av programmet kan hantera sina egna data och funktioner. Detta gör koden mer organiserad och lättare att underhålla särskilt när programmen blir större och mer komplexa. JavaScript gör det också möjligt att skapa och hantera objekt dynamiskt, vilket ger stor flexibilitet och kraft till utvecklarna.
 
 1. https://www.freecodecamp.org/news/how-javascript-implements-oop/
 2. https://sv.khanacademy.org/computing/computer-programming/programming/objects/a/review-objects
+3. https://medium.com/@priyam_mondal/exploring-object-oriented-programming-in-javascript-25ebb1cc13c9
+4. 
 
 ## JS 1.5 DOM-manipulation
 
-DOM-manipulation är en viktigt verktyg i Javascript där utvecklare kan integerera med HTML element för att skapa en dymanisk och interaktiv plattform. Genom att komma åt element och modifera struktur, styling och innehåll så blir användarupplevelsen mer dynamisk än att bara använda en statisk sida.
+DOM-manipulation är en viktigt verktyg i Javascript där utvecklare kan integerera med HTML element för att skapa en dymanisk och interaktiv plattform. Genom att komma åt element och modifera struktur, styling och innehåll så blir användarupplevelsen mer dynamisk än att bara använda en statisk sida. DOM är en representation av HTML-dokumentet som en trädlika struktur där varje nod är en del av dokumentet (t.ex., element, attribut, text).
 
-För att manilupera DOM trädet så behöver man komma åt elementen genom att använda DOM objekt vilket representerar hela HTML dokumentet. För att komma åt dessa element kan man använda följande exempel:
+För att manipulera DOM-trädet behöver man komma åt elementen genom att använda DOM-objekt, vilket representerar hela HTML-dokumentet. Detta kan göras med metoder som getElementById, getElementsByClassName, och getElementsByTagName, som visat i exemplen ovan. När man har lyckats komma åt dessa element kan man modifiera deras innehåll, struktur och stil med hjälp av JavaScript.
 
 ```Js
 
@@ -139,7 +142,6 @@ const images = document.getElementsByTagName('img');
 När man har lyckats komma åt dessa element så kan man modifera dess innehåll genom att använda detta egenskap:
 
 ```Js
-
 // Modifiera innehållet i ett element
 headerElement.innerHTML = 'Chas Academy';
 
@@ -152,6 +154,10 @@ myParagraph.style.color = 'blue';
 });
 
 ```
+
+DOM används i en mängd olika scenarier inom webbutveckling. Det kan användas för att skapa interaktiva formulär, dynamiskt ladda innehåll från en server via AJAX eller Fetch API, samt hantera händelser och användarinteraktioner på sidan. Genom att använda DOM kan man skapa webbapplikationer som är mer användarvänliga och responsiva.
+
+I JavaScript ramverket Angular och biblotket React så är DOM manipulation en väldigt stor del av deras mekanism. Genom att använda virtuell DOM, komponentbaserad arkitektur och avancerade datahanteringsmekanismer, gör dessa ramverk det enklare och effektivare att bygga dynamiska och responsiva webbapplikationer. 
 
 1. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 2. https://www.freecodecamp.org/news/dom-manipulation-in-javascript/
@@ -341,7 +347,27 @@ React och Angular hjälper till med enkeltrådad programmering genom att erbjuda
 
 ## JS 1.12 OAuth från frontend
 
-v 21
+OAuth (Open Authorization) är en standard för hantering av åtkomst som tillåter användare att ge tredjepartsapplikationer åtkomst till sina resurser utan att dela sina lösenord. Från ett frontend-perspektiv innebär detta att en applikation kan begära åtkomst till data från en annan tjänst, som Google eller Facebook med användarens tillstånd.
+
+Processen påbörjas genom att användaren klickar på en knapp med texten "Logga in med [tjänst]". Användaren blir då omdirigerad till tjänstens OAuth-autoriseringsserver där applikationen specificerar vilka resurser den vill få åtkomst till genom att inkludera olika "scopes" i förfrågan. Användaren loggar in på tjänsten och ombeds sedan att godkänna åtkomsten som applikationen begär.
+
+Om användaren godkänner skickar tjänsten tillbaka en auktoriseringskod till applikationen via en omdirigering till en fördefinierad URL. Denna kod skickas sedan från frontend till backend-servern. På backend-servern begärs ett åtkomsttoken från tjänsten med hjälp av koden och en klienthemlighet. Detta steg utförs på backend för att skydda känslig information från att exponeras i frontend-koden.
+
+En enkel illustration på vad som händer om en användare väljer att använda sig av google login:
+
+- Användaren klickar på "Logga in med Google".
+- Användaren omdirigeras till Googles inloggningssida och loggar in.
+- Användaren godkänner att applikationen får åtkomst till deras Google-profil och e-postadress.
+- Google omdirigerar användaren tillbaka till webbapplikationen med en auktoriseringskod.
+- Webbapplikationens frontend skickar koden till sin backend.
+- Backend begär och får ett åtkomsttoken från Google.
+- Backend använder åtkomsttoken för att hämta användarens Google-profil och e-postadress från Googles API och skickar tillbaka denna information till frontend.
+
+* [tjänst] innebär annan tjänst som Google, Facebook eller Twitter med användarens tillstånd.
+
+1. https://medium.com/web-security/understanding-oauth2-a50f29f0fbf7
+2. https://medium.com/@tony.infisical/guide-to-using-oauth-2-0-to-access-google-apis-dead94d6866d
+3. https://stackoverflow.blog/2022/12/22/the-complete-guide-to-protecting-your-apis-with-oauth2/
 
 ## JS 1.13 Websockets
 
