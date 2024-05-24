@@ -87,7 +87,7 @@ fetch('https://swapi.dev/api/people/')
   .catch(error => console.error('Något gick fel:', error));
 ```
 
-Promises gör det möjligt att skriva mer läsbar och underhållbar asynkron kod jämfört med callback-metoden. De är också grunden för async/await-syntaxen som introducerades i ECMAScript 2017 och gör asynkron kod ännu lättare att läsa och skriva. Innan det var möjligt att använda sig av asynkrona metoder så kunde utvecklare hamna i så kallade callback-hell. Callback-hell uppstod när man hade flera inbäddade eller nästlade callback-funktioner, vilket resulterade i djupt nästlad och svåråtkomlig kod.
+Promises gör det möjligt att skriva mer läsbar och underhållbar asynkron kod jämfört med callback-metoden. De är också grunden för async/await-syntaxen som introducerades i ECMAScript 2017 och gör asynkron kod ännu lättare att läsa och skriva. Innan det var möjligt att använda sig av asynkrona metoder så kunde utvecklare hamna i så kallade callback-hell. Callback-hell uppstod när man hade flera inbäddade eller nästlade callback-funktioner, vilket resulterade i djupt nästlad och svåråtkomlig kod. Denna problematik ledde till en minskad kodkvalitet och ökad underhållskostnad.
 
 1. https://sunlightmedia.org/sv/tips-f%C3%B6r-javascript/
 2. https://www.freecodecamp.org/news/javascript-promise-object-explained/
@@ -100,6 +100,8 @@ Promises gör det möjligt att skriva mer läsbar och underhållbar asynkron kod
 JavaScript är ett OOP-skriptspråk. OOP är fortkortning till Obejktorinterad programmering (Eng: Object Oriented Programming). Programmeringsmetoden gör det möljigt att använda sig av uppsättning av objekt som integerar med varandra och detta skapar effektiv och kraftfulla konstruktion vid stora program.
 
 Inom OOP representerar objekten verkliga entiteter med specifika egenskaper och beteenden. Ett objekt är en instans av en klass, där klassen kan ses som en mall eller ett blåtryck för objektet. Klassen definierar vilka egenskaper (attribut) och metoder (funktioner) objektet kommer att ha.
+
+I OOP finns det tre huvudprinciper: arv, inkapsling, polymorfism. Arv innebär att en klass kan ärva egenskaper och metoder från en annan klass, vilket främjar återanvändning av kod och minskar redundans. Inkapsling handlar om att begränsa åtkomsten till objektets interna detaljer och bara tillåta extern åtkomst via väldefinierade gränssnitt, vilket ökar säkerheten och underlättar förändringar i koden. Polymorfism möjliggör att objekt av olika klasser kan behandlas på samma sätt, vilket främjar flexibilitet och ökar återanvändningen av kod. Tillsammans skapar dessa principer en ram för att skapa robusta och skalbara applikationer i JavaScript och andra OOP-språk.
 
 För att skapa en objekt börjar man med att deklarera variabeln och sedan namnger man egenskaperna mellan måsvingarna.
 
@@ -258,7 +260,32 @@ Att förstå sig på eventhandling kommer även att underlätta hur man testar s
 
 ## JS 1.9 Prototype inheritance
 
-Beskriv rubriken här
+Prototypisk arv är en grundläggande del av JavaScript. Det definierar hur objekt ärver egenskaper och metoder från andra objekt. Istället för traditionellt klassbaserat arv där objekt skapas från klasser använder JavaScript prototyper för att skapa objekt och dela funktionalitet.
+
+Varje objekt har en prototyp, som kan vara ett annat objekt eller null. När ett objekt skapas, kopplas det till sin prototyp genom en länk som kallas prototypkedjan. När du försöker nå en egenskap eller metod på ett objekt, letar JavaScript-motorn först i objektet självt. Om den inte hittar egenskapen där, letar den längs prototypkedjan tills den hittar egenskapen eller når slutet av kedjan.
+
+Här är ett exempel som visar hur prototypal arv fungerar i praktiken:
+
+```js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}`);
+};
+
+const shaker = new Person('Shaker', 27);
+shaker.greet(); // Output: Hello, my name is Shaker
+```
+
+Denna process främjar effektiv kodåteranvändning och skapar en flexibel ram för att definiera och styra objekt samt deras beteenden. Även med ES6
+klassbaserade syntax är JavaScripts klasser primärt syntaktiskt socker ovanpå prototyper.
+
+Object.prototype är kärnobjektet i JavaScript, vilket betyder att alla JavaScript-objekt ärver från detta grundobjekt. Prototypiskt arv är en av de centrala idéerna som gör JavaScript till ett kraftfullt och flexibelt språk för webutveckling och andra applikationer.
+
+Prototypiskt arv ger JavaScript en unik kapacitet att skapa dynamiska och anpassningsbara objekt. Genom att dela egenskaper och metoder via prototyper, främjar det enkel kodåteranvändning och effektiv hantering av objektorienterade mönster. Denna design utgör en robust grund för utveckling av webbapplikationer och andra programvarusystem.
 
 1. https://www.freecodecamp.org/news/prototypes-and-inheritance-in-javascript/
 2. https://medium.com/@kevincennis/prototypal-inheritance-781bccc97edb
@@ -333,7 +360,7 @@ I ett single-thread (Enkeltrådad programmering) programmerings språk innebär 
 
 JavaScripts enkeltrådiga karaktär kommer av dess rötter som ett språk för webbläsare, där dess huvudsyfte är att interagera med användaren genom att manipulera HTML, CSS samt hantera händelser. Att bara ha en tråd kan förenkla utvecklingsprocessen då det tar bort behovet av att hantera trådsynkronisering och andra komplexa problem som kan uppstå vid användning av flera trådar.
 
-Dock kan JavaScripts enkeltrådiga natur även vara en begränsning i vissa fall. Till exempel kan intensiva beräkningar eller långsamma I/O-operationer ge intrycket att webbläsaren fastnar eftersom den enda tråden är upptagen med att utföra dessa operationer och kan inte svara på andra användarinteraktioner under tiden.
+Dock kan JavaScripts enkeltrådiga natur även vara en begränsning i vissa fall. Till exempel kan intensiva beräkningar eller långsamma I/O-operationer ge intrycket att webbläsaren fastnar eftersom den enda tråden är upptagen med att utföra dessa operationer och kan inte svara på andra användarinteraktioner under tiden. Detta fenomen kan skapa upplevt långsam responsivitet och begränsningar i realtidsapplikationer.
 
 För att bemöta detta har JavaScript infört koncept såsom asynkron programmering och händelsebaserade arkitekturer. Med hjälp av funktioner som callbacks, promises och async/await kan utvecklare skapa icke-blockerande kod som tillåter andra operationer att fortsätta samtidigt som intensiva eller långsamma operationer behandlas i bakgrunden.
 
