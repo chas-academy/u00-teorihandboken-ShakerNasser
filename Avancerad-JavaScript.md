@@ -11,7 +11,11 @@ Studerande: Förnamn Efternamn
 5. https://dev.to/vyan/how-to-structure-your-backend-code-in-nodejs-expressjs-2bdd
 
 ## AJ 1.2 Express
-Beskriv rubriken här
+
+1. https://www.codecademy.com/article/what-is-express-js
+2. https://medium.com/@Brilworks/what-is-express-js-a-comprehensive-guide-to-beginners-b289a25bd414
+3. https://dev.to/bilal1718/how-to-create-a-backend-api-in-express-js-e0k
+4. https://dev.to/dipakahirav/modern-api-development-with-nodejs-express-and-typescript-using-clean-architecture-1m77
 
 ## AJ 1.3 Progressive Web Apps
 Beskriv rubriken här
