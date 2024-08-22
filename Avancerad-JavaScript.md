@@ -39,7 +39,45 @@ Beskriv rubriken här
 Beskriv rubriken här
 
 ## AJ 1.6 Avancerad funktionalitet i ES.next
-Beskriv rubriken här
+
+ECMASprict är en standard för JavaScript som gör att det fungerar likadant i olika webbläsare och miljöer. Den bestämmer regler, funktioner och hur språket ska se ut. Standard uppdateras ofta för att lägga till nya funktioner och förbättringar.
+
+ES.next är ett samlingsnamn för framtida versioner av ECMAScript, standarden för programmeringsspråket JavaScript. ES.next syftar specifikt på den version av ECMAScript som är i utveckling och som följer efter den nuvarande standarden.
+
+Man kan bidra med nya feature i form av ider men dessa måste skickas in till TC-39 kommiten. Nya funktioner och förslag granskas och godkänns av TC39-kommittén som ansvarar för att utveckla och underhålla ECMAScript-standarden. Deras uppgift är att säkerställa att bidragsgivare följer standarden och att JavaScript fortsätter att utvecklas och förbättras.
+Varje feature behöver gå genom dem fyra olika stegen i procecessn för att inkuderas i standarden.
+
+De fyra stegen är:
+0: Idéstadium (Strawman) - Förslag lämnas in till specifikationen.
+1: Förslag (Proposal) - Förklara varför förslaget behövs, beskriv en möjlig lösning och identifiera eventuella problem.
+2: Utkast (Draft) - Beskriv hur det ska fungera med korrekt syntax och tekniskt språk.
+3: Kandidat (Candidate) - Det behövs mer feedback från utvecklare och användare för att förbättra förslaget.
+4: Färdig (Finished) - Förslaget är redo att läggas till i den officiella ECMAScript-standarden.
+
+ECMAscirpt är ständigt inom förändring vilket innebär att som utvecklare så ska man vara förberdd på att läsa sig in i nya förändringar. Några av dessa features som har kommit in den seanste året:
+
+`replaceAll()` - En metod som låter dig byta ut alla förekomster av en sträng mot en annan i ett textstycke. Tidigare kunde `replace()` endast byta ut den första matchningen, men med `replaceAll()` byts alla förekomster ut på en gång.
+
+`Promise.any()` - Denna metod tar en lista av löften (Promises) och returnerar det första löftet som uppfylls (resolves). Om inget löfte uppfylls, och alla misslyckas, returnerar det ett fel. Detta skiljer sig från `Promise.all()`, som väntar på att alla löften ska uppfyllas eller misslyckas.
+
+Kodexempel:
+
+```js
+const paragraph = "I think Ruth's dog is cuter than your dog!";
+
+console.log(paragraph.replaceAll('dog', 'monkey'));
+// Expected output: "I think Ruth's monkey is cuter than your monkey!"
+
+// Global flag required when calling replaceAll with regex
+const regex = /Dog/gi;
+console.log(paragraph.replaceAll(regex, 'ferret'));
+// Expected output: "I think Ruth's ferret is cuter than your ferret!"
+```
+
+1. https://github.com/tc39/proposals
+2. https://tc39.es/process-document/
+3. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
+
 
 ## AJ 1.7 JavaScript i integrerade system
 Beskriv rubriken här
