@@ -24,10 +24,37 @@ Node.js erbjuder en mängd funktioner för webbutveckling. Det använder en asyn
 
 ## AJ 1.2 Express
 
+Express är ett välkänt och kraftfull ramverk för webbapplikationer för Node.js som gör webbapplikations- och API-utveckling enklare och effektivare. Express är snabbt, anpassningsbart och "ointressant", vilket innebär att det inte kräver att utvecklare håller sig till en specifik struktur eller designfilosofi. Istället ger det ett enkelt sätt att bygga skalbara och lätta att underhålla applikationer. Express stöder också arkitekturen Model-View-Controller (MVC), som är ett vanligt mönster för att strukturera webbapplikationer.
+Utvecklare kan ställa in och använda Express i sitt arbete med Node.js och npm (Node Package Manager). Det är ett toppval för att bygga enkla webbplatser pcj knepiga appar och API:er.
+
+Routing spelar en nyckelroll i Express och syftar till att hantera hur en webbapp svarar på olika klientförfrågningar till specifika slutpunkter. Dessa slutpunkter består ofta av en URI (som /home eller /about) och en HTTP-metod (GET, POST, PUT DELETE). Genom att använda routing kan utvecklare bygga responsiva och interaktiva webbappar som hanterar olika typer av förfrågningar baserat på vad användaren behöver.
+En enkel routermetod i Express:
+
+```js
+app.get('/home', (req, res) => {
+  res.send('Home Page');
+});
+app.get('/about', (req, res) => {
+  res.send('About');
+});
+```
+
+Express har en annan nyckelfunktion: middleware. Det här är funktioner som har tillgång till begäran (req), svaret (res) och nästa funktion i appens begäran-svar-cykel. De behandlar förfrågningar innan de når sina slutdestinationer eller ändrar svar innan appen skickar dem till kunden. Du kan använda mellanprogram för att hantera uppgifter som att kontrollera om en användare är inloggad för att hålla loggar eller lägga till specifika rubriker till svar.
+Express har ett grundläggande sätt att ställa in en routermetod. Det ser ut så här:
+
+```js
+app.use((req, res, next) => {
+  console.log('En ny begäran mottogs vid ' + Date.now());
+  next();  // Går vidare till nästa middleware eller rutt
+});
+```
+
 1. https://www.codecademy.com/article/what-is-express-js
 2. https://medium.com/@Brilworks/what-is-express-js-a-comprehensive-guide-to-beginners-b289a25bd414
 3. https://dev.to/bilal1718/how-to-create-a-backend-api-in-express-js-e0k
 4. https://dev.to/dipakahirav/modern-api-development-with-nodejs-express-and-typescript-using-clean-architecture-1m77
+5. https://www.freecodecamp.org/news/the-express-handbook/
+6. https://www.freecodecamp.org/news/express-explained-with-examples-installation-routing-middleware-and-more/
 
 ## AJ 1.3 Progressive Web Apps
 Beskriv rubriken här
@@ -59,15 +86,14 @@ function identity<T>(arg: T): T {
   return arg;
 }
 let result = identity<number>(42); 
-
 ```
+
 Tuples: 
 En tuple är en maskinskriven lista där varje objekt kan ha en annan typ. Detta hjälper till att representera ett snabbt element med specifika typer.
 
 ```js
 let tuple: [string, number];
 tuple = ['hello', 10]; 
-
 ```
 
 Unions: Unions låter en variabel ha flera möjliga typer. Till exempel kan en variabel vara antingen ett tal eller en sträng:,
