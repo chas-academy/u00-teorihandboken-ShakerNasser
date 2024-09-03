@@ -33,7 +33,56 @@ Node.js erbjuder en mängd funktioner för webbutveckling. Det använder en asyn
 Beskriv rubriken här
 
 ## AJ 1.4 Typningssystem för Javascript (ex TypeScript, Flow)
-Beskriv rubriken här
+
+TypeScript är ett kodningsspråk som utökar JavaScript och lägger till statisk typkontroll. Microsoft skapade det, och folk använder det ofta för att bygga stora skalbara appar. En av de viktigaste fördelarna med TypeScript är att det hjälper kodare att skriva starkare kod som är lättare att underhålla genom att föra in typer i JavaScript, som är ett dynamiskt språk. JavaScript är ett tolkat språk som räknar ut typer när det körs, men TypeScript introducerar typer innan programmet körs.
+
+TypeScript fungerar genom att utvecklare skriver kod i TypeScript, som sedan konverteras till JavaScript. Denna konvertering upptäcker potentiella fel och andra problem innan koden körs, vilket leder till färre fel och problem när programvaran är aktiv. TypeScript använder också "duck typing", vilket innebär att det kan gissa en variabels typ baserat på dess användning, utan att utvecklaren behöver stava det.
+Konverteringen sker genom kommandot tsc (TypeScript Compiler). Detta kommando ändrar TypeScript-filer (som slutar med .ts) till standard JavaScript-filer som kan köras i alla inställningar som stöder JavaScript.
+Anteckningar i TypeScript
+
+TypeScript ger dig massor av alternativ för att lägga till typinformation till din kod. Här är några vanliga sätt att göra det:
+
+nummer: värden som är siffror.
+sträng: bitar av text.
+boolean: sanna eller falska värden.
+any: När du inte vill fästa en specifik typ. Detta kan vara praktiskt men också riskabelt eftersom det stänger av typkontroll.
+void: Visar att en funktion inte ger tillbaka något värde.
+array: Typen för en lista med saker, som nummer[] för en lista med nummer.
+
+TypeScriptkod har vissa fördelar jämfört med vanlig JavaScript. Den stora är statisk typkontroll, som upptäcker fel när du kompilerar istället för när du kör koden. Det betyder att din kod är starkare och lättare att hålla koll på. Så här skiljer sig JavaScript och TypeScript.
+
+TypeScript har några starka skrividéer som gör koden mer anpassningsbar och återanvändbar. Här är några:
+Generika: 
+Med generika kan du bygga återanvändbara delar som fungerar med många typer utan att förlora typkontrollen. Här är ett exempel på en generisk funktion:
+```js
+function identity<T>(arg: T): T {
+  return arg;
+}
+let result = identity<number>(42); 
+
+```
+Tuples: 
+En tuple är en maskinskriven lista där varje objekt kan ha en annan typ. Detta hjälper till att representera ett snabbt element med specifika typer.
+
+```js
+let tuple: [string, number];
+tuple = ['hello', 10]; 
+
+```
+
+Unions: Unions låter en variabel ha flera möjliga typer. Till exempel kan en variabel vara antingen ett tal eller en sträng:,
+
+```js
+function printId(id: number | string) {
+  console.log(id);
+}
+```
+
+
+1. https://dev.to/janvierjr/intro-to-typescript-5dhi 
+2. https://medium.com/@krishsurya1249/typescript-tutorial-f8d45ce5766b
+3. https://www.freecodecamp.org/news/learn-typescript-beginners-guide/
+
 
 ## AJ 1.5 Funktionell programmering i JavaScript
 Beskriv rubriken här
