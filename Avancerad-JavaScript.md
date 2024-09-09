@@ -111,7 +111,13 @@ function printId(id: number | string) {
 
 
 ## AJ 1.5 Funktionell programmering i JavaScript
-Beskriv rubriken här
+
+Funktionell programmering är ett tillvägagångssätt som ser beräkningar som ett sätt att utvärdera matematiska funktioner. Det har sitt ursprung i lambda-kalkyl, ett formellt system som Alonzo Church utvecklade på 1930-talet. Detta system skapade en grund för att förklara beräkningar som bygger på funktioner. Språk som Lisp (1958) och ML (1973) banade vägen för funktionell programmering. De påverkade nyare språk som Haskell och Scala.
+Funktionell programmering betonar att skriva rena funktioner. Dessa funktioner är förutsägbara och har inga bieffekter. Detta innebär att de alltid ger samma output för ett givet input utan att ändra något utanför deras omfattning. Denna fokus på oföränderliga data gör programmen mer pålitliga. Det gör dem också lättare att förstå och säkrare att köra samtidigt på olika processorer.
+
+1. https://thecodest.co/sv/blog/kraften-i-funktionell-programmering-i-javascript-del-1-introduktion/
+2. https://dev.to/alexmercedcoder/deep-dive-into-functional-programming-in-javascript-851
+3. https://www.freecodecamp.org/news/functional-programming-in-javascript/
 
 ## AJ 1.6 Avancerad funktionalitet i ES.next
 
