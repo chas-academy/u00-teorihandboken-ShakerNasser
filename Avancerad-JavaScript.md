@@ -1,5 +1,5 @@
 # Teorihandboken - Avancerad JavaScript (AJ)
-Studerande: Förnamn Efternamn
+Studerande: Shaker Nasser
 
 ## AJ 1.1 Node.js
 
@@ -31,11 +31,11 @@ Routing spelar en nyckelroll i Express och syftar till att hantera hur en webbap
 En enkel routermetod i Express:
 
 ```js
-app.get('/home', (req, res) => {
-  res.send('Home Page');
+app.get('/books', (req, res) => {
+  res.send('books page');
 });
 app.get('/about', (req, res) => {
-  res.send('About');
+  res.send('about');
 });
 ```
 
@@ -57,11 +57,58 @@ app.use((req, res, next) => {
 6. https://www.freecodecamp.org/news/express-explained-with-examples-installation-routing-middleware-and-more/
 
 ## AJ 1.3 Progressive Web Apps
-Beskriv rubriken här
+
+En Progressiv Webbapp (PWA) kombinerar de bästa delarna av webbplatser och mobilappar. Den utnyttjar den senaste webbläsartekniken för att ge användarna en upplevelse som känns mer som en vanlig app. Detta inkluderar att kunna fungera offline, skicka notiser och ladda snabbare än vanliga webbsidor.
+
+Problem som PWAs försöker lösa:
+
+Internetberoende: Vanliga webbappar kräver en bra internetanslutning för att fungera. PWAs kan fungera offline eller när internetanslutningen är långsam.
+
+Hastighet: Webbappar kan vara långsammare än appar du laddar ner. PWAs är byggda för att starta snabbt och fungera smidigt.
+
+Svårt att lägga till på hemskärmen: Du kan inte lägga till vanliga webbappar på din hemskärm som vanliga appar. Men du kan lägga till PWAs direkt från din webbläsare utan att behöva gå till en appbutik.
+
+Hur PWAs hjälper:
+
+Fungerar offline: PWAs använder särskilda verktyg för att spara vad de behöver. Detta gör att de kan fortsätta fungera även när du inte är online.
+
+Snabbare prestanda: PWAs hämtar det de behöver från sparad data. Detta ger användarna en smidig och snabb upplevelse.
+
+### Dessa kritier måste uppfyllas för att få en fungerande PWA applikation:
+
+HTTPS: Din webbapp måste köras på en säker anslutning. Detta håller den säker och gör att servicearbetare kan utföra sitt jobb.
+
+Web App Manifest: Denna JSON-fil talar om för PWA:n hur den ska bete sig. Den inkluderar saker som appikoner, namn, startpunkt och hur den ska visas.
+
+Service Worker: Detta är ett skript som körs i bakgrunden. Det möjliggör caching, push-meddelanden och offlineanvändning.
+
+### Fördelar och nackdelar med att göra en app till en PWA
+
+Fördelar:
+Fungerar på alla plattformar och enheter.
+Kostar mindre än att skapa separata appar för iOS och Android.
+Laddar snabbare och fungerar offline, vilket gör användarna nöjda.
+
+Nackdelar:
+Kan inte använda vissa enhetsfunktioner, som Bluetooth eller avancerade kamerakontroller.
+Vissa funktioner kanske inte fungerar lika bra på vissa plattformar, särskilt på iOS där PWAs inte har lika stort stöd.
+
+Vad kan en serviceworker göra?
+
+En service worker är ett skript som körs i bakgrunden och hanterar olika uppgifter som:
+
+Lagra resurser: Detta gör att PWAs kan fungera utan internetanslutning eller snabba upp laddningen genom att hämta resurser från lagring.
+
+Hantera nätverksförfrågningar: Den kan styra hur appen hanterar nätverksförfrågningar, vilket hjälper till att optimera resurser och förbättra prestandan.
+
+1. https://medium.com/@blockchain_simplified/what-is-a-pwa-an-intro-to-progressive-web-apps-3f280071f909
+2. https://dev.to/udoka033/progressive-web-apps-pwa-a-comprehensive-guide-57ii
+3. https://www.rabitsolutions.com/blog/examples-of-pwa-development/
+4. https://www.freecodecamp.org/news/what-are-progressive-web-apps/
 
 ## AJ 1.4 Typningssystem för Javascript (ex TypeScript, Flow)
 
-TypeScript är ett kodningsspråk som utökar JavaScript och lägger till statisk typkontroll. Microsoft skapade det, och folk använder det ofta för att bygga stora skalbara appar. En av de viktigaste fördelarna med TypeScript är att det hjälper kodare att skriva starkare kod som är lättare att underhålla genom att föra in typer i JavaScript, som är ett dynamiskt språk. JavaScript är ett tolkat språk som räknar ut typer när det körs, men TypeScript introducerar typer innan programmet körs.
+TypeScript är ett kodningsspråk som utökar JavaScript och lägger till statisk typkontroll. Microsoft skapade det och folk använder det ofta för att bygga stora skalbara appar. En av de viktigaste fördelarna med TypeScript är att det hjälper kodare att skriva starkare kod som är lättare att underhålla genom att föra in typer i JavaScript som är ett dynamiskt språk. JavaScript är ett tolkat språk som räknar ut typer när det körs men TypeScript introducerar typer innan programet körs.
 
 TypeScript fungerar genom att utvecklare skriver kod i TypeScript, som sedan konverteras till JavaScript. Denna konvertering upptäcker potentiella fel och andra problem innan koden körs, vilket leder till färre fel och problem när programvaran är aktiv. TypeScript använder också "duck typing", vilket innebär att det kan gissa en variabels typ baserat på dess användning, utan att utvecklaren behöver stava det.
 Konverteringen sker genom kommandot tsc (TypeScript Compiler). Detta kommando ändrar TypeScript-filer (som slutar med .ts) till standard JavaScript-filer som kan köras i alla inställningar som stöder JavaScript.
