@@ -211,5 +211,30 @@ console.log(paragraph.replaceAll(regex, 'ferret'));
 Beskriv rubriken här
 
 ## AJ 1.8 Native bundeling av JavaScript för olika operativsystem och enheter
-Beskriv rubriken här
 
+Native bundling packar en app och dess nödvändiga beroenden i ett format som kan köras direkt på en specifik plattform eller ett operativsystem. Detta gör att appen beter sig som om den var byggd med plattformens egna språk och verktyg. Syftet är att ge användarna en upplevelse som känns mer "native" och låta appen använda plattformens resurser för att prestera optimalt.
+
+Ett kraftfullt verktyg för native bundling i JavaScript-ekosystemet är React Native, som utvecklades av Facebook. Till skillnad från traditionella web-to-desktop-ramverk, tillåter React Native utvecklare att bygga mobila applikationer för både Android och iOS med hjälp av JavaScript, samtidigt som koden kompileras till faktiskt native kod. Världskända företag som Instagram, Airbnb och Tesla använder React Native, vilket visar på dess styrka och mångsidighet. Plattformen har en stor och aktiv community som erbjuder ett brett utbud av moduler och bibliotek, vilket underlättar för utvecklare att snabbt implementera komplexa funktioner.
+
+Fördelar med native bundling:
+
+Korsplattformskod: Utvecklare kan skriva koden en gång och sedan distribuera den på flera operativsystem. Detta sparar tid och minskar behovet av att underhålla separata kodbaser för varje plattform.
+
+Enklare distribution: Genom att paketera alla beroenden tillsammans säkerställer native bundling att applikationen kan köras på olika system. Detta eliminerar behovet av komplexa installationsprocesser eller versioneringsproblem.
+
+Tillgång till native API:
+Applikationen kan använda systemfunktioner som filhantering, notifikationer och systemintegration utan behov av en webbläsare, vilket ger en smidig användarupplevelse.
+
+Nackdelar med native bundling:
+
+Stora filstorlekar: Bundlade appar kan bli ganska stora eftersom hela runtime-miljön ofta inkluderas, vilket kräver mycket lagringsutrymme.
+
+Prestandaproblem: Native bundlade appar, såsom de som byggts med Electron, använder mer minne och CPU-resurser än appar som utvecklats med språk som Swift eller C++.
+
+Avsaknad av plattformspecifika förbättringar: Även om appen fungerar på flera plattformar kanske den inte utnyttjar plattformspecifika optimeringar eller designelement, vilket kan leda till en mindre polerad användarupplevelse.
+
+Native bundling är utmärkt när man behöver lansera en app snabbt på flera plattformar utan att skriva om koden för varje plattform. Det är också idealiskt för prototyper intern verktyg eller appar där snabb leverans är viktigare än maximal prestanda. Däremot är det kanske inte det bästa valet för appar som kräver hög prestanda som spel eller resurskrävande applikationer/program.
+
+1. https://www.freecodecamp.org/news/react-js-vs-react-native-whats-the-difference/
+2. https://www.computer.org/publications/tech-news/trends/benefits-of-react-native
+3. https://www.netguru.com/glossary/react-native
