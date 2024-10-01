@@ -208,7 +208,39 @@ console.log(paragraph.replaceAll(regex, 'ferret'));
 
 
 ## AJ 1.7 JavaScript i integrerade system
-Beskriv rubriken här
+
+JavaScript är ett mycket användbart skriptspråk inom webbutveckling. Det används både på klientsidan (frontend) och alltmer inom backend-utveckling med hjälp av olika ramverk och plattformar som Node.js. Detta gör JavaScript till ett kraftfull och ett av de mest populära och användbara programmeringsspråken idag. JavaScript används också utanför webben i prylar som har inbyggda och integrerade system. För att förstå hur JavaScript tillämpas i dessa system är det viktigt att kunna skilja på begreppen inbyggda och integrerade system:
+
+Inbyggda system: 
+Inbyggda system är datorer som är designade för att utföra specifika uppgifter inom en större produkt. De finns ofta i saker som hushållsapparater, bilar eller medicinsk utrustning och arbetar i bakgrunden utan att vi märker det. Dessa system är ofta små och optimerade för att använda så lite hårdvara och energi som möjligt.
+
+Ett par exempel på inbyggda system är mikrokontroller i diskmaskiner, termostater eller sensorer i smarta hem-enheter.
+
+Fördelar av inbyggdad system:
+- Optimering: Eftersom inbyggda system är designade för specifika uppgifter, kan de optimeras för att vara både energieffektiva och snabba. De är alltså riktigt bra på just det de är skapade för att göra.
+- Tillförlitlighet: Dessa system är ofta byggda för att vara väldigt stabila och kunna fungera utan problem under lång tid, även i tuffa miljöer. Du kan lita på att de gör sitt jobb utan att krångla.
+- Lägre kostnader: Eftersom inbyggda system är optimerade för specifika funktioner, kan de tillverkas med billigare och enklare hårdvara. Det betyder att produktionskostnaderna kan hållas nere.
+
+Integrerade system:
+Integrerade system är som en avancerad version av inbyggda system. De består av flera komponenter eller delsystem som samarbetar för att nå ett gemensamt mål. Dessa system kombinerar både mjukvara och hårdvara som kommunicerar och arbetar tillsammans för att utföra mer komplexa uppgifter. Du hittar integrerade system i avancerade tekniska lösningar som intelligenta trafiksystem eller stora nätverksbaserade IoT-arkitekturer.
+
+Integrerade system inkluderar smarta hem automatiserade fabriker och självkörande bilar där flera inbyggda system samarbetar för att säkerställa att allt fungerar smidigt och koordinerat.
+
+Fördelar med integerade sytem:
+- Skalbarhet: Integrerade system kan byggas ut med nya komponenter och funktioner utan att det påverkar stabiliteten hos den övergripande lösningen vilket gör det enkelt att anpassa till förändrade behov.
+
+- Komplexitetshantering: Eftersom flera olika komponenter samarbetar kan dessa system hantera mer komplexa uppgifter och erbjuda mer avancerade funktioner än enskilda inbyggda system.
+
+- Flexibilitet: De kan anpassas till olika miljöer och krav genom att nya moduler eller delsystem läggs till och interagerar med befintliga system.
+
+JavaScript har många viktiga användningsområden inom integrerade system. För det första används det ofta i IoT-applikationer för att möjliggöra kommunikation mellan olika enheter och servrar. Med hjälp av ramverk som Node.js kan utvecklare skapa serverlösningar som effektivt samlar in och bearbetar data från olika sensorer och enheter i realtid. Dessutom används webbläsarbaserade gränssnitt i många integrerade system vilket gör det möjligt för användare att styra och övervaka enheter. JavaScript spelar en stor central roll genom att skapa dynamiska och responsiva användargränssnitt vilket gör det enkelt för användare att interagera med systemet via sina smartphones eller datorer.
+
+JavaScript används också för datahantering och analys inom integrerade system. Genom att använda bibliotek som D3.js eller Chart.js kan utvecklare effektivt visualisera data som samlas in från olika källor. Slutligen kan JavaScript användas för att automatisera uppgifter och processer i dessa system som leder till ökad efiktivet. 
+
+1. https://www.techtarget.com/iotagenda/definition/embedded-system
+2. https://www.kth.se/social/upload/214/Lecture2_2.pdf
+3. https://www.spiceworks.com/tech/tech-general/articles/what-are-embedded-systems/
+4. https://skillupwards.com/blog/data-visualization-with-javascript-chart-js-and-d3-js
 
 ## AJ 1.8 Native bundeling av JavaScript för olika operativsystem och enheter
 
