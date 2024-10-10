@@ -165,8 +165,71 @@ function printId(id: number | string) {
 
 ## AJ 1.5 Funktionell programmering i JavaScript
 
-Funktionell programmering är ett tillvägagångssätt som ser beräkningar som ett sätt att utvärdera matematiska funktioner. Det har sitt ursprung i lambda-kalkyl, ett formellt system som Alonzo Church utvecklade på 1930-talet. Detta system skapade en grund för att förklara beräkningar som bygger på funktioner. Språk som Lisp (1958) och ML (1973) banade vägen för funktionell programmering. De påverkade nyare språk som Haskell och Scala.
-Funktionell programmering betonar att skriva rena funktioner. Dessa funktioner är förutsägbara och har inga bieffekter. Detta innebär att de alltid ger samma output för ett givet input utan att ändra något utanför deras omfattning. Denna fokus på oföränderliga data gör programmen mer pålitliga. Det gör dem också lättare att förstå och säkrare att köra samtidigt på olika processorer.
+Functional programming (FP) har sina rötter i matematik och logik, med en stark betoning på att definiera program som en sekvens av funktioner snarare än som en serie av instruktioner. Dess tidiga historia sträcker sig tillbaka till 1930-talet med utvecklingen av lambda-kalkyl av Alonzo Church, en formellism som används för att definiera beräkningar genom funktioner och variabler. Lambda-kalkyl lade grunden för många av de koncept som senare skulle komma att definiera funktionell programmering.
+
+Lambdakalkyl
+Lambda-kalkyl är en matematisk teori som möjliggör representation och manipulation av funktioner. I lambda-kalkyl används lambda-notation för att definiera anonyma funktioner, vilket gör det möjligt att skapa och använda funktioner som förstklassiga objekt. Det ger en kraftfull och elegant metod för att hantera funktionell abstraktion och möjliggör skapandet av komplexa program genom enkla byggstenar.
+
+Haskell
+Haskell, som introducerades i slutet av 1980-talet, är ett av de mest kända funktionella programmeringsspråken. Det är ett rent funktionellt språk, vilket innebär att alla funktioner är renodlade och inga sidoeffekter är tillåtna. Haskell använder laziness (fördröjd utvärdering), vilket innebär att uttryck utvärderas först när deras värden behövs. Detta ger möjlighet att skriva mer deklarativ kod och gör att programmerare kan fokusera på att specificera vad de vill uppnå snarare än hur. Haskell
+typ-system är också mycket kraftfullt och möjliggör typinference, vilket gör att programmerare kan skriva mer robust och felresistent kod.
+
+Deklarativ vs imperativ programmeringsparadigm
+Programmeringsparadigmer kan delas in i deklarativa och imperativa. Deklarativ programmering handlar om att specificera vad som ska göras utan att ange hur, vilket gör att programmeraren kan fokusera på problemets lösning snarare än detaljerna i genomförandet. Exempel på detta inkluderar SQL och HTML. Imperativ programmering å sin sida innebär att man ger en serie instruktioner som direkt styr hur något ska utföras. Det handlar om att beskriva steg-för-steg hur uppgiften ska utföras, vilket kan göra koden mer komplex och svår att underhålla.
+
+Programmeringsexempel
+Ett enkelt exempel på funktionell programmering i JavaScript kan vara att beräkna summan av en lista med nummer med hjälp av den inbyggda metoden reduce(). Istället för att använda en loop för att iterera genom listan och ackumulera summan, kan vi skriva:
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, current) => acc + current, 0);
+```
+
+Här använder vi en högre ordningens funktion för att summera elementen, vilket ger en mer deklarativ och kompakt kod.
+
+Higher order functions
+Högre ordningens funktioner är funktioner som kan ta andra funktioner som argument eller returnera dem som resultat. Detta tillåter programmerare att skapa mer abstrakta och återanvändbara kodblock. Exempel på högre ordningens funktioner i JavaScript inkluderar map, filter och reduce, vilka alla möjliggör olika typer av listbearbetning på ett funktionellt sätt.
+
+Läs mer om high order functions: [JS 1.10 High Order Functions](JavaScript.md#JS-1.10-Higher-order-functions)
+
+Pure components i React
+I React refererar "pure components" till komponenter som ger samma utdata för samma indata och inte ändrar sitt interna tillstånd. Detta gör dem enklare att förutsäga och testas, och kan leda till förbättrad prestanda genom att undvika onödiga omrenderingar. Pure components i React optimerar renderingsprocessen genom att endast uppdatera komponenter när deras props eller state förändras, vilket gör applikationen mer effektiv.
+
+Map()
+map() är en högre ordningens funktion i JavaScript som skapar en ny array genom att applicera en given funktion på varje element i den ursprungliga arrayen. Till exempel, om vi har en array med tal och vill skapa en ny array med dessa tal multiplicerade med två, kan vi skriva:
+
+``` js
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(num => num * 2); // [2, 4, 6, 8, 10]
+
+
+```
+
+Denna funktion är ett exempel på deklarativ programmering, där vi uttrycker vad vi vill åstadkomma utan att specificera hur iterationen genomförs.
+
+Filter()
+filter() är en annan högre ordningens funktion som skapar en ny array med alla element som uppfyller ett visst villkor. Till exempel, för att extrahera alla jämna tal från en array kan vi använda:
+
+``` js
+const numbers = [1, 2, 3, 4, 5];
+const evens = numbers.filter(num => num % 2 === 0); // [2, 4]
+
+```
+
+Reduce()
+reduce() är en kraftfull metod som används för att ackumulera värden i en array till ett enda värde. Det kan användas för att summera tal, som i det tidigare exemplet, eller för att skapa en objektstruktur från en lista. Här är ett exempel där vi räknar antalet förekomster av varje element i en array:
+
+```js
+const fruits = ['apple', 'banana', 'orange', 'apple', 'orange'];
+const fruitCount = fruits.reduce((acc, fruit) => {
+  acc[fruit] = (acc[fruit] || 0) + 1;
+  return acc;
+}, {});
+// { apple: 2, banana: 1, orange: 2 }
+
+```
+
+
 
 1. https://thecodest.co/sv/blog/kraften-i-funktionell-programmering-i-javascript-del-1-introduktion/
 2. https://dev.to/alexmercedcoder/deep-dive-into-functional-programming-in-javascript-851
